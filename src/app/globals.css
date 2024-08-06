@@ -105,3 +105,32 @@ a {
     color-scheme: dark;
   }
 } */
+
+
+.l0 {
+  fill: none;
+  stroke: #212426;
+  stroke-miterlimit:100;
+  stroke-width: 15 
+}
+.l1 {
+  fill: #212426 
+}
+
+.d0 {
+  fill: none;
+  stroke: #D9D9D9;
+  stroke-miterlimit:100;
+  stroke-width: 15 
+}
+.d1 {
+  fill: #D9D9D9;
+}
+
+.bd{
+  color: #D9D9D9;
+}
+
+.bl{
+  color:#212426
+}
