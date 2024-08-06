@@ -1,7 +1,7 @@
 
-import { createTheme } from '@mui/material/styles';
+import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 
-export const lightTheme = createTheme({
+let lightTheme = createTheme({
     palette: {
         mode: 'light',
         primary: {
@@ -17,17 +17,11 @@ export const lightTheme = createTheme({
             default: '#D9D9D9',
         },
     },
-    typography: {
-        h1: {
-            fontSize: '2rem',
-        },
-        h2: {
-            fontSize: '1.5rem',
-        },
-    },
 });
 
-export const darkTheme = createTheme({
+lightTheme = responsiveFontSizes(lightTheme)
+
+let darkTheme = createTheme({
     palette: {
         mode: 'dark',
         primary: {
@@ -43,12 +37,11 @@ export const darkTheme = createTheme({
             default: '#212426',
         },
     },
-    typography: {
-        h1: {
-            fontSize: '2rem',
-        },
-        h2: {
-            fontSize: '1.5rem',
-        },
-    },
 });
+
+darkTheme = responsiveFontSizes(darkTheme)
+
+export {
+    lightTheme,
+    darkTheme
+}

@@ -31,22 +31,25 @@ const Header = ({ darkMode, toggleDarkMode }) => {
 
     return (
         <AppBar position="static" color="transparent" >
-            <Container sx={{display: "flex", justifyContent: "space-between"}}>
-                <Toolbar sx={{width:1}}>
-                    <EmojiObjectsIcon color="secondary" sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+                <Toolbar sx={{display: "flex", justifyContent: "space-between"}}>
+                    <Container sx={{display: "flex", alignItems: "center", width: 400, m: 0}} >
 
-                    <Typography
-                        variant="h4"
-                        color="secondary"
-                        noWrap
-                        component="a"
-                        href="/"
-                        sx={{
-                            textDecoration: "none",
-                        }}
-                    > Jesus Santiago Web </Typography>
+                        <EmojiObjectsIcon fontSize="large" color="secondary" sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
 
-                    <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'flex', lg: "none" } }}>
+                        <Typography
+                            variant="h4"
+                            color="secondary"
+                            noWrap
+                            component="a"
+                            href="/"
+                            sx={{
+                                textDecoration: "none",
+                            }}
+                            > Jesus Santiago Web
+                        </Typography>
+                    </Container>
+
+                    <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none', lg: "none" } }}>
 
                         <IconButton
                             size="large"
@@ -100,12 +103,14 @@ const Header = ({ darkMode, toggleDarkMode }) => {
                         </Menu>
                     </Box>
 
-                    <Box sx={{ml:20, display: { xs: 'none', md: 'none', lg: "flex" }, justifyContent: "space-between" }}>
+                    <Box sx={{display: { xs: 'none', md: 'flex', lg: "flex" }, justifyContent: "space-between",  }}>
                         {pages.map((page) => (
                             <Button
+                                variant="contained"
+                                color="secondary"
                                 key={page}
                                 onClick={handleCloseNavMenu}
-                                sx={{ my: 2, color: 'primary', display: 'block' }}
+                                sx={{ m: 1, display: 'block' }}
                             >
                                 {page}
                             </Button>
@@ -114,11 +119,11 @@ const Header = ({ darkMode, toggleDarkMode }) => {
                         <Tooltip title={darkMode ? "Modo claro" : "Modo Oscuro"}>
                             <ToggleButton
                                 edge="end"
-                                color="secondary"
                                 onClick={toggleDarkMode}
+                                color="secondary"
                             >
-                                {darkMode ? <Brightness7 /> : <Brightness4 />}
-                            </ToggleButton>
+                                {darkMode ? <Brightness7 color="secondary"/> : <Brightness4 color="secondary"/>}
+                            </ToggleButton> 
 
                         </Tooltip>
                     </Box>
@@ -154,8 +159,6 @@ const Header = ({ darkMode, toggleDarkMode }) => {
                     </Box> */}
 
                 </Toolbar>
-            </Container>
-
         </AppBar>
     )
 }

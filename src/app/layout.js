@@ -26,10 +26,10 @@ export default function RootLayout({ children }) {
       <Head/>
       <Box component="body">
         <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-        <CssBaseline/>
-        <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
- 
-        {children}
+          <CssBaseline/>
+          <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
+  
+          {children}
         </ThemeProvider>
         
         </Box>
