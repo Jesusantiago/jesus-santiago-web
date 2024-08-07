@@ -7,7 +7,10 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Link from "next/link";
 import { useState } from "react"
 
-const pages = ["Sobre mí", "Servicios", "Portfolio"]
+const pages = [
+    {name: "Sobre mí", page: "/about"},
+    {name: "Servicios", page: "/service"},
+    {name: "Portfolio", page: "/portfolio"}]
 
 const LogotipoLight = () => {
     return (
@@ -49,13 +52,15 @@ const Header = ({ darkMode, toggleDarkMode }) => {
     return (
         <AppBar position="static" color="transparent" >
             <Container>
-                <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
-                    <Container sx={{display: "flex", alignItems: "center", justifyContent: "space-between", width: 250, m: 0}} >
+                <Toolbar sx={{ display: "flex", justifyContent: "space-between" }} >
+                    <Container maxWidth="xs" >
+                        <Button href="/" sx={{display: "flex", alignItems: "center", justifyContent: "space-between", width:250, m: 0}}>
 
-                        {darkMode ? <LogotipoDark/> : <LogotipoLight/>}
-                        {darkMode ? <img width="150" src="/imalogotipoLight.svg" alt="imalogotipo de jesus santiago web, diseñamos tu página web"/> 
-                        : <img width="150" src="/imalogotipoDark.svg" alt="imalogotipo de jesus santiago web, diseñamos tu página web"/>}
+                         {darkMode ? <LogotipoDark/> : <LogotipoLight/>}
+                          {darkMode ? <img width="150" src="/imalogotipoLight.svg" alt="imalogotipo de jesus santiago web, diseñamos tu página web"/> 
+                         : <img width="150" src="/imalogotipoDark.svg" alt="imalogotipo de jesus santiago web, diseñamos tu página web"/>}
 
+                        </Button>
                     </Container>
 
                     <Box sx={{ display: { xs: 'flex', md: 'none'} }}>
@@ -68,9 +73,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
                             onClick={handleOpenNavMenu}
                             color="inherit"
                         >
-
-                            <MenuIcon />
-
+                            <MenuIcon color='primary'/>
                         </IconButton>
 
                         <Menu
@@ -91,20 +94,19 @@ const Header = ({ darkMode, toggleDarkMode }) => {
                                 display: { xs: 'block', md: 'block', lg: "none" },
                             }}
                         >
-
-                            {pages.map((page) => (
-                                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center">{page}</Typography>
+                            {pages.map((item) => (
+                                <MenuItem key={item.name} onClick={handleCloseNavMenu}>
+                                    <Button href={item.page} textAlign="left" fontWeight={700}>{item.name}</Button>
                                 </MenuItem>
                             ))}
 
                             <Tooltip title={darkMode ? "Modo claro" : "Modo Oscuro"}>
                                 <ToggleButton
-                                    edge="end"
-                                    color="secondary"
                                     onClick={toggleDarkMode}
+                                    sx={{border:0}}
+                                    fullWidth
                                 >
-                                    {darkMode ? <Brightness7 /> : <Brightness4 />}
+                                  {darkMode ? <Brightness7 color="secondary" /> : <Brightness4 color="primary" />}
                                 </ToggleButton>
 
                             </Tooltip>
@@ -113,15 +115,16 @@ const Header = ({ darkMode, toggleDarkMode }) => {
                     </Box>
 
                     <Box sx={{ display: { xs: 'none', md: 'flex'}, justifyContent: "space-between", }}>
-                        {pages.map((page) => (
+                        {pages.map((item) => (
                             <Button
                                 variant="contained"
-                                color="secondary"
-                                key={page}
+                                color="primary"
+                                key={item.name}
                                 onClick={handleCloseNavMenu}
-                                sx={{ m: 1, display: 'block'}}
+                                href={item.page}
+                                sx={{ m: 1, display: 'block', color:'background.default', fontWeight:700}}
                             >
-                                {page}
+                                {item.name}
                             </Button>
                         ))}
 
@@ -130,7 +133,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
                                 onClick={toggleDarkMode}
                                 sx={{border:0}}
                             >
-                                {darkMode ? <Brightness7 color="secondary" /> : <Brightness4 color="secondary" />}
+                                {darkMode ? <Brightness7 color="secondary" /> : <Brightness4 color="primary" />}
                             </ToggleButton>
 
                         </Tooltip>
