@@ -134,3 +134,36 @@ a {
 .bl{
   color:#212426
 }
+
+.swiper {
+  width: 100%;
+  height: 100svh;
+}
+
+/* .wfull{
+  width: 100vw;
+} */
+
+.cblack{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 100000000000;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.hfull{
+  height: 100svh;
+  object-fit: cover;
+  position: absolute;
+  z-index: -100000000;
+  /* background: rgba(0, 0, 0, 1); */
+}
+
+.hfull::after{
+  content: " ";
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
