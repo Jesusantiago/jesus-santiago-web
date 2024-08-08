@@ -1,12 +1,10 @@
-import { Box } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import VideoCarousel from './VideoCarousel'
 
 const Hero = () => {
   return (
     <Box
-        component="section"
-        minWidth={1}
-        minHeight={1}
+      component='section'
     >
       <VideoCarousel/>
     </Box>

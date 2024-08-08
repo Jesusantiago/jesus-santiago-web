@@ -1,7 +1,24 @@
 
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
+import { Manrope, Lexend} from 'next/font/google'
+
+const manrope = Manrope({
+    subsets: ['latin'],
+    display: 'swap'
+});
+
+const lexend = Lexend({
+    subsets: ['latin'],
+    display: 'swap'
+});
 
 let lightTheme = createTheme({
+    typography:{
+        fontFamily: manrope.style.fontFamily,
+        body2: {
+            fontFamily: lexend.style.fontFamily
+        }
+    },
     palette: {
         mode: 'light',
         primary: {
@@ -22,6 +39,12 @@ let lightTheme = createTheme({
 lightTheme = responsiveFontSizes(lightTheme)
 
 let darkTheme = createTheme({
+    typography:{
+        fontFamily: manrope.style.fontFamily,
+        body2: {
+            fontFamily: lexend.style.fontFamily
+        }
+    },
     palette: {
         mode: 'dark',
         primary: {
