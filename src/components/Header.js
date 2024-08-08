@@ -53,8 +53,8 @@ const Header = ({ darkMode, toggleDarkMode }) => {
         <AppBar position="static" color="transparent" >
             <Container>
                 <Toolbar sx={{ display: "flex", justifyContent: "space-between" }} >
-                    <Container maxWidth="xs" >
-                        <Button href="/" sx={{display: "flex", alignItems: "center", justifyContent: "space-between", width:250, m: 0}}>
+                    <Container maxWidth="xs" sx={{ml:0}}>
+                        <Button href="/" sx={{display: "flex", alignItems: "center", justifyContent: "space-between", width:220, m: 0}}>
 
                          {darkMode ? <LogotipoDark/> : <LogotipoLight/>}
                           {darkMode ? <img width="150" src="/imalogotipoLight.svg" alt="imalogotipo de jesus santiago web, diseñamos tu página web"/> 
@@ -118,12 +118,10 @@ const Header = ({ darkMode, toggleDarkMode }) => {
                     <Box sx={{ display: { xs: 'none', md: 'flex'}, justifyContent: "space-between", }}>
                         {pages.map((item) => (
                             <Button
-                                variant="contained"
-                                color="primary"
                                 key={item.name}
                                 onClick={handleCloseNavMenu}
                                 href={item.page}
-                                sx={{ m: 1, display: 'block', color:'background.default', fontWeight:700}}
+                                sx={{ m: 1, display: 'block', color:'primary.main', fontWeight:700}}
                             >
                                 {item.name}
                             </Button>
