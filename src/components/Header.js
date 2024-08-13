@@ -1,4 +1,4 @@
-import { AppBar, Box, Button, Container, IconButton, Menu, MenuItem, SvgIcon, ToggleButton, Toolbar, Tooltip, Typography } from "@mui/material"
+import { AppBar, Box, Button, ButtonGroup, Container, IconButton, Menu, MenuItem, SvgIcon, ToggleButton, Toolbar, Tooltip, Typography } from "@mui/material"
 // import { EmojiObjectsIcon, Brightness4, Brightness7 } from "@mui/icons-material";
 import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects';
 import { Brightness7 } from "@mui/icons-material";
@@ -50,10 +50,12 @@ const Header = ({ darkMode, toggleDarkMode }) => {
     };
 
     return (
-        <AppBar position="static" color="transparent" >
+        <AppBar position="fixed" color="background" >
             <Container>
                 <Toolbar sx={{ display: "flex", justifyContent: "space-between" }} >
-                    <Container maxWidth="xs" sx={{ml:0}}>
+
+                    {/* logo */}
+                    <Box sx={{m:0, p:0}}>
                         <Button href="/" sx={{display: "flex", alignItems: "center", justifyContent: "space-between", width:220, m: 0}}>
 
                          {darkMode ? <LogotipoDark/> : <LogotipoLight/>}
@@ -61,8 +63,9 @@ const Header = ({ darkMode, toggleDarkMode }) => {
                          : <img width="150" src="/imalogotipoDark.svg" alt="imalogotipo de jesus santiago web, diseñamos tu página web"/>}
 
                         </Button>
-                    </Container>
+                    </Box>
 
+                    {/* HAMBURGUESA */}
                     <Box sx={{ display: { xs: 'flex', md: 'none'} }}>
 
                         <IconButton
@@ -115,17 +118,25 @@ const Header = ({ darkMode, toggleDarkMode }) => {
                         </Menu>
                     </Box>
 
+                    {/* Botones desktop */}
                     <Box sx={{ display: { xs: 'none', md: 'flex'}, justifyContent: "space-between", }}>
+                        <ButtonGroup 
+                            variant="outlined"
+                            // color="background" 
+                            size="large"
+                            aria-label="Buttons header of Jesus Santiago web- when we create your web site"
+                        >
                         {pages.map((item) => (
                             <Button
                                 key={item.name}
                                 onClick={handleCloseNavMenu}
                                 href={item.page}
-                                sx={{ m: 1, display: 'block', color:'primary.main', fontWeight:700}}
+                                sx={{display: 'block', color:'primary.main', fontWeight:700}}
                             >
                                 {item.name}
                             </Button>
                         ))}
+                        </ButtonGroup>
 
                         <Tooltip title={darkMode ? "Modo claro" : "Modo Oscuro"}>
                             <ToggleButton
@@ -136,6 +147,17 @@ const Header = ({ darkMode, toggleDarkMode }) => {
                             </ToggleButton>
 
                         </Tooltip>
+                    </Box>
+
+                    <Box sx={{display: { xs: 'none', md: 'block'}}}>
+                        <Button 
+                        variant="contained"
+                        color="secondary" 
+                        size="large"
+                        sx={{fontWeight:700}}
+                    > 
+                        Charlemos!
+                    </Button>
                     </Box>
 
                 </Toolbar>
