@@ -8,6 +8,7 @@ import "./globals.css";
 import Head from './head';
 import Header from '@/components/Header';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter'
+import ProvidersParallax from './ProvidersParallax'
 
 
 
@@ -20,18 +21,19 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="es">
-
       <Head/>
-      <Box component="body">
-        <AppRouterCacheProvider>
-          <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-            <CssBaseline/>
-            <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
-    
-            {children}
-          </ThemeProvider>
-        </AppRouterCacheProvider>
-        
+        <Box component="body">
+
+          <ProvidersParallax>
+            <AppRouterCacheProvider>
+              <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+                <CssBaseline/>
+                <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
+                {children}
+              </ThemeProvider>
+            </AppRouterCacheProvider>
+          </ProvidersParallax>
+
         </Box>
     </html>
   );
