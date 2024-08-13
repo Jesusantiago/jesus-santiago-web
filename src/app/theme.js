@@ -1,11 +1,28 @@
 
-import { createTheme } from '@mui/material/styles';
+import { createTheme, responsiveFontSizes } from '@mui/material/styles';
+import { Manrope, Lexend} from 'next/font/google'
 
-export const lightTheme = createTheme({
+const manrope = Manrope({
+    subsets: ['latin'],
+    display: 'swap'
+});
+
+const lexend = Lexend({
+    subsets: ['latin'],
+    display: 'swap'
+});
+
+let lightTheme = createTheme({
+    typography:{
+        fontFamily: manrope.style.fontFamily,
+        body2: {
+            fontFamily: lexend.style.fontFamily
+        }
+    },
     palette: {
         mode: 'light',
         primary: {
-            main: '#212426',
+            main: '#212121',
         },
         secondary: {
             main: '#9CA653',
@@ -14,20 +31,20 @@ export const lightTheme = createTheme({
             main: '#ff1744',
         },
         background: {
-            default: '#D9D9D9',
-        },
-    },
-    typography: {
-        h1: {
-            fontSize: '2rem',
-        },
-        h2: {
-            fontSize: '1.5rem',
+            default: '#F0F0F0',
         },
     },
 });
 
-export const darkTheme = createTheme({
+lightTheme = responsiveFontSizes(lightTheme)
+
+let darkTheme = createTheme({
+    typography:{
+        fontFamily: manrope.style.fontFamily,
+        body2: {
+            fontFamily: lexend.style.fontFamily
+        }
+    },
     palette: {
         mode: 'dark',
         primary: {
@@ -40,15 +57,14 @@ export const darkTheme = createTheme({
             main: '#ff5252',
         },
         background: {
-            default: '#212426',
-        },
-    },
-    typography: {
-        h1: {
-            fontSize: '2rem',
-        },
-        h2: {
-            fontSize: '1.5rem',
+            default: '#070707',
         },
     },
 });
+
+darkTheme = responsiveFontSizes(darkTheme)
+
+export {
+    lightTheme,
+    darkTheme
+}
