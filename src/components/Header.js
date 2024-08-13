@@ -50,7 +50,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
     };
 
     return (
-        <AppBar position="fixed" color="background" >
+        <AppBar position="fixed" sx={{backgroundColor:'background.default', backgroundImage:'none'}}>
             <Container>
                 <Toolbar sx={{ display: "flex", justifyContent: "space-between" }} >
 
