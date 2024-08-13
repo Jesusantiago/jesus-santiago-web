@@ -94,15 +94,26 @@ const Header = ({ darkMode, toggleDarkMode }) => {
                             open={Boolean(anchorElNav)}
                             onClose={handleCloseNavMenu}
                             sx={{
-                                display: { xs: 'block', md: 'block', lg: "none" },
+                                display: { xs: 'flex', lg: "none" },
                                 zIndex:10000,
                             }}
                         >
                             {pages.map((item) => (
-                                <MenuItem key={item.name} onClick={handleCloseNavMenu}>
-                                    <Button href={item.page}  fontWeight={700}>{item.name}</Button>
+                                <MenuItem key={item.name} onClick={handleCloseNavMenu} >
+                                    <Button 
+                                        variant="text" 
+                                        href={item.page}
+                                        sx={{width:1}}
+                                        >
+                                        {item.name}
+                                    </Button>
                                 </MenuItem>
                             ))}
+                            <MenuItem>
+                                <Button color="secondary" variant="contained" sx={{margin: 'auto', color:'background.default'}}>
+                                    Charlemos!
+                                </Button>
+                            </MenuItem>
 
                             <Tooltip title={darkMode ? "Modo claro" : "Modo Oscuro"}>
                                 <ToggleButton
