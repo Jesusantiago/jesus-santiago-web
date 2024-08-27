@@ -35,9 +35,6 @@ importers:
       react-dom:
         specifier: ^18
         version: 18.3.1(react@18.3.1)
-      react-scroll-parallax:
-        specifier: ^3.4.5
-        version: 3.4.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     devDependencies:
       eslint:
         specifier: ^8
@@ -538,9 +535,6 @@ packages:
 
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
-
-  bezier-easing@2.1.0:
-    resolution: {integrity: sha512-gbIqZ/eslnUFC1tjEvtz0sgx+xTK20wDnYMIA27VA04R7w6xxXQPZDbibjA9DTWZRA2CXtwHykkVzlCaAJAZig==}
 
   brace-expansion@1.1.11:
     resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==}
@@ -1297,10 +1291,6 @@ packages:
     resolution: {integrity: sha512-LaNjtRWUBY++zB5nE/NwcaoMylSPk+S+ZHNB1TzdbMJMny6dynpAGt7X/tl/QYq3TIeE6nxHppbo2LGymrG5Pw==}
     engines: {node: '>=10'}
 
-  parallax-controller@1.7.1:
-    resolution: {integrity: sha512-facVMEBnUynzMN7hCSqyNpF6uyCpVIl4XAUyTR9D8q2JlhgyPY6bZtj/OkFk3+Cpka1TnYCppQb8BzDWHtSaZg==}
-    engines: {node: '>=12'}
-
   parent-module@1.0.1:
     resolution: {integrity: sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g==}
     engines: {node: '>=6'}
@@ -1371,13 +1361,6 @@ packages:
 
   react-is@18.3.1:
     resolution: {integrity: sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==}
-
-  react-scroll-parallax@3.4.5:
-    resolution: {integrity: sha512-4NLZQ8cZEUyxoA95DfrXWneOOUSFrFmpM0dZNzMErmuJ0LzY+CCw8Xw0hqB6xxHWxNknfs46AozyIPSWkZeucA==}
-    engines: {node: '>=10'}
-    peerDependencies:
-      react: ^16.8.0-0 || >=17.0.1 || ^18.0.0
-      react-dom: ^16.8.0-0 || >=17.0.1 || ^18.0.0
 
   react-transition-group@4.4.5:
     resolution: {integrity: sha512-pZcd1MCJoiKiBR2NRxeCRg13uCXbydPnmB4EOeRrY7480qNWO8IIgQG6zlDkm6uRMsURXPuKq0GWtiM59a5Q6g==}
@@ -2205,8 +2188,6 @@ snapshots:
       resolve: 1.22.8
 
   balanced-match@1.0.2: {}
-
-  bezier-easing@2.1.0: {}
 
   brace-expansion@1.1.11:
     dependencies:
@@ -3159,10 +3140,6 @@ snapshots:
     dependencies:
       p-limit: 3.1.0
 
-  parallax-controller@1.7.1:
-    dependencies:
-      bezier-easing: 2.1.0
-
   parent-module@1.0.1:
     dependencies:
       callsites: 3.1.0
@@ -3222,12 +3199,6 @@ snapshots:
   react-is@16.13.1: {}
 
   react-is@18.3.1: {}
-
-  react-scroll-parallax@3.4.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
-    dependencies:
-      parallax-controller: 1.7.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
 
   react-transition-group@4.4.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:

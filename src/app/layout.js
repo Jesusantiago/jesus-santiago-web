@@ -8,7 +8,6 @@ import "./globals.css";
 import Head from './head';
 import Header from '@/components/Header';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter'
-import ProvidersParallax from './ProvidersParallax'
 
 
 
@@ -23,8 +22,6 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <Head/>
         <Box component="body">
-
-          <ProvidersParallax>
             <AppRouterCacheProvider>
               <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
                 <CssBaseline/>
@@ -32,8 +29,6 @@ export default function RootLayout({ children }) {
                 {children}
               </ThemeProvider>
             </AppRouterCacheProvider>
-          </ProvidersParallax>
-
         </Box>
     </html>
   );
