@@ -50,15 +50,27 @@ const Header = ({ darkMode, toggleDarkMode }) => {
     };
 
     return (
-        <AppBar 
-        position="fixed" 
-        sx={{
-            backgroundColor:'background.default', 
-            backgroundImage:'none'
+        // <AppBar 
+        // position="fixed" 
+        // color="transparent"
+        // sx={{
+        //     backgroundColor:'background.default', 
+        //     backgroundImage:'none',
+        //     }}>
+        <Box
+            component='header'
+            sx={{
+                mx:4,
+                // background: 'rgba(0, 0, 0, 0.1)',
+                backdropFilter: 'blur(5px)',
+                borderRadius:10,
+                border: '0.5px, solid, #B7F25E' ,
+                position: 'sticky',
+                top:'32px',
             }}
         >
-            <Container>
-                <Toolbar sx={{ display: "flex", justifyContent: "space-between" }} >
+            <Container maxWidth='xl'>
+                <Toolbar sx={{ display: "flex", justifyContent: "space-between", py: 1, }} >
 
                     {/* logo */}
                     <Box sx={{m:0, p:0}}>
@@ -179,7 +191,8 @@ const Header = ({ darkMode, toggleDarkMode }) => {
 
                 </Toolbar>
             </Container>
-        </AppBar>
+        {/*</AppBar>*/}
+        </Box>
     )
 }
 

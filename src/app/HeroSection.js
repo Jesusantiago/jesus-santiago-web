@@ -4,26 +4,34 @@ import Grid from '@mui/material/Unstable_Grid2'
 const HeroSection = () => {
   return (
     <Container
-      maxWidth="lg"
-      sx={{
-        minHeight:'100svh',
-        background:'background.default'
-      }}
+      maxWidth='xl'
     >
-      <Grid container spacing={2} sx={{height:'100svh',minWidth:1, paddingY: {xs: 20, md:20}}}>
-        <Grid xs={12} md={6}> 
+
+      <Grid container spacing={2} sx={{
+        maxWidth:'100vw',
+        paddingTop:20,  
+        borderRadius:6,
+        boxSizing:'content-box'
+      }}>
+        <Grid xs={12} sm={6}> 
             <Typography
-              variant='h1'
-            >
+              variant='h2'
+              >
               Hola yo soy Jesus Santiago
             </Typography>
         </Grid>
-        <Grid xs={12} md={6}> 
-            <Typography
-              variant='h1'
-            >
+        <Grid xs={12} sm={6}> 
+          <picture>
+            <source srcSet='contenido-pequeña.png' media='(max-width:600px)' type='image/png'/>
+            <source srcSet='contenido-grande.png' media='(max-width:1080px)' type='image/png'/>
+            <img src='contenido-grande.png' alt='imagen de presentaación del hero de Jesús Santiago' />
+            </picture>
+          {/* <Typography
+              variant='h2'
+              >
               Hola yo soy Jesus Santiago
-            </Typography>
+            </Typography> */}
+          
         </Grid>
 
       </Grid>
@@ -33,3 +41,4 @@ const HeroSection = () => {
 }
 
 export default HeroSection
+
