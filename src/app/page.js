@@ -7,7 +7,9 @@ import HeroSection from "./HeroSection";
 
 export default function Home() {
   return (
-    <>
+    <Box
+      component='main'
+    >
         <HeroSection/>
         <ProblemAndSolucion />
         <Typography component='h1' variant="h1">
@@ -38,11 +40,11 @@ export default function Home() {
           dgdfgwe
           gergfgd
           erewr
-          
+
         </Typography>
           
       <Button href="/about"> ABOUT</Button>
-    </>
+    </Box>
   );
 }
 

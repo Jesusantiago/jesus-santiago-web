@@ -21,7 +21,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <Head/>
-        <Box component="body">
+        <Box 
+          component="body"
+          sx={{
+            maxWidth:'100vw'
+          }}
+        >
             <AppRouterCacheProvider>
               <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
                 <CssBaseline/>

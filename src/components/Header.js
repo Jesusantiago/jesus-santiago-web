@@ -50,23 +50,21 @@ const Header = ({ darkMode, toggleDarkMode }) => {
     };
 
     return (
-        // <AppBar 
-        // position="fixed" 
-        // color="transparent"
-        // sx={{
-        //     backgroundColor:'background.default', 
-        //     backgroundImage:'none',
-        //     }}>
         <Box
             component='header'
             sx={{
-                mx:4,
-                // background: 'rgba(0, 0, 0, 0.1)',
-                backdropFilter: 'blur(5px)',
-                borderRadius:10,
-                border: '0.5px, solid, #B7F25E' ,
-                position: 'sticky',
+                m: 'auto',
+                backdropFilter: 'blur(10px)',
+                borderRadius:2,
+                // border: '0.5px, solid, #B7F25E' ,
+                position: 'fixed',
+                zIndex:1,
+                left:'50%',
+                transform: 'translate(-50%)',
                 top:'32px',
+                width:{xs:.8, md: 0.9},
+                // background: (theme) => theme.palette.card.main,
+                boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`,
             }}
         >
             <Container maxWidth='xl'>
@@ -128,7 +126,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
                                 </MenuItem>
                             ))}
                             <MenuItem>
-                                <Button color="secondary" variant="contained" sx={{margin: 'auto', color:'background.default'}}>
+                                <Button color="secondary" variant="contained" sx={{margin: 'auto'}}>
                                     Charlemos!
                                 </Button>
                             </MenuItem>
@@ -191,7 +189,6 @@ const Header = ({ darkMode, toggleDarkMode }) => {
 
                 </Toolbar>
             </Container>
-        {/*</AppBar>*/}
         </Box>
     )
 }
