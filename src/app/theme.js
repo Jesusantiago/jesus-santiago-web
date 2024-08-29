@@ -25,7 +25,12 @@ let lightTheme = createTheme({
             main: '#212121',
         },
         secondary: {
-            main: '#9CA653',
+            main: '#B7F25E',
+        },
+        card: {
+            main: '#e0e0e0',
+            shadowPrimary : '#bebebe',
+            shadowSecondary: '#ffffff'
         },
         error: {
             main: '#ff1744',
@@ -51,7 +56,12 @@ let darkTheme = createTheme({
             main: '#D9D9D9',
         },
         secondary: {
-            main: '#F2EA77',
+            main: '#B7F25E',
+        },
+        card:{
+            main: '#292929',
+            shadowPrimary: '#1F1F1F',
+            shadowSecondary: '#141414'
         },
         error: {
             main: '#ff5252',
