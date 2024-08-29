@@ -214,19 +214,4 @@ a {
   font-weight: 700;
 }
 
-.object{
-  object-position: cover;
-}
-
 /* From Uiverse.io by qhns3 */ 
-.container {
-
-  background-color: #111111;
-  background-image: linear-gradient(
-    32deg,
-    rgba(8, 8, 8, 0.74) 30px,
-    transparent
-  );
-  background-size: 100px 100px;
-  background-position: -5px -5px;
-}

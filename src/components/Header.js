@@ -52,18 +52,17 @@ const Header = ({ darkMode, toggleDarkMode }) => {
     return (
         <Box
             component='header'
+            maxWidth='xl'
             sx={{
                 m: 'auto',
                 backdropFilter: 'blur(10px)',
                 borderRadius:2,
-                // border: '0.5px, solid, #B7F25E' ,
                 position: 'fixed',
                 zIndex:1,
                 left:'50%',
                 transform: 'translate(-50%)',
                 top:'32px',
-                width:{xs:.8, md: 0.9},
-                // background: (theme) => theme.palette.card.main,
+                width:{xs:.8, md: 0.7},
                 boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`,
             }}
         >
@@ -82,7 +81,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
                     </Box>
 
                     {/* HAMBURGUESA */}
-                    <Box sx={{ display: { xs: 'flex', md: 'none'} }}>
+                    <Box sx={{ display: { xs: 'flex', md: 'flex',lg : ' none'} }}>
 
                         <IconButton
                             size="large"
@@ -146,7 +145,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
                     </Box>
 
                     {/* Botones desktop */}
-                    <Box sx={{ display: { xs: 'none', md: 'flex'}, justifyContent: "space-between", }}>
+                    <Box sx={{ display: { xs: 'none', md: 'none', lg: 'flex'}, justifyContent: "space-between", }}>
                         <ButtonGroup 
                             variant="outlined"
                             // color="background" 
@@ -176,7 +175,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
                         </Tooltip>
                     </Box>
 
-                    <Box sx={{display: { xs: 'none', md: 'block'}}}>
+                    <Box sx={{display: { xs: 'none', lg:'block'}}}>
                         <Button 
                         variant="contained"
                         color="secondary" 
