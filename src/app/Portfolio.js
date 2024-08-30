@@ -1,5 +1,6 @@
+import { GitHub } from '@mui/icons-material'
 import { Build } from '@mui/icons-material'
-import { Box, Card, CardMedia, Chip, Typography } from '@mui/material'
+import { Box, Card, CardMedia, Chip, Divider, Typography } from '@mui/material'
 import React from 'react'
 
 const Portfolio = () => {
@@ -45,18 +46,45 @@ const Portfolio = () => {
                 <Card 
                     sx={{ 
                         display: 'flex', 
+                        flexDirection: {xs:'column', lg: 'row'},
                         borderRadius: 4, 
                         boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`,
                 }}>
                     <CardMedia
-                        component='img'
-                        height='300'
-                        image='linkedin/guiaFrontEnd1.png'
-                        alt='Imagen de un articulo'
-                        sx={{ width: 345, objectFit: 'cover' }}
-                    />
-                    <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-around', py: 2, px: 4, width: 1 }}>
-                        <Chip variant='contained' color='secondary' label='En desarrollo' size='small' icon={<Build />} sx={{ width: 1 / 6 }} />
+                        component='picture'
+                        sx={{ 
+                            height: 300,
+                            width: {xs: 1, lg: 345}, 
+                            objectFit: 'cover',
+                            
+                        }}
+                    >
+                        <source src='portfolio/nebulaWear.png' media='(max-width:1000px)' type='image/png'/>
+                        <img src='portfolio/nebulaWear.png' className='object'/>
+                    {/* <source src='portfolio/nebulaWear.png' media='(max-width:1000px)' type='image/png'/>
+                    <source src='portfolio/nebulaWear.png' media='(max-width:1000px)' type='image/png'/> */}
+                    </CardMedia>
+                    <Box 
+                        sx={{ 
+                            display: 'flex', 
+                            flexDirection: 'column', 
+                            justifyContent: 'space-around', 
+                            py: 2, 
+                            px: 4,
+                        }}
+                    >
+                        <Chip 
+                            variant='filled' 
+                            color='secondary' 
+                            label='En desarrollo' 
+                            size='small' 
+                            icon={<Build />} 
+                            sx={{ 
+                                minWidth: 130,
+                                width:1/6,
+                                mb:2
+                            }} 
+                            />
                         <Typography variant='body1'>
                             <b>Nebula Wear</b> es una plataforma de comercio electrónico enfocada en crear una solución robusta y escalable. Lidero el equipo técnico, guiando el desarrollo y aplicando nuestras habilidades especializadas en cada área. Mi enfoque es llevar este proyecto a su máximo potencial.
                         </Typography>
@@ -65,8 +93,18 @@ const Portfolio = () => {
                         </Typography>
                         <Typography>
                             <b>Tecnologías:</b> React, Material UI (estilos), Firebase (autenticación).
-
                         </Typography>
+                        <Divider sx={{ my:2}}/>
+                        <Chip 
+                            variant='filled'
+                            color='primary'
+                            label='GitHub'
+                            icon={<GitHub/>}
+                            sx={{
+                                minWidth:120,
+                                width:1/6
+                            }}
+                        />
                     </Box>
                 </Card>
 
@@ -74,18 +112,40 @@ const Portfolio = () => {
                 <Card 
                     sx={{ 
                         display: 'flex', 
+                        flexDirection: {xs:'column', lg: 'row'},
                         borderRadius: 4, 
                         boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`
                 }}>
                     <CardMedia
                         component='img'
-                        height='300'
-                        image='linkedin/guiaFrontEnd1.png'
+                        image='portfolio/agiliza2.png'
                         alt='Imagen de un articulo'
-                        sx={{ width: 345, objectFit: 'cover' }}
+                        sx={{ 
+                            height: 300,
+                            width: {xs: 1, lg: 345}, 
+                            objectFit: 'cover' 
+                        }}
                     />
-                    <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-around', py: 2, px: 4, width: 1 }}>
-                        <Chip variant='contained' color='secondary' label='En desarrollo' size='small' icon={<Build />} sx={{ width: 1 / 6 }} />
+                    <Box 
+                        sx={{ 
+                            display: 'flex', 
+                            flexDirection: 'column', 
+                            justifyContent: 'space-around', 
+                            py: 2, 
+                            px: 4, 
+                        }}>
+
+                        <Chip 
+                            variant='filled' 
+                            color='secondary' 
+                            label='Actualmente' 
+                            size='small' 
+                            icon={<Build />} 
+                            sx={{ 
+                                minWidth: 130,
+                                width:1/6,
+                                mb:2
+                            }} />
                         <Typography variant='body1'>
                             <b>Agiliza</b> es una startup dedicada a la centralización y presentación de datos empresariales. Lideré la creación de la app, desarrollando la interfaz que muestra gráficos BI y gestionando la autenticación, control de usuarios y permisos.
                         </Typography>
@@ -96,6 +156,7 @@ const Portfolio = () => {
                             <b>Tecnologías:</b> React.
 
                         </Typography>
+                        <Divider sx={{ my:2}}/>
                     </Box>
                 </Card>
             </Box>

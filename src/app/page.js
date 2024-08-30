@@ -25,37 +25,7 @@ export default function Home() {
         <HeroSection/>
         <Newletter />
         <Portfolio />
-        {/* <Typography component='h1' variant="h1" mt={6}>
-          Hdsofj
-          df
-          df
-          df
-          dfd
-          dfds
-          f
-          sdf
-          sdfsd
-          fa
-          de
-          dfd
-          des
-          sdfsdf
-          dsf
-          dsfdsfsd
-          sdfdsfsdf
-          dsfdsfsdsdf
-          sdfdsfsdfsdf
-          dsfdsfsdsdf
-          aasas
-          asfsd
-          sdfdsfsdf
-          dsdsdwe
-          dgdfgwe
-          gergfgd
-          erewr
-
-        </Typography> */}
-          
+         
       <Button href="/about"> ABOUT</Button>
     </Box>
   );

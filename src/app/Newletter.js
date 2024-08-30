@@ -3,7 +3,6 @@ import React from 'react'
 import NewsLetterBD from '../database/Newletter.js'
 import NextLink from 'next/link'
 const Newletter = () => {
-    console.log(NewsLetterBD)
 
     return (
         <Box
@@ -37,6 +36,7 @@ const Newletter = () => {
                 {NewsLetterBD.map((val) => {
                     return (
                         <Card
+                        key={val.article}
                             component='article'
                             sx={{
                                 width:'1',
