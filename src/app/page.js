@@ -1,10 +1,11 @@
 'use client'
+
 import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
 import { Box, Button, Container, Typography } from "@mui/material"
-import ProblemAndSolucion from './ProblemAndSolucion'
 import HeroSection from "./HeroSection";
+import Newletter from "./Newletter";
 
 export default function Home() {
   return (
@@ -21,7 +22,8 @@ export default function Home() {
       }}
     >
         <HeroSection/>
-        <Typography component='h1' variant="h1" mt={6}>
+        <Newletter />
+        {/* <Typography component='h1' variant="h1" mt={6}>
           Hdsofj
           df
           df
@@ -50,7 +52,7 @@ export default function Home() {
           gergfgd
           erewr
 
-        </Typography>
+        </Typography> */}
           
       <Button href="/about"> ABOUT</Button>
     </Box>

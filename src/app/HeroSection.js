@@ -9,6 +9,7 @@ const HeroSection = () => {
   return (
     <Grid
       container
+      component='section'
       sx={{
         minHeight: '80svh',
         width:'.9',
@@ -24,6 +25,7 @@ const HeroSection = () => {
       }}>
 
       <Grid xs={12} lg={6} 
+      component='article'
         sx={{
           display: 'flex',
           flexDirection: 'column',
@@ -99,6 +101,7 @@ const HeroSection = () => {
       </Grid>
 
       <Grid xs={12} lg={6}
+        component='article'
         sx={{
           display: 'flex',
           alignItems: 'center',
