@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Box, Button, Container, Typography } from "@mui/material"
 import HeroSection from "./HeroSection";
 import Newletter from "./Newletter";
+import Portfolio from "./Portfolio";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
     >
         <HeroSection/>
         <Newletter />
+        <Portfolio />
         {/* <Typography component='h1' variant="h1" mt={6}>
           Hdsofj
           df
