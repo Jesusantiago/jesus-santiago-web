@@ -1,5 +1,7 @@
 'use client'
-import { Circle } from '@mui/icons-material'
+import Circle  from '@mui/icons-material/Circle'
+import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
+import DownloadForOfflineRoundedIcon from '@mui/icons-material/DownloadForOfflineRounded';
 import { Box, Button, Container, Typography, } from '@mui/material'
 import Grid from '@mui/material/Unstable_Grid2'
 
@@ -30,13 +32,15 @@ const HeroSection = () => {
         }}
       >
         <Button
-          variant='contained'
-          color='secondary'
+          variant='text'
+          color='primary'
+          size='large'
           sx={{
-            mb: 2
+            mb: {xs: 0, sm: 1, md: 2}
+            // borderColor:'secondary'
           }}
           startIcon={
-            <Circle color='success' />
+            <Circle color='secondary' />
           }
         >
           DISPONIBLE
@@ -44,6 +48,7 @@ const HeroSection = () => {
 
         <Typography
           variant='h1'
+          component='h2'
           textAlign='center'
           fontWeight='700'
           sx={{width:1, textWrap: 'balance'}}
@@ -52,12 +57,45 @@ const HeroSection = () => {
         </Typography>
 
         <Typography
-          variant='h4'
+          variant='h5'
+          component='h1'
           textAlign='center'
           sx={{width:1, textWrap: 'balance'}}
         >
-          Desarrollador Front-End
+          Desarrollador Front-End especializado en React
         </Typography>
+
+        <Box
+          display='flex'
+          sx={{
+            mt: {xs: 2, sm: 4, gap: '1rem'},
+          }}
+        >
+          <Button
+            color='secondary'
+            variant='contained'
+            size='large'
+            endIcon={
+              <ArrowCircleRightIcon/>
+            }
+          >
+            Charlemos
+          </Button>
+
+          <Button
+            variant='outlined'
+            size='large'
+            endIcon={
+              <DownloadForOfflineRoundedIcon/>
+            }
+            target='_blank'
+            href='CvJesusSantiago-Front-End.pdf'
+          >
+            ver CV
+          </Button>
+        </Box>
+
+
       </Grid>
 
       <Grid xs={12} lg={6}

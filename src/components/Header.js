@@ -182,7 +182,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
                         size="large"
                         sx={{fontWeight:700}}
                     > 
-                        Charlemos!
+                        Charlemos 
                     </Button>
                     </Box>
 
