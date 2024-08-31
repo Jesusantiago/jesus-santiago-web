@@ -109,7 +109,7 @@ const HeroSection = () => {
         }}
       >
         <picture className='object'>
-          <source srcSet='contenido-pequeña.png' media='(max-width:1000px)' type='image/png'/>
+          <source srcSet='contenido-pequeña.png' media='(max-width:750px)' type='image/png'/>
           <source srcSet='contenido-grande.png' media='(max-width:1080px)' type='image/png'/>
           <img src='contenido-grande.png' alt='imagen de presentaación del hero de Jesús Santiago' className='object'/>
         </picture>
