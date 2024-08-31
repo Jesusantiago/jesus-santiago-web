@@ -1,5 +1,7 @@
-import { GitHub } from '@mui/icons-material'
-import { Build } from '@mui/icons-material'
+import GitHub from '@mui/icons-material/GitHub'
+import Build from '@mui/icons-material/Build'
+import Done from '@mui/icons-material/Done'
+import EngineeringIcon from '@mui/icons-material/Engineering';
 import { Box, Card, CardMedia, Chip, Divider, Typography } from '@mui/material'
 import React from 'react'
 
@@ -8,7 +10,6 @@ const Portfolio = () => {
         <Box
             component='section'
             sx={{
-                // minHeight: '80svh',
                 width: '.9',
                 maxWidth: '1620px',
                 borderRadius: 4,
@@ -19,8 +20,8 @@ const Portfolio = () => {
                 mt: 2,
                 display: 'flex',
                 flexDirection: 'column',
-                alignItems: { xs: 'end', md: 'center' },
-                justifyContent: { xs: 'center', md: 'space-between'},
+                alignItems:'center',
+                justifyContent: 'space-between',
                 gap:6,
             }}
         >
@@ -35,7 +36,7 @@ const Portfolio = () => {
             <Box
                 component='section'
                 sx={{
-                    width: '.9',
+                    width: {xs: 0.95, lg: 0.8},
                     maxWidth: '1620px',
                     display:'flex',
                     flexDirection: 'column',
@@ -50,25 +51,23 @@ const Portfolio = () => {
                         borderRadius: 4, 
                         boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`,
                 }}>
-                    <CardMedia
-                        component='picture'
-                        sx={{ 
-                            height: 300,
-                            width: {xs: 1, lg: 345}, 
-                            objectFit: 'cover',
-                            
+                    <CardMedia 
+                        component='img'
+                        image='portfolio/nebulaWear1-1.png'
+                        alt='Imagen representativa del Proyecto de NebulaWear'
+                        sx={{
+                            height : 300,
+                            width: {xs: 1, lg: 345},
+                            objectPosition:'bottom'
                         }}
-                    >
-                        <source src='portfolio/nebulaWear.png' media='(max-width:1000px)' type='image/png'/>
-                        <img src='portfolio/nebulaWear.png' className='object'/>
-                    {/* <source src='portfolio/nebulaWear.png' media='(max-width:1000px)' type='image/png'/>
-                    <source src='portfolio/nebulaWear.png' media='(max-width:1000px)' type='image/png'/> */}
-                    </CardMedia>
+                    />
+
                     <Box 
                         sx={{ 
                             display: 'flex', 
                             flexDirection: 'column', 
                             justifyContent: 'space-around', 
+                            gap:1,
                             py: 2, 
                             px: 4,
                         }}
@@ -86,7 +85,7 @@ const Portfolio = () => {
                             }} 
                             />
                         <Typography variant='body1'>
-                            <b>Nebula Wear</b> es una plataforma de comercio electrónico enfocada en crear una solución robusta y escalable. Lidero el equipo técnico, guiando el desarrollo y aplicando nuestras habilidades especializadas en cada área. Mi enfoque es llevar este proyecto a su máximo potencial.
+                            <b>Nebula Wear</b> es una marca de ropa de lujo y plataforma de comercio electrónico enfocada en crear una solución robusta y escalable. Lidero el equipo técnico, guiando el desarrollo y aplicando nuestras habilidades especializadas en cada área. Mi enfoque es llevar este proyecto a su máximo potencial.
                         </Typography>
                         <Typography>
                             <b>Mi rol:</b> Líder técnico y desarrollador Front-End.
@@ -106,6 +105,7 @@ const Portfolio = () => {
                             }}
                         />
                     </Box>
+
                 </Card>
 
                 {/* agiliza */}
@@ -118,21 +118,25 @@ const Portfolio = () => {
                 }}>
                     <CardMedia
                         component='img'
-                        image='portfolio/agiliza2.png'
-                        alt='Imagen de un articulo'
+                        image='portfolio/agiliza1-1.png'
+                        alt='Imagen presentativa de Agiliza'
                         sx={{ 
                             height: 300,
                             width: {xs: 1, lg: 345}, 
-                            objectFit: 'cover' 
+                            objectPosition: 'center' 
                         }}
                     />
+  
                     <Box 
                         sx={{ 
                             display: 'flex', 
                             flexDirection: 'column', 
                             justifyContent: 'space-around', 
-                            py: 2, 
-                            px: 4, 
+                            gap:1,
+                            pt: 2, 
+                            px: 4,
+                            pb: {xs:2, lg: 10}, 
+                            // mb: {xs:2, lg:0}
                         }}>
 
                         <Chip 
@@ -140,7 +144,7 @@ const Portfolio = () => {
                             color='secondary' 
                             label='Actualmente' 
                             size='small' 
-                            icon={<Build />} 
+                            icon={<EngineeringIcon />} 
                             sx={{ 
                                 minWidth: 130,
                                 width:1/6,
@@ -150,13 +154,66 @@ const Portfolio = () => {
                             <b>Agiliza</b> es una startup dedicada a la centralización y presentación de datos empresariales. Lideré la creación de la app, desarrollando la interfaz que muestra gráficos BI y gestionando la autenticación, control de usuarios y permisos.
                         </Typography>
                         <Typography>
-                            <b>Mi rol:</b>Desarrollador Front-End
+                            <b>Mi rol:</b>Desarrollador Front-End.
                         </Typography>
                         <Typography>
                             <b>Tecnologías:</b> React.
 
                         </Typography>
-                        <Divider sx={{ my:2}}/>
+                    </Box>
+                </Card>
+
+                {/* Moorishville */}
+                <Card 
+                    sx={{ 
+                        display: 'flex', 
+                        flexDirection: {xs:'column', lg: 'row'},
+                        borderRadius: 4, 
+                        boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`
+                }}>
+                    <CardMedia
+                        component='img'
+                        image='portfolio/moorishville.png'
+                        alt='Imagen presentativa de Moorishville'
+                        sx={{ 
+                            height: 300,
+                            width: {xs: 1, lg: 345}, 
+                            objectPosition: 'center' 
+                        }}
+                    />
+  
+                    <Box 
+                        sx={{ 
+                            display: 'flex', 
+                            flexDirection: 'column', 
+                            justifyContent: 'space-around', 
+                            gap:1,
+                            pt: 2, 
+                            px: 4,
+                            pb: {xs:2, lg: 10} 
+                        }}>
+
+                        <Chip 
+                            variant='filled' 
+                            color='secondary' 
+                            label='Finalizado' 
+                            size='small' 
+                            icon={<Done />} 
+                            sx={{ 
+                                minWidth: 130,
+                                width:1/6,
+                                mb:2
+                            }} />
+                        <Typography variant='body1'>
+                            <b>Moorishville</b> es un condado en los Estados Unidos para el que he trabajado como freelancer. Mi proyecto más destacado para ellos fue el desarrollo de un sistema de búsqueda de archivos en una base de datos local.
+                        </Typography>
+                        <Typography>
+                            <b>Mi rol:</b>Desarrollador Front-End.
+                        </Typography>
+                        <Typography>
+                            <b>Tecnologías:</b> HTML, CSS, JavaScript Vanilla.
+
+                        </Typography>
                     </Box>
                 </Card>
             </Box>
