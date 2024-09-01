@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Box, Button, Container, Typography } from "@mui/material"
 import HeroSection from "./HeroSection";
 import Newletter from "./Newletter";
+import Portfolio from "./Portfolio";
 
 export default function Home() {
   return (
@@ -23,37 +24,8 @@ export default function Home() {
     >
         <HeroSection/>
         <Newletter />
-        {/* <Typography component='h1' variant="h1" mt={6}>
-          Hdsofj
-          df
-          df
-          df
-          dfd
-          dfds
-          f
-          sdf
-          sdfsd
-          fa
-          de
-          dfd
-          des
-          sdfsdf
-          dsf
-          dsfdsfsd
-          sdfdsfsdf
-          dsfdsfsdsdf
-          sdfdsfsdfsdf
-          dsfdsfsdsdf
-          aasas
-          asfsd
-          sdfdsfsdf
-          dsdsdwe
-          dgdfgwe
-          gergfgd
-          erewr
-
-        </Typography> */}
-          
+        <Portfolio />
+         
       <Button href="/about"> ABOUT</Button>
     </Box>
   );
