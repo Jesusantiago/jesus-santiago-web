@@ -4,8 +4,10 @@ import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import DownloadForOfflineRoundedIcon from '@mui/icons-material/DownloadForOfflineRounded';
 import { Box, Button, Container, Typography, } from '@mui/material'
 import Grid from '@mui/material/Unstable_Grid2'
+import {useTranslations} from 'next-intl'
 
 const HeroSection = () => {
+  const t = useTranslations('Home')
   return (
     <Grid
       container
@@ -39,13 +41,12 @@ const HeroSection = () => {
           size='large'
           sx={{
             mb: {xs: 0, sm: 1, md: 2}
-            // borderColor:'secondary'
           }}
           startIcon={
             <Circle color='secondary' />
           }
         >
-          DISPONIBLE
+          {t('hero.status')}
         </Button>
 
         <Typography
@@ -55,7 +56,8 @@ const HeroSection = () => {
           fontWeight='700'
           sx={{width:1, textWrap: 'balance'}}
         >
-          Jesus Santiago
+          {t('hero.title')}
+
         </Typography>
 
         <Typography
@@ -64,7 +66,7 @@ const HeroSection = () => {
           textAlign='center'
           sx={{width:1, textWrap: 'balance'}}
         >
-          Desarrollador Front-End especializado en React
+          {t('hero.subtitle')}
         </Typography>
 
         <Box
@@ -81,7 +83,7 @@ const HeroSection = () => {
               <ArrowCircleRightIcon/>
             }
           >
-            Charlemos
+            {t('hero.btnCTA')}
           </Button>
 
           <Button
@@ -93,7 +95,7 @@ const HeroSection = () => {
             target='_blank'
             href='CvJesusSantiago-Front-End.pdf'
           >
-            ver CV
+            {t('hero.btnCV')}
           </Button>
         </Box>
 

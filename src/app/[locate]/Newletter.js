@@ -1,8 +1,12 @@
 import { Box, Card, CardActionArea, CardContent, CardMedia, Typography, Divider, Link, Button, Stack } from '@mui/material'
 import React from 'react'
-import NewsLetterBD from '../database/Newletter.js'
-import NextLink from 'next/link'
+import NewsLetterBD from '@/database/Newletter'
+import {useTranslations} from 'next-intl'
+
+
 const Newletter = () => {
+    const t = useTranslations('Home')
+
 
     return (
         <Box
@@ -29,7 +33,7 @@ const Newletter = () => {
                     px: 2,
                 }}
             >
-                Te interesa o estas comenzando en la programación, he escrito estos articulos para ti.
+                {t('newletter.title')}
             </Typography>
 
             <Stack direction={{xs:'column', md: 'row'}} spacing={{xs:6, lg:10}}>

@@ -1,0 +1,20 @@
+{
+    "header" : {
+        "btnAbout" : "About",
+        "btnService" : "Service",
+        "btnPortfolio" : "Portfolio",
+        "btnCTA" : "Let's talk"
+    },
+    "Home": {
+        "hero" : {
+            "status" : "Available",
+            "title" : "I'm Jesus Santiago",
+            "subtitle" : "Front-End Developer React Specialist",
+            "btnCTA" : "Let's talk",
+            "btnCV" : "see CV"
+       },
+       "newletter" : {
+            "title" : "If you are interested or just starting in programming, I have written these articles for you."
+       }
+    }
+}

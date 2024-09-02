@@ -1,0 +1,20 @@
+{
+    "header" : {
+        "btnAbout" : "Sobre mi",
+        "btnService" : "Servicios",
+        "btnPortfolio" : "Portafolio",
+        "btnCTA" : "Hablemos"
+    },
+    "Home": {
+        "hero" : {
+            "status" : "Disponible",
+            "title" : "Yo soy Jesus Santiago",
+            "subtitle" : "Desarrollador Front-End especializado en  React",
+            "btnCTA" : "Hablemos",
+            "btnCV" : "ver CV"
+       },
+       "newletter" : {
+            "title" : "Te interesa o estas comenzando en la programación, he escrito estos articulos para ti."
+       }
+    }
+}
