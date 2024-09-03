@@ -2,10 +2,12 @@ import GitHub from '@mui/icons-material/GitHub'
 import Build from '@mui/icons-material/Build'
 import Done from '@mui/icons-material/Done'
 import EngineeringIcon from '@mui/icons-material/Engineering';
-import { Box, Card, CardMedia, Chip, Divider, Typography } from '@mui/material'
-import React from 'react'
+import { Box, Card, CardMedia, Chip, Divider, Typography } from '@mui/material';
+import { useTranslations } from 'next-intl'
 
 const Portfolio = () => {
+    const t = useTranslations('Home.proyect')
+
     return (
         <Box
             component='section'
@@ -29,8 +31,9 @@ const Portfolio = () => {
                 variant='h2'
                 width='1'
                 textAlign='center'
+                fontWeight='500'
             >
-                Portfolio
+                {t('title')}
             </Typography>
 
             <Box
@@ -75,7 +78,7 @@ const Portfolio = () => {
                         <Chip 
                             variant='filled' 
                             color='secondary' 
-                            label='En desarrollo' 
+                            label={t('proyectNebula.status')}
                             size='small' 
                             icon={<Build />} 
                             sx={{ 
@@ -84,14 +87,14 @@ const Portfolio = () => {
                                 mb:2
                             }} 
                             />
-                        <Typography variant='body1'>
-                            <b>Nebula Wear</b> es una marca de ropa de lujo y plataforma de comercio electrónico enfocada en crear una solución robusta y escalable. Lidero el equipo técnico, guiando el desarrollo y aplicando nuestras habilidades especializadas en cada área. Mi enfoque es llevar este proyecto a su máximo potencial.
+                        <Typography variant='body1' >
+                            {t('proyectNebula.description')}
                         </Typography>
                         <Typography>
-                            <b>Mi rol:</b> Líder técnico y desarrollador Front-End.
+                            {t('proyectNebula.myRole')}
                         </Typography>
                         <Typography>
-                            <b>Tecnologías:</b> React, Material UI (estilos), Firebase (autenticación).
+                        {t('proyectNebula.technologies')}
                         </Typography>
                         <Divider sx={{ my:2}}/>
                         <Chip 
@@ -142,7 +145,7 @@ const Portfolio = () => {
                         <Chip 
                             variant='filled' 
                             color='secondary' 
-                            label='Actualmente' 
+                            label={t('proyectAgiliza.status')} 
                             size='small' 
                             icon={<EngineeringIcon />} 
                             sx={{ 
@@ -151,13 +154,13 @@ const Portfolio = () => {
                                 mb:2
                             }} />
                         <Typography variant='body1'>
-                            <b>Agiliza</b> es una startup dedicada a la centralización y presentación de datos empresariales. Lideré la creación de la app, desarrollando la interfaz que muestra gráficos BI y gestionando la autenticación, control de usuarios y permisos.
+                            {t('proyectAgiliza.description')} 
                         </Typography>
                         <Typography>
-                            <b>Mi rol:</b>Desarrollador Front-End.
+                            {t('proyectAgiliza.myRole')} 
                         </Typography>
                         <Typography>
-                            <b>Tecnologías:</b> React.
+                            {t('proyectAgiliza.technologies')} 
 
                         </Typography>
                     </Box>
@@ -196,7 +199,7 @@ const Portfolio = () => {
                         <Chip 
                             variant='filled' 
                             color='secondary' 
-                            label='Finalizado' 
+                            label={t('proyectMoorishville.status')} 
                             size='small' 
                             icon={<Done />} 
                             sx={{ 
@@ -205,14 +208,13 @@ const Portfolio = () => {
                                 mb:2
                             }} />
                         <Typography variant='body1'>
-                            <b>Moorishville</b> es un condado en los Estados Unidos para el que he trabajado como freelancer. Mi proyecto más destacado para ellos fue el desarrollo de un sistema de búsqueda de archivos en una base de datos local.
+                            {t('proyectMoorishville.description')} 
                         </Typography>
                         <Typography>
-                            <b>Mi rol:</b>Desarrollador Front-End.
+                            {t('proyectMoorishville.myRole')} 
                         </Typography>
                         <Typography>
-                            <b>Tecnologías:</b> HTML, CSS, JavaScript Vanilla.
-
+                            {t('proyectMoorishville.technologies')} 
                         </Typography>
                     </Box>
                 </Card>
@@ -222,3 +224,4 @@ const Portfolio = () => {
 }
 
 export default Portfolio
+// 

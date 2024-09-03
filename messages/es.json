@@ -15,6 +15,28 @@
        },
        "newletter" : {
             "title" : "Te interesa o estas comenzando en la programación, he escrito estos articulos para ti."
-       }
+       },
+       "proyect" : {
+            "title" : "Proyectos",
+            
+            "proyectNebula" : {
+                "status" : "En desarrollo",
+                "description" : "Nebula Wear es una marca de ropa de lujo y plataforma de comercio electrónico enfocada en crear una solución robusta y escalable. Lidero el equipo técnico, guiando el desarrollo y aplicando nuestras habilidades especializadas en cada área. Mi enfoque es llevar este proyecto a su máximo potencial.",
+                "myRole" : "My role: Lider Técnico y desarrollador Front-End",
+                "technologies" : "Tecnologías: React, Material UI (estilos), Firebase (autenticación)."
+            },
+            "proyectAgiliza" : {
+                "status" : "Actualmente",
+                "description" : "Agiliza es una startup dedicada a la centralización y presentación de datos empresariales. Lideré la creación de la app, desarrollando la interfaz que muestra gráficos BI y gestionando la autenticación, control de usuarios y permisos.",
+                "myRole" : "My role: Desarrollador Front-End.",
+                "technologies" : "Tecnologíass: React, ReactStrap (estilos)."
+            },
+            "proyectMoorishville" : {
+                "status" : "Finalizado",
+                "description" : "Moorishville es un condado en los Estados Unidos para el que he trabajado como freelancer. Mi proyecto más destacado para ellos fue el desarrollo de un sistema de búsqueda de archivos en una base de datos local.",
+                "myRole" : "My role: Desarrollador Front-End.",
+                "technologies" : "Tecnologías: HTML, CSS, JavaScript"
+            }
+        }   
     }
 }
