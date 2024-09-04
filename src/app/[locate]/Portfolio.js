@@ -2,7 +2,7 @@ import GitHub from '@mui/icons-material/GitHub'
 import Build from '@mui/icons-material/Build'
 import Done from '@mui/icons-material/Done'
 import EngineeringIcon from '@mui/icons-material/Engineering';
-import { Box, Card, CardMedia, Chip, Divider, Typography } from '@mui/material';
+import { Box, Button, Card, CardMedia, Chip, Divider, Typography } from '@mui/material';
 import { useTranslations } from 'next-intl'
 
 const Portfolio = () => {
@@ -22,9 +22,9 @@ const Portfolio = () => {
                 mt: 2,
                 display: 'flex',
                 flexDirection: 'column',
-                alignItems:'center',
+                alignItems: 'center',
                 justifyContent: 'space-between',
-                gap:6,
+                gap: 6,
             }}
         >
             <Typography
@@ -39,72 +39,87 @@ const Portfolio = () => {
             <Box
                 component='section'
                 sx={{
-                    width: {xs: 0.95, lg: 0.8},
+                    width: { xs: 0.95, lg: 0.8 },
                     maxWidth: '1620px',
-                    display:'flex',
+                    display: 'flex',
                     flexDirection: 'column',
-                    gap:4
+                    gap: 4
                 }}
             >
                 {/* nebula wear */}
-                <Card 
-                    sx={{ 
-                        display: 'flex', 
-                        flexDirection: {xs:'column', lg: 'row'},
-                        borderRadius: 4, 
+                <Card
+                    sx={{
+                        display: 'flex',
+                        flexDirection: { xs: 'column', lg: 'row' },
+                        borderRadius: 4,
                         boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`,
-                }}>
-                    <CardMedia 
+                    }}>
+                    <CardMedia
                         component='img'
                         image='portfolio/nebulaWear1-1.png'
                         alt='Imagen representativa del Proyecto de NebulaWear'
                         sx={{
-                            height : 300,
-                            width: {xs: 1, lg: 345},
-                            objectPosition:'bottom'
+                            height: 400,
+                            width: { xs: 1, lg: 345 },
+                            objectPosition: 'bottom'
                         }}
                     />
 
-                    <Box 
-                        sx={{ 
-                            display: 'flex', 
-                            flexDirection: 'column', 
-                            justifyContent: 'space-around', 
-                            gap:1,
-                            py: 2, 
+                    <Box
+                        sx={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'space-around',
+                            gap: 1,
+                            py: 2,
                             px: 4,
                         }}
                     >
-                        <Chip 
-                            variant='filled' 
-                            color='secondary' 
-                            label={t('proyectNebula.status')}
-                            size='small' 
-                            icon={<Build />} 
-                            sx={{ 
-                                minWidth: 130,
-                                width:1/6,
-                                mb:2
-                            }} 
-                            />
+                        <Box
+                            sx={{
+                                display: 'flex',
+                                justifyContent: 'space-between'
+                            }}
+                        >
+                            <Typography
+                                variant='h6'
+                            >
+                                {t('proyectNebula.name')}
+                            </Typography>
+                            <Typography
+                                variant='button'
+                            >
+                                {t('proyectNebula.date')}
+                            </Typography>
+
+                        </Box>
+
+                        <Divider />
+
+                        <Typography
+                            variant='body1'
+                            color='primary.transparent'
+                            fontWeight='500'
+                        >
+                            {t('proyectNebula.myRole')}
+                        </Typography>
+
                         <Typography variant='body1' >
                             {t('proyectNebula.description')}
                         </Typography>
+
                         <Typography>
-                            {t('proyectNebula.myRole')}
+                            {t('proyectNebula.technologies')}
                         </Typography>
-                        <Typography>
-                        {t('proyectNebula.technologies')}
-                        </Typography>
-                        <Divider sx={{ my:2}}/>
-                        <Chip 
+                        <Divider sx={{ my: 2 }} />
+                        <Chip
                             variant='filled'
                             color='primary'
                             label='GitHub'
-                            icon={<GitHub/>}
+                            icon={<GitHub />}
                             sx={{
-                                minWidth:120,
-                                width:1/6
+                                minWidth: 120,
+                                width: 1 / 6
                             }}
                         />
                     </Box>
@@ -112,112 +127,143 @@ const Portfolio = () => {
                 </Card>
 
                 {/* agiliza */}
-                <Card 
-                    sx={{ 
-                        display: 'flex', 
-                        flexDirection: {xs:'column', lg: 'row'},
-                        borderRadius: 4, 
+                <Card
+                    sx={{
+                        display: 'flex',
+                        flexDirection: { xs: 'column', lg: 'row' },
+                        borderRadius: 4,
                         boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`
-                }}>
+                    }}>
                     <CardMedia
                         component='img'
                         image='portfolio/agiliza1-1.png'
                         alt='Imagen presentativa de Agiliza'
-                        sx={{ 
+                        sx={{
                             height: 300,
-                            width: {xs: 1, lg: 345}, 
-                            objectPosition: 'center' 
+                            width: { xs: 1, lg: 345 },
+                            objectPosition: 'center'
                         }}
                     />
-  
-                    <Box 
-                        sx={{ 
-                            display: 'flex', 
-                            flexDirection: 'column', 
-                            justifyContent: 'space-around', 
-                            gap:1,
-                            pt: 2, 
+
+                    <Box
+                        sx={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'space-around',
+                            gap: 1,
+                            pt: 2,
                             px: 4,
-                            pb: {xs:2, lg: 10}, 
+                            pb: { xs: 2, lg: 10 },
                             // mb: {xs:2, lg:0}
                         }}>
 
-                        <Chip 
-                            variant='filled' 
-                            color='secondary' 
-                            label={t('proyectAgiliza.status')} 
-                            size='small' 
-                            icon={<EngineeringIcon />} 
-                            sx={{ 
-                                minWidth: 130,
-                                width:1/6,
-                                mb:2
-                            }} />
+                        <Box
+                            sx={{
+                                display: 'flex',
+                                justifyContent: 'space-between'
+                            }}
+                        >
+                            <Typography
+                                variant='h6'
+                            >
+                                {t('proyectAgiliza.name')}
+                            </Typography>
+                            <Typography
+                                variant='button'
+                            >
+                                {t('proyectAgiliza.date')}
+                            </Typography>
+
+                        </Box>
+                        <Divider />
+                        <Typography
+                            variant='body1'
+                            color='primary.transparent'
+                            fontWeight='500'
+                        >
+                            {t('proyectAgiliza.myRole')}
+                        </Typography>
+
                         <Typography variant='body1'>
-                            {t('proyectAgiliza.description')} 
+                            {t('proyectAgiliza.description')}
                         </Typography>
+            
                         <Typography>
-                            {t('proyectAgiliza.myRole')} 
-                        </Typography>
-                        <Typography>
-                            {t('proyectAgiliza.technologies')} 
+                            {t('proyectAgiliza.technologies')}
 
                         </Typography>
                     </Box>
                 </Card>
 
                 {/* Moorishville */}
-                <Card 
-                    sx={{ 
-                        display: 'flex', 
-                        flexDirection: {xs:'column', lg: 'row'},
-                        borderRadius: 4, 
-                        boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`
-                }}>
-                    <CardMedia
-                        component='img'
-                        image='portfolio/moorishville.png'
-                        alt='Imagen presentativa de Moorishville'
-                        sx={{ 
-                            height: 300,
-                            width: {xs: 1, lg: 345}, 
-                            objectPosition: 'center' 
-                        }}
-                    />
-  
-                    <Box 
-                        sx={{ 
-                            display: 'flex', 
-                            flexDirection: 'column', 
-                            justifyContent: 'space-around', 
-                            gap:1,
-                            pt: 2, 
-                            px: 4,
-                            pb: {xs:2, lg: 10} 
+                <Button>
+                    <Card
+                        sx={{
+                            display: 'flex',
+                            flexDirection: { xs: 'column', lg: 'row' },
+                            borderRadius: 4,
+                            boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`
                         }}>
+                        <CardMedia
+                            component='img'
+                            image='portfolio/moorishville.png'
+                            alt='Imagen presentativa de Moorishville'
+                            sx={{
+                                height: 300,
+                                width: { xs: 1, lg: 345 },
+                                objectPosition: 'center'
+                            }}
+                        />
 
-                        <Chip 
-                            variant='filled' 
-                            color='secondary' 
-                            label={t('proyectMoorishville.status')} 
-                            size='small' 
-                            icon={<Done />} 
-                            sx={{ 
-                                minWidth: 130,
-                                width:1/6,
-                                mb:2
-                            }} />
-                        <Typography variant='body1'>
-                            {t('proyectMoorishville.description')} 
-                        </Typography>
-                        <Typography>
-                            {t('proyectMoorishville.myRole')} 
-                        </Typography>
-                        <Typography>
-                            {t('proyectMoorishville.technologies')} 
-                        </Typography>
-                    </Box>
-                </Card>
+                        <Box
+                            sx={{
+                                display: 'flex',
+                                flexDirection: 'column',
+                                justifyContent: 'space-around',
+                                gap: 1,
+                                pt: 2,
+                                px: 4,
+                                pb: { xs: 2, lg: 10 }
+                            }}>
+                                <Box
+                                sx={{
+                                    display: 'flex',
+                                    justifyContent: 'space-between'
+                                }}
+                            >
+                                <Typography
+                                    variant='h6'
+                                >
+                                    {t('proyectMoorishville.name')}
+                                </Typography>
+                                <Typography
+                                    variant='button'
+                                >
+                                    {t('proyectMoorishville.date')}
+                                </Typography>
+
+                            </Box>
+                            <Divider />
+                            <Typography
+                                variant='body1'
+                                color='primary.transparent'
+                                fontWeight='500'
+                                textAlign='left'
+                            >
+                                {t('proyectMoorishville.myRole')}
+                            </Typography>
+                            <Typography variant='body1' textAlign='left'>
+                                {t('proyectMoorishville.description')}
+                            </Typography>
+                
+                            <Typography
+                                textAlign='left'
+                            >
+                                {t('proyectMoorishville.technologies')}
+                            </Typography>
+                        </Box>
+                    </Card>
+                </Button>
             </Box>
         </Box>
     )

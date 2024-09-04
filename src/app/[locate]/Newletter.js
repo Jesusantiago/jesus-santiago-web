@@ -23,7 +23,7 @@ const Newletter = () => {
             }}
         >
             <Typography
-                variant='h3'
+                variant='h2'
                 component='h3'
                 textAlign='center'
                 fontWeight='700'

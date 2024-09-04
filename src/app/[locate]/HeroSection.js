@@ -31,8 +31,9 @@ const HeroSection = () => {
         sx={{
           display: 'flex',
           flexDirection: 'column',
-          alignItems: 'center',
-          mb:4
+          alignItems: 'start',
+          mb:4,
+          pl:{xs: 2, lg: 10}
         }}
       >
         <Button
@@ -40,7 +41,7 @@ const HeroSection = () => {
           color='primary'
           size='large'
           sx={{
-            mb: {xs: 0, sm: 1, md: 2}
+            mb: {xs: 0, sm: 1, md: 2, fontWeight:'700'}
           }}
           startIcon={
             <Circle color='secondary' />
@@ -52,9 +53,9 @@ const HeroSection = () => {
         <Typography
           variant='h1'
           component='h2'
-          textAlign='center'
+          textAlign='left'
           fontWeight='700'
-          sx={{width:1, textWrap: 'balance'}}
+          sx={{width:1, textWrap: 'balance', mb: 4}}
         >
           {t('hero.title')}
 
@@ -63,8 +64,8 @@ const HeroSection = () => {
         <Typography
           variant='h5'
           component='h1'
-          textAlign='center'
-          sx={{width:1, textWrap: 'balance'}}
+          textAlign='left'
+          sx={{width:1, textWrap: 'balance', mb: 6}}
         >
           {t('hero.subtitle')}
         </Typography>

@@ -23,6 +23,7 @@ let lightTheme = createTheme({
         mode: 'light',
         primary: {
             main: '#212121',
+            transparent: '#212121A0'
         },
         secondary: {
             main: '#B7F25E',
