@@ -1,12 +1,13 @@
 'use client'
 
 import Image from "next/image";
-import styles from "./page.module.css";
-import Link from "next/link";
+import styles from "../page.module.css";
+import { Link } from "@/i18n/routing";
 import { Box, Button, Container, Typography } from "@mui/material"
 import HeroSection from "./HeroSection";
-import Newletter from "./Newletter";
+
 import Portfolio from "./Portfolio";
+import Newletter from "./Newletter";
 
 export default function Home() {
   return (
@@ -26,7 +27,7 @@ export default function Home() {
         <Newletter />
         <Portfolio />
          
-      <Button href="/about"> ABOUT</Button>
+      <Button><Link href='/about'>About </Link></Button>
     </Box>
   );
 }

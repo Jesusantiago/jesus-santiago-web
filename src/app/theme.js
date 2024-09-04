@@ -15,7 +15,7 @@ const lexend = Lexend({
 let lightTheme = createTheme({
     typography:{
         fontFamily: manrope.style.fontFamily,
-        body2: {
+        lexend: {
             fontFamily: lexend.style.fontFamily
         }
     },
@@ -23,6 +23,7 @@ let lightTheme = createTheme({
         mode: 'light',
         primary: {
             main: '#212121',
+            transparent: '#212121A0'
         },
         secondary: {
             main: '#B7F25E',
@@ -31,6 +32,11 @@ let lightTheme = createTheme({
             main: '#e0e0e0',
             shadowPrimary : '#bebebe',
             shadowSecondary: '#ffffff'
+        },
+        text: {
+            main: '#5c5c5c',
+            textPrimary: '#1F1F1F',
+            secondary: '#141414'
         },
         error: {
             main: '#ff1744',
@@ -46,7 +52,7 @@ lightTheme = responsiveFontSizes(lightTheme)
 let darkTheme = createTheme({
     typography:{
         fontFamily: manrope.style.fontFamily,
-        body2: {
+        lexend: {
             fontFamily: lexend.style.fontFamily
         }
     },
@@ -62,6 +68,11 @@ let darkTheme = createTheme({
             main: '#292929',
             shadowPrimary: '#1F1F1F',
             shadowSecondary: '#141414'
+        }, 
+        text: {
+            main: '#e0e0e0',
+            textPrimary: '#bebebe',
+            secondary: '#4f4f4f'
         },
         error: {
             main: '#ff5252',

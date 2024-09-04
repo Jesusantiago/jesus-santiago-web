@@ -4,8 +4,10 @@ import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import DownloadForOfflineRoundedIcon from '@mui/icons-material/DownloadForOfflineRounded';
 import { Box, Button, Container, Typography, } from '@mui/material'
 import Grid from '@mui/material/Unstable_Grid2'
+import {useTranslations} from 'next-intl'
 
 const HeroSection = () => {
+  const t = useTranslations('Home')
   return (
     <Grid
       container
@@ -17,20 +19,20 @@ const HeroSection = () => {
         borderRadius: 4,
         backgroundColor: (theme) => theme.palette.card.main,
         boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`,
-        pt: {xs: 14, md: 10},
+        pt: {xs: 14, md: 20},
         px:2,
         mt: 2,
         alignItems: {xs: 'end', md: 'center'},
         justifyContent: {xs:'center', md: 'space-between'}
       }}>
 
-      <Grid xs={12} lg={6} 
+      <Grid xs={12} lg={12} 
       component='article'
         sx={{
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          mb:4
+          mb:4,
         }}
       >
         <Button
@@ -38,14 +40,13 @@ const HeroSection = () => {
           color='primary'
           size='large'
           sx={{
-            mb: {xs: 0, sm: 1, md: 2}
-            // borderColor:'secondary'
+            mb: {xs: 0, sm: 1, fontWeight:'700'}
           }}
           startIcon={
-            <Circle color='secondary' />
+            <Circle color='success' />
           }
         >
-          DISPONIBLE
+          {t('hero.status')}
         </Button>
 
         <Typography
@@ -53,18 +54,27 @@ const HeroSection = () => {
           component='h2'
           textAlign='center'
           fontWeight='700'
-          sx={{width:1, textWrap: 'balance'}}
+          sx={{
+            width:1, 
+            textWrap: 'balance',
+            background: (theme) => `linear-gradient(282deg, ${theme.palette.text.secondary} 0%, ${theme.palette.text.main} 53%, ${theme.palette.text.secondary} 108%)`,    
+            WebkitBackgroundClip: 'text',
+            backgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            fontFamily: (theme) => theme.typography.lexend.fontFamily
+        }}
         >
-          Jesus Santiago
+          {t('hero.title')}
+
         </Typography>
 
         <Typography
-          variant='h5'
+          variant='h4'
           component='h1'
           textAlign='center'
-          sx={{width:1, textWrap: 'balance'}}
+          sx={{width:1, textWrap: 'balance', mb:2}}
         >
-          Desarrollador Front-End especializado en React
+          {t('hero.subtitle')}
         </Typography>
 
         <Box
@@ -80,8 +90,11 @@ const HeroSection = () => {
             endIcon={
               <ArrowCircleRightIcon/>
             }
+            sx={{
+              fontFamily: (theme) => theme.typography.lexend.fontFamily
+            }}
           >
-            Charlemos
+            {t('hero.btnCTA')}
           </Button>
 
           <Button
@@ -90,17 +103,20 @@ const HeroSection = () => {
             endIcon={
               <DownloadForOfflineRoundedIcon/>
             }
+            sx={{
+              fontFamily: (theme) => theme.typography.lexend.fontFamily
+            }}
             target='_blank'
             href='CvJesusSantiago-Front-End.pdf'
           >
-            ver CV
+            {t('hero.btnCV')}
           </Button>
         </Box>
 
 
       </Grid>
 
-      <Grid xs={12} lg={6}
+      <Grid xs={12} lg={12}
         component='article'
         sx={{
           display: 'flex',

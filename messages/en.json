@@ -1,0 +1,48 @@
+{
+    "header" : {
+        "btnAbout" : "About",
+        "btnService" : "Service",
+        "btnPortfolio" : "Portfolio",
+        "btnCTA" : "Let's talk"
+    },
+    "Home": {
+        "hero" : {
+            "status" : "Available",
+            "title" : "Jesus Santiago",
+            "subtitle" : "Front-End Developer React Specialist",
+            "btnCTA" : "Let's talk",
+            "btnCV" : "see CV"
+       },
+       "newletter" : {
+            "title" : "Blog"
+       },
+       "experience" : {
+            "title" : "Experience",
+
+            "proyectNebula" : {
+                "status" : "In development",
+                "date": "Apr. 2024 - Currently",
+                "name" : "Nebula Wear",
+                "description" : "Luxury apparel brand and e-commerce platform focused on creating a robust and scalable solution. I lead the technical team, guiding the development and applying our specialized skills in each area. My focus is to take this project to its full potential.",
+                "myRole" : "Technical leader and Front-End developer.",
+                "technologies" : "React, Material UI (styles), Firebase (authentication)."
+            },
+            "proyectAgiliza" : {
+                "status" : "Currently",
+                "date" : "Aug. 2023 - Currently",
+                "name" : "Agiliza",
+                "description" : "A startup dedicated to the centralization and presentation of business data. I led the creation of the app, developing the interface that displays BI charts and managing authentication, user control and permissions.",
+                "myRole" : "Front-End developer.",
+                "technologies" : "React, ReactStrap (styles)."
+            },
+            "proyectMoorishville" : {
+                "status" : "Finish",
+                "name" : "Moorishville",
+                "date" : "Apr. - May. 2024",
+                "description" : "Is a county in the United States for which I have worked as a freelancer. My most notable project for them was the development of a system for searching files in a local database.",
+                "myRole" : "Front-End developer.",
+                "technologies" : "HTML, CSS, JavaScript"
+            }
+       }
+    }
+}

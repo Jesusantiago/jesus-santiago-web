@@ -1,0 +1,48 @@
+{
+    "header" : {
+        "btnAbout" : "Sobre mi",
+        "btnService" : "Servicios",
+        "btnPortfolio" : "Portafolio",
+        "btnCTA" : "Hablemos"
+    },
+    "Home": {
+        "hero" : {
+            "status" : "Disponible",
+            "title" : "Jesús Santiago",
+            "subtitle" : "Desarrollador Front-End especializado en  React",
+            "btnCTA" : "Hablemos",
+            "btnCV" : "ver CV"
+       },
+       "newletter" : {
+            "title" : "Blog"
+       },
+       "experience" : {
+            "title" : "Experiencia",
+
+            "proyectNebula" : {
+                "status" : "En desarrollo",
+                "date": "Abril 2024 - Actualmente",
+                "name" : "Nebula Wear",
+                "description" : " Marca de ropa de lujo y plataforma de comercio electrónico enfocada en crear una solución robusta y escalable. Lidero el equipo técnico, guiando el desarrollo y aplicando nuestras habilidades especializadas en cada área. Mi enfoque es llevar este proyecto a su máximo potencial.",
+                "myRole" : "Lider Técnico y desarrollador Front-End",
+                "technologies" : "React, Material UI (estilos), Firebase (autenticación)."
+            },
+            "proyectAgiliza" : {
+                "status" : "Actualmente",
+                "date": "Agosto 2023 - Actualmente",
+                "name" : "Agiliza",
+                "description" : "Startup dedicada a la centralización y presentación de datos empresariales. Lideré la creación de la app, desarrollando la interfaz que muestra gráficos BI y gestionando la autenticación, control de usuarios y permisos.",
+                "myRole" : "Desarrollador Front-End.",
+                "technologies" : "React, ReactStrap (estilos)."
+            },
+            "proyectMoorishville" : {
+                "status" : "Finalizado",
+                "date" : "Abril - Mayo 2024",
+                "name" : "Moorishville",
+                "description" : "Es un condado en los Estados Unidos para el que he trabajado como freelancer. Mi proyecto más destacado para ellos fue el desarrollo de un sistema de búsqueda de archivos en una base de datos local.",
+                "myRole" : "Desarrollador Front-End.",
+                "technologies" : "HTML, CSS, JavaScript"
+            }
+        }   
+    }
+}
