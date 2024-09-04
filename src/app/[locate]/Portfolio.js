@@ -6,7 +6,7 @@ import { Box, Button, Card, CardMedia, Chip, Divider, Typography } from '@mui/ma
 import { useTranslations } from 'next-intl'
 
 const Portfolio = () => {
-    const t = useTranslations('Home.proyect')
+    const t = useTranslations('Home.experience')
 
     return (
         <Box
@@ -32,6 +32,10 @@ const Portfolio = () => {
                 width='1'
                 textAlign='center'
                 fontWeight='500'
+                color={'primary.main'}
+                sx={{
+                    fontFamily: (theme) => theme.typography.lexend.fontFamily,
+                }}
             >
                 {t('title')}
             </Typography>
@@ -78,16 +82,20 @@ const Portfolio = () => {
                         <Box
                             sx={{
                                 display: 'flex',
-                                justifyContent: 'space-between'
+                                justifyContent: 'space-between',
+                                alignItems : 'center'
                             }}
                         >
                             <Typography
                                 variant='h6'
+                                width={1/2}
                             >
                                 {t('proyectNebula.name')}
                             </Typography>
                             <Typography
                                 variant='button'
+                                width={1/2}
+                                textAlign={'right'}
                             >
                                 {t('proyectNebula.date')}
                             </Typography>
@@ -127,73 +135,82 @@ const Portfolio = () => {
                 </Card>
 
                 {/* agiliza */}
-                <Card
-                    sx={{
-                        display: 'flex',
-                        flexDirection: { xs: 'column', lg: 'row' },
-                        borderRadius: 4,
-                        boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`
-                    }}>
-                    <CardMedia
-                        component='img'
-                        image='portfolio/agiliza1-1.png'
-                        alt='Imagen presentativa de Agiliza'
-                        sx={{
-                            height: 300,
-                            width: { xs: 1, lg: 345 },
-                            objectPosition: 'center'
-                        }}
-                    />
-
-                    <Box
+                <Button
+                    href='https://agiliza-sa.com/'
+                    target='_black'
+                >
+                    <Card
                         sx={{
                             display: 'flex',
-                            flexDirection: 'column',
-                            justifyContent: 'space-around',
-                            gap: 1,
-                            pt: 2,
-                            px: 4,
-                            pb: { xs: 2, lg: 10 },
-                            // mb: {xs:2, lg:0}
+                            flexDirection: { xs: 'column', lg: 'row' },
+                            borderRadius: 4,
+                            boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`
                         }}>
+                        <CardMedia
+                            component='img'
+                            image='portfolio/agiliza1-1.png'
+                            alt='Imagen presentativa de Agiliza'
+                            sx={{
+                                height: 320,
+                                width: { xs: 1, lg: 345 },
+                                objectPosition: 'center'
+                            }}
+                        />
 
                         <Box
                             sx={{
                                 display: 'flex',
-                                justifyContent: 'space-between'
-                            }}
-                        >
-                            <Typography
-                                variant='h6'
+                                flexDirection: 'column',
+                                justifyContent: 'space-around',
+                                gap: 1,
+                                pt: 2,
+                                px: 4,
+                                pb: { xs: 2, lg: 10 },
+                                // mb: {xs:2, lg:0}
+                            }}>
+
+                            <Box
+                                sx={{
+                                    display: 'flex',
+                                    justifyContent: 'space-between',
+                                    alignItems: 'center'
+                                }}
                             >
-                                {t('proyectAgiliza.name')}
-                            </Typography>
+                                <Typography
+                                    variant='h6'
+                                    width={1/2}
+                                >
+                                    {t('proyectAgiliza.name')}
+                                </Typography>
+                                <Typography
+                                    variant='button'
+                                    width={1/2}
+                                    textAlign={'right'}
+                                >
+                                    {t('proyectAgiliza.date')}
+                                </Typography>
+
+                            </Box>
+                            <Divider />
                             <Typography
-                                variant='button'
+                                variant='body1'
+                                color='primary.transparent'
+                                fontWeight='500'
                             >
-                                {t('proyectAgiliza.date')}
+                                {t('proyectAgiliza.myRole')}
                             </Typography>
 
+                            <Typography variant='body1'>
+                                {t('proyectAgiliza.description')}
+                            </Typography>
+                
+                            <Typography>
+                                {t('proyectAgiliza.technologies')}
+
+                            </Typography>
                         </Box>
-                        <Divider />
-                        <Typography
-                            variant='body1'
-                            color='primary.transparent'
-                            fontWeight='500'
-                        >
-                            {t('proyectAgiliza.myRole')}
-                        </Typography>
-
-                        <Typography variant='body1'>
-                            {t('proyectAgiliza.description')}
-                        </Typography>
-            
-                        <Typography>
-                            {t('proyectAgiliza.technologies')}
-
-                        </Typography>
-                    </Box>
-                </Card>
+                    </Card>
+                </Button>
 
                 {/* Moorishville */}
                 <Button>
@@ -225,24 +242,30 @@ const Portfolio = () => {
                                 px: 4,
                                 pb: { xs: 2, lg: 10 }
                             }}>
-                                <Box
+
+                            <Box
                                 sx={{
                                     display: 'flex',
-                                    justifyContent: 'space-between'
+                                    justifyContent: 'space-between',
+                                    alignItems : 'center'
                                 }}
                             >
                                 <Typography
                                     variant='h6'
+                                    width={1/2}
                                 >
                                     {t('proyectMoorishville.name')}
                                 </Typography>
                                 <Typography
                                     variant='button'
+                                    width={1/2}
+                                    textAlign={'right'}
                                 >
                                     {t('proyectMoorishville.date')}
                                 </Typography>
 
                             </Box>
+
                             <Divider />
                             <Typography
                                 variant='body1'

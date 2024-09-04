@@ -8,16 +8,16 @@
     "Home": {
         "hero" : {
             "status" : "Disponible",
-            "title" : "Yo soy Jesus Santiago",
+            "title" : "Jesús Santiago",
             "subtitle" : "Desarrollador Front-End especializado en  React",
             "btnCTA" : "Hablemos",
             "btnCV" : "ver CV"
        },
        "newletter" : {
-            "title" : "Blog."
+            "title" : "Blog"
        },
-       "proyect" : {
-            "title" : "Proyectos",
+       "experience" : {
+            "title" : "Experiencia",
 
             "proyectNebula" : {
                 "status" : "En desarrollo",

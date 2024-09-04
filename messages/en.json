@@ -8,7 +8,7 @@
     "Home": {
         "hero" : {
             "status" : "Available",
-            "title" : "I'm Jesus Santiago",
+            "title" : "Jesus Santiago",
             "subtitle" : "Front-End Developer React Specialist",
             "btnCTA" : "Let's talk",
             "btnCV" : "see CV"
@@ -16,8 +16,8 @@
        "newletter" : {
             "title" : "Blog"
        },
-       "proyect" : {
-            "title" : "Proyect",
+       "experience" : {
+            "title" : "Experience",
 
             "proyectNebula" : {
                 "status" : "In development",

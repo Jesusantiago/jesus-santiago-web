@@ -19,21 +19,20 @@ const HeroSection = () => {
         borderRadius: 4,
         backgroundColor: (theme) => theme.palette.card.main,
         boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`,
-        pt: {xs: 14, md: 10},
+        pt: {xs: 14, md: 20},
         px:2,
         mt: 2,
         alignItems: {xs: 'end', md: 'center'},
         justifyContent: {xs:'center', md: 'space-between'}
       }}>
 
-      <Grid xs={12} lg={6} 
+      <Grid xs={12} lg={12} 
       component='article'
         sx={{
           display: 'flex',
           flexDirection: 'column',
-          alignItems: 'start',
+          alignItems: 'center',
           mb:4,
-          pl:{xs: 2, lg: 10}
         }}
       >
         <Button
@@ -41,10 +40,10 @@ const HeroSection = () => {
           color='primary'
           size='large'
           sx={{
-            mb: {xs: 0, sm: 1, md: 2, fontWeight:'700'}
+            mb: {xs: 0, sm: 1, fontWeight:'700'}
           }}
           startIcon={
-            <Circle color='secondary' />
+            <Circle color='success' />
           }
         >
           {t('hero.status')}
@@ -53,19 +52,27 @@ const HeroSection = () => {
         <Typography
           variant='h1'
           component='h2'
-          textAlign='left'
+          textAlign='center'
           fontWeight='700'
-          sx={{width:1, textWrap: 'balance', mb: 4}}
+          sx={{
+            width:1, 
+            textWrap: 'balance',
+            background: (theme) => `linear-gradient(282deg, ${theme.palette.text.secondary} 0%, ${theme.palette.text.main} 53%, ${theme.palette.text.secondary} 108%)`,    
+            WebkitBackgroundClip: 'text',
+            backgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            fontFamily: (theme) => theme.typography.lexend.fontFamily
+        }}
         >
           {t('hero.title')}
 
         </Typography>
 
         <Typography
-          variant='h5'
+          variant='h4'
           component='h1'
-          textAlign='left'
-          sx={{width:1, textWrap: 'balance', mb: 6}}
+          textAlign='center'
+          sx={{width:1, textWrap: 'balance', mb:2}}
         >
           {t('hero.subtitle')}
         </Typography>
@@ -83,6 +90,9 @@ const HeroSection = () => {
             endIcon={
               <ArrowCircleRightIcon/>
             }
+            sx={{
+              fontFamily: (theme) => theme.typography.lexend.fontFamily
+            }}
           >
             {t('hero.btnCTA')}
           </Button>
@@ -93,6 +103,9 @@ const HeroSection = () => {
             endIcon={
               <DownloadForOfflineRoundedIcon/>
             }
+            sx={{
+              fontFamily: (theme) => theme.typography.lexend.fontFamily
+            }}
             target='_blank'
             href='CvJesusSantiago-Front-End.pdf'
           >
@@ -103,7 +116,7 @@ const HeroSection = () => {
 
       </Grid>
 
-      <Grid xs={12} lg={6}
+      <Grid xs={12} lg={12}
         component='article'
         sx={{
           display: 'flex',

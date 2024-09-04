@@ -26,11 +26,12 @@ const Newletter = () => {
                 variant='h2'
                 component='h3'
                 textAlign='center'
-                fontWeight='700'
+                fontWeight='500'
                 sx={{
                     textWrap: 'balance',
                     width: '1',
                     px: 2,
+                    fontFamily: (theme) => theme.typography.lexend.fontFamily
                 }}
             >
                 {t('newletter.title')}
