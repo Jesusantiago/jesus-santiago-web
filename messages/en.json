@@ -13,21 +13,12 @@
             "btnCTA" : "Let's talk",
             "btnCV" : "see CV"
        },
-       "newletter" : {
+       "blog" : {
             "title" : "Blog"
        },
        "experience" : {
             "title" : "Experience",
-
-            "proyectNebula" : {
-                "status" : "In development",
-                "date": "Apr. 2024 - Currently",
-                "name" : "Nebula Wear",
-                "description" : "Luxury apparel brand and e-commerce platform focused on creating a robust and scalable solution. I lead the technical team, guiding the development and applying our specialized skills in each area. My focus is to take this project to its full potential.",
-                "myRole" : "Technical leader and Front-End developer.",
-                "technologies" : "React, Material UI (styles), Firebase (authentication)."
-            },
-            "proyectAgiliza" : {
+            "projectAgiliza" : {
                 "status" : "Currently",
                 "date" : "Aug. 2023 - Currently",
                 "name" : "Agiliza",
@@ -35,13 +26,61 @@
                 "myRole" : "Front-End developer.",
                 "technologies" : "React, ReactStrap (styles)."
             },
-            "proyectMoorishville" : {
+            "projectMoorishville" : {
                 "status" : "Finish",
                 "name" : "Moorishville",
                 "date" : "Apr. - May. 2024",
                 "description" : "Is a county in the United States for which I have worked as a freelancer. My most notable project for them was the development of a system for searching files in a local database.",
                 "myRole" : "Front-End developer.",
                 "technologies" : "HTML, CSS, JavaScript"
+            }
+       },
+       "project" : {
+            "title" : "Projects",
+            "projectNebula" : {
+                "status" : "In development",
+                "name" : "Nebula Wear",
+                "description" : "Luxury apparel brand and e-commerce platform focused on creating a robust and scalable solution. I lead the technical team, guiding the development and applying our specialized skills in each area. My focus is to take this project to its full potential.",
+                "myRole" : "Technical leader and Front-End developer.",
+                "technologies" : "React, Material UI (styles), Firebase (authentication)."
+            }
+       },
+       "education": {
+            "title" : "Education",
+            "ux" : {
+                "title" : "UX-UI Course",
+                "date" : "Sep. 2024 - Currently",
+                "institute" : "Talento Tech",
+                "location" : "Buenos Aires, Argentina",
+                "description" : "User interface design for mobile apps, focusing on UX/UI principles."
+            },
+            "react" : {
+                "title" : "Front-End Developer with React",
+                "date" : "Nov. - Dec. 2023",
+                "institute" : "Codo a Codo",
+                "location" : "Buenos Aires, Argentina",
+                "description" : "I learned how to build user interfaces with React's FrameWork."
+            },
+            "sass" : {
+                "title" : "Sass course",
+                "date" : "Mar. - Apr. 2023",
+                "institute" : "Codigo Facilito",
+                "location" : "Buenos Aires, Argentina",
+                "description" : "One of the most important CSS frameWorks today."
+            },
+            "node" : {
+                "title" : "Full Stack with Node.js",
+                "date" : "Feb. - Jul. 2023",
+                "institute" : "Codo a Codo",
+                "location" : "Buenos Aires, Argentina",
+                "description" : "I gained knowledge to build functional schemes and services, working both on the client side (Front-end) and the server side (Back-end)."
+            },
+            "alura" : {
+                "title" : "Full Stack with Java",
+                "date" : "Aug. 2022 - Feb. 2023",
+                "institute" : "Alura Latam & Oracle ONE ",
+                "location" : "Buenos Aires, Argentina",
+                "description" : "Bootcamp especially designed to train quality full stack developers with solid foundations and good coding practices."
             }
        }
     }

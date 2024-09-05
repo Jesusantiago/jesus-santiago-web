@@ -6,8 +6,10 @@ import { Link } from "@/i18n/routing";
 import { Box, Button, Container, Typography } from "@mui/material"
 import HeroSection from "./HeroSection";
 
-import Portfolio from "./Portfolio";
-import Newletter from "./Newletter";
+import Experience from "./Experience";
+import Blog from "./Blog";
+import Project from "./Project";
+import Education from "./Education";
 
 export default function Home() {
   return (
@@ -24,10 +26,12 @@ export default function Home() {
       }}
     >
         <HeroSection/>
-        <Newletter />
-        <Portfolio />
+        <Blog />
+        <Experience />
+        <Project />
+        <Education />
          
-      <Button><Link href='/about'>About </Link></Button>
+      <Link href='/about'> <Button>About</Button>  </Link>
     </Box>
   );
 }

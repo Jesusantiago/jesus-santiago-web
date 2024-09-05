@@ -60,6 +60,7 @@ let darkTheme = createTheme({
         mode: 'dark',
         primary: {
             main: '#D9D9D9',
+            transparent: '#D9D9D9A0'
         },
         secondary: {
             main: '#B7F25E',

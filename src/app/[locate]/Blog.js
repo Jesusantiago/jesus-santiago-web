@@ -4,8 +4,8 @@ import NewsLetterBD from '@/database/Newletter'
 import {useTranslations} from 'next-intl'
 
 
-const Newletter = () => {
-    const t = useTranslations('Home')
+const Blog = () => {
+    const t = useTranslations('Home.blog')
 
 
     return (
@@ -14,7 +14,7 @@ const Newletter = () => {
             sx={{
                 width: '.8',
                 maxWidth: '1520px',
-                my: 6,
+                mt: 10,
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
@@ -31,10 +31,14 @@ const Newletter = () => {
                     textWrap: 'balance',
                     width: '1',
                     px: 2,
+                    background: (theme) => `linear-gradient(282deg, ${theme.palette.text.secondary} 0%, ${theme.palette.text.main} 53%, ${theme.palette.text.secondary} 108%)`,    
+                    WebkitBackgroundClip: 'text',
+                    backgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
                     fontFamily: (theme) => theme.typography.lexend.fontFamily
                 }}
             >
-                {t('newletter.title')}
+                {t('title')}
             </Typography>
 
             <Stack direction={{xs:'column', md: 'row'}} spacing={{xs:6, lg:10}}>
@@ -97,4 +101,4 @@ const Newletter = () => {
     )
 }
 
-export default Newletter
+export default Blog
