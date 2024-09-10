@@ -4,7 +4,7 @@ import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects';
 import { Brightness7 } from "@mui/icons-material";
 import { Brightness4 } from "@mui/icons-material";
 import MenuIcon from '@mui/icons-material/Menu';
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { useState } from "react"
 
 const pages = [
@@ -71,13 +71,15 @@ const Header = ({ darkMode, toggleDarkMode }) => {
 
                     {/* logo */}
                     <Box sx={{m:0, p:0}}>
-                        <Button href="/" sx={{display: "flex", alignItems: "center", justifyContent: "space-between", width:220, m: 0}}>
+                        <Link href='/'>
+                        <Button sx={{display: "flex", alignItems: "center", justifyContent: "space-between", width:220, m: 0}}>
 
                          {darkMode ? <LogotipoDark/> : <LogotipoLight/>}
                           {darkMode ? <img width="150" src="/imalogotipoLight.svg" alt="imalogotipo de jesus santiago web, diseñamos tu página web"/> 
                          : <img width="150" src="/imalogotipoDark.svg" alt="imalogotipo de jesus santiago web, diseñamos tu página web"/>}
 
                         </Button>
+                        </Link>
                     </Box>
 
                     {/* HAMBURGUESA */}

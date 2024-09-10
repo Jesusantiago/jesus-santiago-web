@@ -5,7 +5,7 @@ import EngineeringIcon from '@mui/icons-material/Engineering';
 import { Box, Button, Card, CardMedia, Chip, Divider, Typography } from '@mui/material';
 import { useTranslations } from 'next-intl'
 
-const Portfolio = () => {
+const Experience = () => {
     const t = useTranslations('Home.experience')
 
     return (
@@ -17,9 +17,9 @@ const Portfolio = () => {
                 borderRadius: 4,
                 backgroundColor: (theme) => theme.palette.card.main,
                 boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`,
-                py: { xs: 14, md: 10 },
+                py: { xs: 6, md: 10 },
                 px: 2,
-                mt: 2,
+                mt: 10,
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
@@ -32,8 +32,11 @@ const Portfolio = () => {
                 width='1'
                 textAlign='center'
                 fontWeight='500'
-                color={'primary.main'}
                 sx={{
+                    background: (theme) => `linear-gradient(282deg, ${theme.palette.text.secondary} 0%, ${theme.palette.text.main} 53%, ${theme.palette.text.secondary} 108%)`,    
+                    WebkitBackgroundClip: 'text',
+                    backgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
                     fontFamily: (theme) => theme.typography.lexend.fontFamily,
                 }}
             >
@@ -50,90 +53,6 @@ const Portfolio = () => {
                     gap: 4
                 }}
             >
-                {/* nebula wear */}
-                <Card
-                    sx={{
-                        display: 'flex',
-                        flexDirection: { xs: 'column', lg: 'row' },
-                        borderRadius: 4,
-                        boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`,
-                    }}>
-                    <CardMedia
-                        component='img'
-                        image='portfolio/nebulaWear1-1.png'
-                        alt='Imagen representativa del Proyecto de NebulaWear'
-                        sx={{
-                            height: 400,
-                            width: { xs: 1, lg: 345 },
-                            objectPosition: 'bottom'
-                        }}
-                    />
-
-                    <Box
-                        sx={{
-                            display: 'flex',
-                            flexDirection: 'column',
-                            justifyContent: 'space-around',
-                            gap: 1,
-                            py: 2,
-                            px: 4,
-                        }}
-                    >
-                        <Box
-                            sx={{
-                                display: 'flex',
-                                justifyContent: 'space-between',
-                                alignItems : 'center'
-                            }}
-                        >
-                            <Typography
-                                variant='h6'
-                                width={1/2}
-                            >
-                                {t('proyectNebula.name')}
-                            </Typography>
-                            <Typography
-                                variant='button'
-                                width={1/2}
-                                textAlign={'right'}
-                            >
-                                {t('proyectNebula.date')}
-                            </Typography>
-
-                        </Box>
-
-                        <Divider />
-
-                        <Typography
-                            variant='body1'
-                            color='primary.transparent'
-                            fontWeight='500'
-                        >
-                            {t('proyectNebula.myRole')}
-                        </Typography>
-
-                        <Typography variant='body1' >
-                            {t('proyectNebula.description')}
-                        </Typography>
-
-                        <Typography>
-                            {t('proyectNebula.technologies')}
-                        </Typography>
-                        <Divider sx={{ my: 2 }} />
-                        <Chip
-                            variant='filled'
-                            color='primary'
-                            label='GitHub'
-                            icon={<GitHub />}
-                            sx={{
-                                minWidth: 120,
-                                width: 1 / 6
-                            }}
-                        />
-                    </Box>
-
-                </Card>
-
                 {/* agiliza */}
                 <Button
                     href='https://agiliza-sa.com/'
@@ -163,10 +82,8 @@ const Portfolio = () => {
                                 flexDirection: 'column',
                                 justifyContent: 'space-around',
                                 gap: 1,
-                                pt: 2,
+                                py: 2,
                                 px: 4,
-                                pb: { xs: 2, lg: 10 },
-                                // mb: {xs:2, lg:0}
                             }}>
 
                             <Box
@@ -179,15 +96,17 @@ const Portfolio = () => {
                                 <Typography
                                     variant='h6'
                                     width={1/2}
+                                    textAlign={'start'}
+                                    fontWeight={'700'}
                                 >
-                                    {t('proyectAgiliza.name')}
+                                    {t('projectAgiliza.name')}
                                 </Typography>
                                 <Typography
                                     variant='button'
                                     width={1/2}
                                     textAlign={'right'}
                                 >
-                                    {t('proyectAgiliza.date')}
+                                    {t('projectAgiliza.date')}
                                 </Typography>
 
                             </Box>
@@ -197,17 +116,32 @@ const Portfolio = () => {
                                 color='primary.transparent'
                                 fontWeight='500'
                             >
-                                {t('proyectAgiliza.myRole')}
+                                {t('projectAgiliza.myRole')}
                             </Typography>
 
                             <Typography variant='body1'>
-                                {t('proyectAgiliza.description')}
+                                {t('projectAgiliza.description')}
                             </Typography>
-                
-                            <Typography>
-                                {t('proyectAgiliza.technologies')}
 
-                            </Typography>
+                            <Box
+                                sx={{
+                                    display : 'flex',
+                                    flexWrap : 'wrap',
+                                    gap: 1,
+                                    mt:6
+                                }}
+                            >
+                                <Chip
+                                    label='JavaScript'
+                                />
+                                <Chip
+                                    label='React'
+                                />
+                                <Chip
+                                    label='ReactStrap'
+                                />
+                            </Box>
+
                         </Box>
                     </Card>
                 </Button>
@@ -238,9 +172,8 @@ const Portfolio = () => {
                                 flexDirection: 'column',
                                 justifyContent: 'space-around',
                                 gap: 1,
-                                pt: 2,
+                                py: 2,
                                 px: 4,
-                                pb: { xs: 2, lg: 10 }
                             }}>
 
                             <Box
@@ -253,15 +186,17 @@ const Portfolio = () => {
                                 <Typography
                                     variant='h6'
                                     width={1/2}
+                                    textAlign={'start'}
+                                    fontWeight={'700'}
                                 >
-                                    {t('proyectMoorishville.name')}
+                                    {t('projectMoorishville.name')}
                                 </Typography>
                                 <Typography
                                     variant='button'
                                     width={1/2}
                                     textAlign={'right'}
                                 >
-                                    {t('proyectMoorishville.date')}
+                                    {t('projectMoorishville.date')}
                                 </Typography>
 
                             </Box>
@@ -273,17 +208,30 @@ const Portfolio = () => {
                                 fontWeight='500'
                                 textAlign='left'
                             >
-                                {t('proyectMoorishville.myRole')}
+                                {t('projectMoorishville.myRole')}
                             </Typography>
                             <Typography variant='body1' textAlign='left'>
-                                {t('proyectMoorishville.description')}
+                                {t('projectMoorishville.description')}
                             </Typography>
-                
-                            <Typography
-                                textAlign='left'
+
+                            <Box
+                                sx={{
+                                    display : 'flex',
+                                    flexWrap : 'wrap',
+                                    gap: 1,
+                                    mt:8
+                                }}
                             >
-                                {t('proyectMoorishville.technologies')}
-                            </Typography>
+                                <Chip
+                                    label='HTML'
+                                />
+                                <Chip
+                                    label='CSS'
+                                />
+                                <Chip
+                                    label='JavaScript'
+                                />
+                            </Box>
                         </Box>
                     </Card>
                 </Button>
@@ -292,5 +240,5 @@ const Portfolio = () => {
     )
 }
 
-export default Portfolio
+export default Experience;
 // 
