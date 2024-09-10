@@ -41,8 +41,13 @@
                 "status" : "In development",
                 "name" : "Nebula Wear",
                 "description" : "Luxury apparel brand and e-commerce platform focused on creating a robust and scalable solution. I lead the technical team, guiding the development and applying our specialized skills in each area. My focus is to take this project to its full potential.",
-                "myRole" : "Technical leader and Front-End developer.",
-                "technologies" : "React, Material UI (styles), Firebase (authentication)."
+                "myRole" : "Technical leader and Front-End developer."
+            },
+            "projectFunko" : {
+                "status" : "Completed in 2023",
+                "name" : "Funko Shop",
+                "description" : " Is the degree project of the Full Stack with Node.js course of Elbow to Elbow. Funko shop is an online store selling Funko products.",
+                "myRole" : "Full Stack Developer - individual project"
             }
        },
        "education": {

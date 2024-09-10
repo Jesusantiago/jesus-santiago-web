@@ -41,8 +41,13 @@
                 "status" : "En desarrollo",
                 "name" : "Nebula Wear",
                 "description" : " Marca de ropa de lujo y plataforma de comercio electrónico enfocada en crear una solución robusta y escalable. Lidero el equipo técnico, guiando el desarrollo y aplicando nuestras habilidades especializadas en cada área. Mi enfoque es llevar este projecto a su máximo potencial.",
-                "myRole" : "Lider Técnico y desarrollador Front-End",
-                "technologies" : "React, Material UI (estilos), Firebase (autenticación)."
+                "myRole" : "Lider Técnico y desarrollador Front-End"
+            },
+            "projectFunko" : {
+                "status" : "Finalizado en 2023",
+                "name" : "Funko Shop",
+                "description" : " Es el proyecto de grado del curso de Full Stack con Node.js de Codo a codo. Funko shop es una tienda en linea de venta de productos Funko.",
+                "myRole" : "Desarrollador Full Stack - proyecto individual"
             }
         },
         "education" : {
