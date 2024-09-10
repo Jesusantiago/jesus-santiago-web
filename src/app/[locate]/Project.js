@@ -1,6 +1,6 @@
 import { LinkRounded } from "@mui/icons-material"
 import GitHub from "@mui/icons-material/GitHub"
-import { Box, Card, CardMedia, Chip, Divider, Typography } from "@mui/material"
+import { Box, Button, Card, CardMedia, Chip, Divider, Typography } from "@mui/material"
 import { useTranslations } from 'next-intl'
 import Link from "next/link"
 
@@ -245,13 +245,23 @@ const Project = () => {
                                 icon={<LinkRounded/>}
                                 onClick={ () => window.open('https://funko-shop-swart.vercel.app/', '_black')}
                             />
-
                         </Box>
                     </Box>
 
                 </Card>
 
+
             </Box>
+
+                <Link href='/portfolio'> 
+                    <Button
+                        variant="contained"
+                        color="secondary"
+                        
+                    >
+                        {t('button')}
+                    </Button>  
+                </Link>
 
         </Box>
     )

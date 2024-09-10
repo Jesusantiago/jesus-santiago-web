@@ -37,6 +37,7 @@
         },
         "project" : {
             "title" : "Proyectos",
+            "button" : "Ver más",
             "projectNebula" : {
                 "status" : "En desarrollo",
                 "name" : "Nebula Wear",
