@@ -21,17 +21,18 @@ const HeroSection = () => {
         boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`,
         pt: {xs: 14, md: 20},
         px:2,
+        pl:{xs:2, md:8},
         mt: 2,
         alignItems: {xs: 'end', md: 'center'},
         justifyContent: {xs:'center', md: 'space-between'}
       }}>
 
-      <Grid xs={12} lg={12} 
+      <Grid xs={12} md={7} 
       component='article'
         sx={{
           display: 'flex',
           flexDirection: 'column',
-          alignItems: 'center',
+          alignItems: {xs:'center', md:'start'},
           mb:4,
         }}
       >
@@ -40,7 +41,8 @@ const HeroSection = () => {
           color='primary'
           size='large'
           sx={{
-            mb: {xs: 0, sm: 1, fontWeight:'700'}
+            mb: {xs: 0, sm: 1, fontWeight:'700'},
+            alignSelf: 'center'
           }}
           startIcon={
             <Circle color='success' />
@@ -52,7 +54,7 @@ const HeroSection = () => {
         <Typography
           variant='h1'
           component='h2'
-          textAlign='center'
+          textAlign={{xs:'center', md: 'start'}}
           fontWeight='700'
           sx={{
             width:1, 
@@ -71,7 +73,7 @@ const HeroSection = () => {
         <Typography
           variant='h4'
           component='h1'
-          textAlign='center'
+          textAlign= {{xs:'center', md: 'start'}}
           sx={{width:1, textWrap: 'balance', mb:2}}
         >
           {t('hero.subtitle')}
@@ -116,7 +118,7 @@ const HeroSection = () => {
 
       </Grid>
 
-      <Grid xs={12} lg={12}
+      <Grid xs={12} md={5}
         component='article'
         sx={{
           display: 'flex',
@@ -125,9 +127,10 @@ const HeroSection = () => {
         }}
       >
         <picture className='object'>
-          <source srcSet='contenido-pequeña.png' media='(max-width:750px)' type='image/png'/>
-          <source srcSet='contenido-grande.png' media='(max-width:1080px)' type='image/png'/>
-          <img src='contenido-grande.png' alt='imagen de presentaación del hero de Jesús Santiago' className='object'/>
+          {/* <source srcSet='contenido-pequeña.png' media='(max-width:750px)' type='image/png'/>
+          <source srcSet='contenido-grande.png' media='(max-width:1080px)' type='image/png'/> */}
+          {/* <img src='contenido-grande.png' alt='imagen de presentaación del hero de Jesús Santiago' className='object'/> */}
+          <img src='imagenPixal.webp' alt='imagen de presentación del hero de Jesús Santiago' className='hola'/>
         </picture>
       </Grid>
 
