@@ -11,6 +11,7 @@ import Blog from "./Blog";
 import Project from "./Project";
 import Education from "./Education";
 import AboutMe from "./AboutMe";
+import Faq from "./Faq";
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
         <Project />
         <Education />
         <AboutMe/>
+        <Faq/>
          
       <Link href='/about'> <Button>About</Button>  </Link>
     </Box>
