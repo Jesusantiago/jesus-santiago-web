@@ -88,6 +88,35 @@
                 "location" : "Buenos Aires, Argentina",
                 "description" : "Bootcamp especialmente pensando en formar desarrolladores full stack de calidad con bases solidas y buenas practicas de codigo."
             }
+        },
+        "about" : {
+            "title" : "Sobre mi",
+            "paragraph1-1" : "Mi nombre es",
+            "paragraph1-2" : "Jesús Santiago",
+            "paragraph1-3" : " y soy un desarrollador especializado en ",
+            "paragraph1-4" :  "Front-End ",
+            "paragraph1-5" : "con ",
+            "paragraph1-6" : "React",
+            "paragraph1-7" : ", aunque también cuento con conocimientos Full Stack. Mi pasión es crear experiencias de usuario dinámicas y soluciones web efectivas. Me destaco por mi enfoque en escribir ", 
+            "paragraph1-8" : "código limpio, bien documentado, actualizado y escalable " ,
+            "paragraph1-9" : "siempre buscando la solución más eficiente para cada proyecto.",
+            "paragraph2-1" : "Actualmente, me encuentro en constante crecimiento profesional, y en breve comenzaré una ",
+            "paragraph2-2" : " Formación Profesional en Desarrollo de Aplicaciones Web",
+            "paragraph2-3" : " en el instituto ",
+            "paragraph2-4" : " EEP iGroup",
+            "paragraph2-5" : ", lo que refuerza mi compromiso con el aprendizaje continuo.", 
+            "paragraph3-1" : "A lo largo de mi carrera, he tenido la oportunidad de ",
+            "paragraph3-2" : "liderar equipos de trabajo ", 
+            "paragraph3-3" : "y ",
+            "paragraph3-4" : "gestionar proyectos ",
+            "paragraph3-5" : "en todas sus fases, lo que me ha permitido desarrollar habilidades interpersonales clave como la ",
+            "paragraph3-6" : "comunicación ",
+            "paragraph3-7" : "y el ", 
+            "paragraph3-8" : " trabajo en equipo.",
+            "paragraph4-1" : "Si estás buscando un ",
+            "paragraph4-2" : "Desarrollador Front-End ",
+            "paragraph4-3" : "apasionado, comprometido y con ganas de seguir creciendo, estaré encantado de conversar sobre cómo puedo aportar a tu equipo. Actualmente, estoy en búsqueda de un ", 
+            "paragraph4-4" : "desafío profesional."
         }
     }
 }

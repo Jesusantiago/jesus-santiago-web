@@ -1,13 +1,15 @@
 import { LinkRounded } from "@mui/icons-material"
 import GitHub from "@mui/icons-material/GitHub"
-import { Box, Button, Card, CardMedia, Chip, Divider, Typography } from "@mui/material"
+import { Box, Button, Card, CardContent, CardMedia, Chip, Divider, Typography } from "@mui/material"
+import Grid from '@mui/material/Unstable_Grid2'
 import { useTranslations } from 'next-intl'
-import Link from "next/link"
+import { Link } from "@/i18n/routing";
+
 
 
 const AboutMe = () => {
 
-    const t = useTranslations('Home.project')
+    const t = useTranslations('Home.about')
 
     return (
         <Box
@@ -42,224 +44,80 @@ const AboutMe = () => {
                 {t('title')}
             </Typography>
 
-            <Box
+            <Grid
+                container
                 component='section'
                 sx={{
                     width: { xs: 0.8, lg: .7 },
-                    maxWidth: '1255px',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: 4
+                    maxWidth: '1620px',
+                    gap: {xs: 4, md: 0}
                 }}
             >
-                {/* nebula wear */}
-                <Card
-                    sx={{
-                        display: 'flex',
-                        flexDirection: { xs: 'column', lg: 'row-reverse' },
-                        borderRadius: 4,
-                        boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`,
-                    }}>
+
+                <Grid xs={12} md={5}>
                     <CardMedia
                         component='img'
-                        image='portfolio/nebulaWear1-1.png'
+                        image='aboutMe1.webp'
                         alt='Imagen representativa del projecto de NebulaWear'
                         sx={{
-                            height: 350,
-                            width: { xs: 1, lg: 345 },
-                            objectPosition: 'bottom'
-                        }}
-                    />
-
-                    <Box
-                        sx={{
-                            display: 'flex',
-                            flexDirection: 'column',
-                            justifyContent: 'space-around',
-                            gap: 1,
-                            py: 2,
-                            px: 4,
-                        }}
-                    >
-                        <Box
-                            sx={{
-                                display: 'flex',
-                                justifyContent: 'space-between',
-                                alignItems: 'center'
-                            }}
-                        >
-                            <Typography
-                                variant='h6'
-                                width={1 / 2}
-                            >
-                                {t('projectNebula.name')}
-                            </Typography>
-                            <Typography
-                                variant='button'
-                                width={1 / 2}
-                                textAlign={'right'}
-                            >
-                                {t('projectNebula.status')}
-                            </Typography>
-
-                        </Box>
-
-                        <Divider />
-
-                        <Typography
-                            variant='body1'
-                            color='primary.transparent'
-                            fontWeight='500'
-                        >
-                            {t('projectNebula.myRole')}
-                        </Typography>
-
-                        <Typography variant='body1' >
-                            {t('projectNebula.description')}
-                        </Typography>
-
-                        <Box
-                            sx={{display : 'flex', flexWrap: 'wrap', gap: 1, mt:4}}
-                        >
-                            <Chip
-                                label='JavaScript'
-                            />
-                            <Chip
-                                label='React'
-                            />
-                            <Chip
-                                label='Material UI'
-                            />
-                            <Chip
-                                label='Firebase'
-                            />
-                            <Chip
-                                label='GitHub'
-                                icon={<GitHub/>}
-                                onClick={ () => window.open('https://github.com/Jesusantiago/NebulaWear', '_black')}
-                            />
-
-                        </Box>
-                    </Box>
-
-                </Card>
-
-                {/* Funko Shop */}
-                <Card
-                    sx={{
-                        display: 'flex',
-                        flexDirection: { xs: 'column', lg: 'row-reverse' },
-                        borderRadius: 4,
-                        boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`,
-                    }}>
-                    <CardMedia
-                        component='img'
-                        image='portfolio/funkoShop.webp'
-                        alt='Imagen representativa del projecto de NebulaWear'
-                        sx={{
-                            height: 350,
-                            width: { xs: 1, lg: 345 },
+                            height: {xs: 300, md: 1},
+                            width: { xs: 1, md: 350 },
                             objectPosition: 'center',
-                            objectFit: 'cover'
+                            objectFit: 'contain'
                         }}
                     />
+                </Grid>
 
-                    <Box
-                        sx={{
-                            display: 'flex',
-                            flexDirection: 'column',
-                            justifyContent: 'space-around',
-                            gap: 1,
-                            py: 2,
-                            px: 4,
-                        }}
-                    >
-                        <Box
-                            sx={{
-                                display: 'flex',
-                                justifyContent: 'space-between',
-                                alignItems: 'center'
-                            }}
-                        >
-                            <Typography
-                                variant='h6'
-                                width={1 / 2}
-                            >
-                                {t('projectFunko.name')}
-                            </Typography>
-                            <Typography
-                                variant='button'
-                                width={1 / 2}
-                                textAlign={'right'}
-                            >
-                                {t('projectFunko.status')}
-                            </Typography>
-
-                        </Box>
-
-                        <Divider />
+                <Grid xs={12} md={7}
+                    sx={{
+                        display:'flex',
+                        flexDirection:'column',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        gap: 6,
+                    }}
+                >
 
                         <Typography
-                            variant='body1'
-                            color='primary.transparent'
-                            fontWeight='500'
+                            variant="h5"
+                            sx={{textWrap:'balance'}}
                         >
-                            {t('projectFunko.myRole')}
+                            {t('paragraph1-1')} <b>{t('paragraph1-2')}</b> {t('paragraph1-3')} <b>{t('paragraph1-4')}</b> {t('paragraph1-5')} <b>{t('paragraph1-6')}</b> {t('paragraph1-7')} <b>{t('paragraph1-8')}</b> {t('paragraph1-9')}
                         </Typography>
 
-                        <Typography variant='body1' >
-                            {t('projectFunko.description')}
+                        <Typography
+                            variant="h5"
+                            sx={{textWrap:'balance'}}
+                        >
+                            {t('paragraph2-1')} <b>{t('paragraph2-2')}</b> {t('paragraph2-3')} <b>{t('paragraph2-4')}</b> {t('paragraph2-5')}
                         </Typography>
 
-                        <Box
-                            sx={{display : 'flex', flexWrap: 'wrap', gap: 1, mt:4}}
+                        <Typography
+                            variant="h5"
+                            sx={{textWrap:'balance'}}
                         >
-                            <Chip
-                                label='HTML'
-                            />
-                            <Chip
-                                label='CSS'
-                            />
-                            <Chip
-                                label='SASS'
-                            />
-                            <Chip
-                                label='JavaScript'
-                            />
-                            <Chip
-                                label='Node.js'
-                            />
-                            <Chip
-                                label='Express.js'
-                            />
-                            <Chip
-                                label='MySQL'
-                            />
-                            <Chip
-                                label='GitHub'
-                                icon={<GitHub/>}
-                                onClick={ () => window.open('https://github.com/Jesusantiago/Funko', '_black')}
-                            />
-                            <Chip
-                                label='Link'
-                                icon={<LinkRounded/>}
-                                onClick={ () => window.open('https://funko-shop-swart.vercel.app/', '_black')}
-                            />
-                        </Box>
-                    </Box>
+                            {t('paragraph3-1')} <b>{t('paragraph3-2')}</b> {t('paragraph3-3')} <b>{t('paragraph3-4')}</b> {t('paragraph3-5')} <b>{t('paragraph3-6')}</b> {t('paragraph3-7')} <b>{t('paragraph3-8')}</b>
+                        </Typography>
 
-                </Card>
+                        <Typography
+                            variant="h5"
+                            sx={{textWrap:'balance'}}
+                        >
+                            {t('paragraph4-1')} <b>{t('paragraph4-2')}</b> {t('paragraph4-3')} <b>{t('paragraph4-4')}</b>
+                        </Typography>
+
+                </Grid>
 
 
-            </Box>
+            </Grid>
 
-                <Link href='/portfolio'> 
+            <Link href='/about'> 
                     <Button
                         variant="contained"
                         color="secondary"
                         
                     >
-                        {t('button')}
+                        {t('title')}
                     </Button>  
                 </Link>
 
