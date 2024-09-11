@@ -88,6 +88,35 @@
                 "location" : "Buenos Aires, Argentina",
                 "description" : "Bootcamp especially designed to train quality full stack developers with solid foundations and good coding practices."
             }
-       }
+       },
+       "about" : {
+        "title" : "About me",
+        "paragraph1-1" : "Mi name is ",
+        "paragraph1-2" : "Jesus Santiago ",
+        "paragraph1-3" : "and I am a developer specialized in ",
+        "paragraph1-4" : "Front-End ",
+        "paragraph1-5" : "with ",
+        "paragraph1-6" : "React",
+        "paragraph1-7" : ", although I also have Full Stack knowledge. My passion is creating dynamic user experiences and building effective web solutions. I am known for my focus on writing ", 
+        "paragraph1-8" : "clean, well-documented, up-to-date, and scalable code " ,
+        "paragraph1-9" : "always striving to find the most efficient solution for each project.",
+        "paragraph2-1" : "Currently, I am continuously growing as a professional, and I will soon begin a ",
+        "paragraph2-2" : "Professional Training in Web Application Development ",
+        "paragraph2-3" : "at ",
+        "paragraph2-4" : " EEP iGroup",
+        "paragraph2-5" : ", which reinforces my commitment to lifelong learning.", 
+        "paragraph3-1" : "Throughout my career, I’ve had the opportunity to ",
+        "paragraph3-2" : "lead teams ", 
+        "paragraph3-3" : "and ",
+        "paragraph3-4" : "manager projects ",
+        "paragraph3-5" : "at every stage, which has helped me develop key interpersonal skills such as ",
+        "paragraph3-6" : "communication ",
+        "paragraph3-7" : "and ", 
+        "paragraph3-8" : "teamwork.",
+        "paragraph4-1" : "If you're looking for a passionate and dedicated ",
+        "paragraph4-2" : "Front-End Developer ",
+        "paragraph4-3" : "who is eager to keep growing, I’d be happy to discuss how I can contribute to your team. I am currently seeking a ", 
+        "paragraph4-4" : "new professional challenge."
+    }
     }
 }

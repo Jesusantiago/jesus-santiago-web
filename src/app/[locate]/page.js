@@ -10,6 +10,7 @@ import Experience from "./Experience";
 import Blog from "./Blog";
 import Project from "./Project";
 import Education from "./Education";
+import AboutMe from "./AboutMe";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
         <Experience />
         <Project />
         <Education />
+        <AboutMe/>
          
       <Link href='/about'> <Button>About</Button>  </Link>
     </Box>
