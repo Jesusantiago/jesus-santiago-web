@@ -1,122 +1,157 @@
 {
-    "header" : {
-        "btnAbout" : "About",
-        "btnService" : "Service",
-        "btnPortfolio" : "Portfolio",
-        "btnCTA" : "Let's talk"
+    "header": {
+        "btnAbout": "About",
+        "btnService": "Service",
+        "btnPortfolio": "Portfolio",
+        "btnCTA": "Let's talk"
     },
     "Home": {
-        "hero" : {
-            "status" : "Available",
-            "title" : "Jesus Santiago",
-            "subtitle" : "Front-End Developer React Specialist",
-            "btnCTA" : "Let's talk",
-            "btnCV" : "see CV"
-       },
-       "blog" : {
-            "title" : "Blog"
-       },
-       "experience" : {
-            "title" : "Experience",
-            "projectAgiliza" : {
-                "status" : "Currently",
-                "date" : "Aug. 2023 - Currently",
-                "name" : "Agiliza",
-                "description" : "A startup dedicated to the centralization and presentation of business data. I led the creation of the app, developing the interface that displays BI charts and managing authentication, user control and permissions.",
-                "myRole" : "Front-End developer.",
-                "technologies" : "React, ReactStrap (styles)."
+        "hero": {
+            "status": "Available",
+            "title": "Jesus Santiago",
+            "subtitle": "Front-End Developer React Specialist",
+            "btnCTA": "Let's talk",
+            "btnCV": "see CV"
+        },
+        "blog": {
+            "title": "Blog"
+        },
+        "experience": {
+            "title": "Experience",
+            "projectAgiliza": {
+                "status": "Currently",
+                "date": "Aug. 2023 - Currently",
+                "name": "Agiliza",
+                "description": "A startup dedicated to the centralization and presentation of business data. I led the creation of the app, developing the interface that displays BI charts and managing authentication, user control and permissions.",
+                "myRole": "Front-End developer.",
+                "technologies": "React, ReactStrap (styles)."
             },
-            "projectMoorishville" : {
-                "status" : "Finish",
-                "name" : "Moorishville",
-                "date" : "Apr. - May. 2024",
-                "description" : "Is a county in the United States for which I have worked as a freelancer. My most notable project for them was the development of a system for searching files in a local database.",
-                "myRole" : "Front-End developer.",
-                "technologies" : "HTML, CSS, JavaScript"
+            "projectMoorishville": {
+                "status": "Finish",
+                "name": "Moorishville",
+                "date": "Apr. - May. 2024",
+                "description": "Is a county in the United States for which I have worked as a freelancer. My most notable project for them was the development of a system for searching files in a local database.",
+                "myRole": "Front-End developer.",
+                "technologies": "HTML, CSS, JavaScript"
             }
-       },
-       "project" : {
-            "title" : "Projects",
-            "button" : "See more",
-            "projectNebula" : {
-                "status" : "In development",
-                "name" : "Nebula Wear",
-                "description" : "Luxury apparel brand and e-commerce platform focused on creating a robust and scalable solution. I lead the technical team, guiding the development and applying our specialized skills in each area. My focus is to take this project to its full potential.",
-                "myRole" : "Technical leader and Front-End developer."
+        },
+        "project": {
+            "title": "Projects",
+            "button": "See more",
+            "projectNebula": {
+                "status": "In development",
+                "name": "Nebula Wear",
+                "description": "Luxury apparel brand and e-commerce platform focused on creating a robust and scalable solution. I lead the technical team, guiding the development and applying our specialized skills in each area. My focus is to take this project to its full potential.",
+                "myRole": "Technical leader and Front-End developer."
             },
-            "projectFunko" : {
-                "status" : "Completed in 2023",
-                "name" : "Funko Shop",
-                "description" : " Is the degree project of the Full Stack with Node.js course of Elbow to Elbow. Funko shop is an online store selling Funko products.",
-                "myRole" : "Full Stack Developer - individual project"
+            "projectFunko": {
+                "status": "Completed in 2023",
+                "name": "Funko Shop",
+                "description": " Is the degree project of the Full Stack with Node.js course of Elbow to Elbow. Funko shop is an online store selling Funko products.",
+                "myRole": "Full Stack Developer - individual project"
             }
-       },
-       "education": {
-            "title" : "Education",
-            "ux" : {
-                "title" : "UX-UI Course",
-                "date" : "Sep. 2024 - Currently",
-                "institute" : "Talento Tech",
-                "location" : "Buenos Aires, Argentina",
-                "description" : "User interface design for mobile apps, focusing on UX/UI principles."
+        },
+        "education": {
+            "title": "Education",
+            "ux": {
+                "title": "UX-UI Course",
+                "date": "Sep. 2024 - Currently",
+                "institute": "Talento Tech",
+                "location": "Buenos Aires, Argentina",
+                "description": "User interface design for mobile apps, focusing on UX/UI principles."
             },
-            "react" : {
-                "title" : "Front-End Developer with React",
-                "date" : "Nov. - Dec. 2023",
-                "institute" : "Codo a Codo",
-                "location" : "Buenos Aires, Argentina",
-                "description" : "I learned how to build user interfaces with React's FrameWork."
+            "react": {
+                "title": "Front-End Developer with React",
+                "date": "Nov. - Dec. 2023",
+                "institute": "Codo a Codo",
+                "location": "Buenos Aires, Argentina",
+                "description": "I learned how to build user interfaces with React's FrameWork."
             },
-            "sass" : {
-                "title" : "Sass course",
-                "date" : "Mar. - Apr. 2023",
-                "institute" : "Codigo Facilito",
-                "location" : "Buenos Aires, Argentina",
-                "description" : "One of the most important CSS frameWorks today."
+            "sass": {
+                "title": "Sass course",
+                "date": "Mar. - Apr. 2023",
+                "institute": "Codigo Facilito",
+                "location": "Buenos Aires, Argentina",
+                "description": "One of the most important CSS frameWorks today."
             },
-            "node" : {
-                "title" : "Full Stack with Node.js",
-                "date" : "Feb. - Jul. 2023",
-                "institute" : "Codo a Codo",
-                "location" : "Buenos Aires, Argentina",
-                "description" : "I gained knowledge to build functional schemes and services, working both on the client side (Front-end) and the server side (Back-end)."
+            "node": {
+                "title": "Full Stack with Node.js",
+                "date": "Feb. - Jul. 2023",
+                "institute": "Codo a Codo",
+                "location": "Buenos Aires, Argentina",
+                "description": "I gained knowledge to build functional schemes and services, working both on the client side (Front-end) and the server side (Back-end)."
             },
-            "alura" : {
-                "title" : "Full Stack with Java",
-                "date" : "Aug. 2022 - Feb. 2023",
-                "institute" : "Alura Latam & Oracle ONE ",
-                "location" : "Buenos Aires, Argentina",
-                "description" : "Bootcamp especially designed to train quality full stack developers with solid foundations and good coding practices."
+            "alura": {
+                "title": "Full Stack with Java",
+                "date": "Aug. 2022 - Feb. 2023",
+                "institute": "Alura Latam & Oracle ONE ",
+                "location": "Buenos Aires, Argentina",
+                "description": "Bootcamp especially designed to train quality full stack developers with solid foundations and good coding practices."
             }
-       },
-       "about" : {
-        "title" : "About me",
-        "paragraph1-1" : "Mi name is ",
-        "paragraph1-2" : "Jesus Santiago ",
-        "paragraph1-3" : "and I am a developer specialized in ",
-        "paragraph1-4" : "Front-End ",
-        "paragraph1-5" : "with ",
-        "paragraph1-6" : "React",
-        "paragraph1-7" : ", although I also have Full Stack knowledge. My passion is creating dynamic user experiences and building effective web solutions. I am known for my focus on writing ", 
-        "paragraph1-8" : "clean, well-documented, up-to-date, and scalable code " ,
-        "paragraph1-9" : "always striving to find the most efficient solution for each project.",
-        "paragraph2-1" : "Currently, I am continuously growing as a professional, and I will soon begin a ",
-        "paragraph2-2" : "Professional Training in Web Application Development ",
-        "paragraph2-3" : "at ",
-        "paragraph2-4" : " EEP iGroup",
-        "paragraph2-5" : ", which reinforces my commitment to lifelong learning.", 
-        "paragraph3-1" : "Throughout my career, I’ve had the opportunity to ",
-        "paragraph3-2" : "lead teams ", 
-        "paragraph3-3" : "and ",
-        "paragraph3-4" : "manager projects ",
-        "paragraph3-5" : "at every stage, which has helped me develop key interpersonal skills such as ",
-        "paragraph3-6" : "communication ",
-        "paragraph3-7" : "and ", 
-        "paragraph3-8" : "teamwork.",
-        "paragraph4-1" : "If you're looking for a passionate and dedicated ",
-        "paragraph4-2" : "Front-End Developer ",
-        "paragraph4-3" : "who is eager to keep growing, I’d be happy to discuss how I can contribute to your team. I am currently seeking a ", 
-        "paragraph4-4" : "new professional challenge."
-    }
+        },
+        "about": {
+            "title": "About me",
+            "paragraph1-1": "Mi name is ",
+            "paragraph1-2": "Jesus Santiago ",
+            "paragraph1-3": "and I am a developer specialized in ",
+            "paragraph1-4": "Front-End ",
+            "paragraph1-5": "with ",
+            "paragraph1-6": "React",
+            "paragraph1-7": ", although I also have Full Stack knowledge. My passion is creating dynamic user experiences and building effective web solutions. I am known for my focus on writing ",
+            "paragraph1-8": "clean, well-documented, up-to-date, and scalable code ",
+            "paragraph1-9": "always striving to find the most efficient solution for each project.",
+            "paragraph2-1": "Currently, I am continuously growing as a professional, and I will soon begin a ",
+            "paragraph2-2": "Professional Training in Web Application Development ",
+            "paragraph2-3": "at ",
+            "paragraph2-4": " EEP iGroup",
+            "paragraph2-5": ", which reinforces my commitment to lifelong learning.",
+            "paragraph3-1": "Throughout my career, I’ve had the opportunity to ",
+            "paragraph3-2": "lead teams ",
+            "paragraph3-3": "and ",
+            "paragraph3-4": "manager projects ",
+            "paragraph3-5": "at every stage, which has helped me develop key interpersonal skills such as ",
+            "paragraph3-6": "communication ",
+            "paragraph3-7": "and ",
+            "paragraph3-8": "teamwork.",
+            "paragraph4-1": "If you're looking for a passionate and dedicated ",
+            "paragraph4-2": "Front-End Developer ",
+            "paragraph4-3": "who is eager to keep growing, I’d be happy to discuss how I can contribute to your team. I am currently seeking a ",
+            "paragraph4-4": "new professional challenge."
+        },
+        "FAQ" : {
+            "title" : "FAQ",
+            "FAQ1" : {
+                    "title" : "Do you have a work permit in Spain?",
+                    "question" : "Yes, I have a work permit and I am fully qualified to work in Spain and in the European Union."
+                },
+                "FAQ2" : {
+                    "title" : "What is your specialization?",
+                    "question" : "Although I have Full Stack knowledge, I specialize in Front-End development, mainly with React, which is where I most enjoy applying my skills."
+                },
+                "FAQ3" : {
+                    "title" : "How long have you been working in web development?",
+                    "question" : "I started self-studying in 2021 and joined the ORACLE ONE program in 2022, which gave me a more solid foundation and a clearer planorama and since then I have not stopped learning."
+                },
+                "FAQ4" : {
+                    "title" : "Do you have experience in agile methodologies?",
+                    "question" : "Yes, I have worked with agile methodologies such as Scrum and Kanban. I also like to implement these methodologies in the collaborative projects I lead."
+                },
+                "FAQ5" : {
+                    "title" : "What type of project are you looking for?",
+                    "question" : "I am looking for projects that are not only technically challenging, but also have a real impact on society, helping to improve people's lives."
+                },
+                "FAQ6" : {
+                    "title" : "Are you open to working remotely or hybrid?",
+                    "question" : "Yes, I am totally open to continue working remotely, although I am also willing to work hybrid or face-to-face if the project requires it."
+                },
+                "FAQ7" : {
+                    "title" : "What has been your greatest professional achievement?",
+                    "question" : "One of my greatest achievements was in my current job, when I was asked to improve a web application that was not meeting expectations: it was slow, not intuitive and not accessible. I was given the freedom to choose the most appropriate technologies and working with the Back-End team we managed to create a new web application that solved the problems presented by the previous one, significantly improving the experience of our customers. "
+                },
+                "FAQ8" : {
+                    "title" : "Are you willing to learn new technologies if required by the project?",
+                    "question" : "Of course! I am always willing to keep learning new technologies and to grow professionally."
+                } 
+        }
     }
 }
