@@ -119,7 +119,39 @@
             "paragraph4-4": "new professional challenge."
         },
         "FAQ" : {
-            "title" : "FAQ"
+            "title" : "FAQ",
+            "FAQ1" : {
+                    "title" : "Do you have a work permit in Spain?",
+                    "question" : "Yes, I have a work permit and I am fully qualified to work in Spain and in the European Union."
+                },
+                "FAQ2" : {
+                    "title" : "What is your specialization?",
+                    "question" : "Although I have Full Stack knowledge, I specialize in Front-End development, mainly with React, which is where I most enjoy applying my skills."
+                },
+                "FAQ3" : {
+                    "title" : "How long have you been working in web development?",
+                    "question" : "I started self-studying in 2021 and joined the ORACLE ONE program in 2022, which gave me a more solid foundation and a clearer planorama and since then I have not stopped learning."
+                },
+                "FAQ4" : {
+                    "title" : "Do you have experience in agile methodologies?",
+                    "question" : "Yes, I have worked with agile methodologies such as Scrum and Kanban. I also like to implement these methodologies in the collaborative projects I lead."
+                },
+                "FAQ5" : {
+                    "title" : "What type of project are you looking for?",
+                    "question" : "I am looking for projects that are not only technically challenging, but also have a real impact on society, helping to improve people's lives."
+                },
+                "FAQ6" : {
+                    "title" : "Are you open to working remotely or hybrid?",
+                    "question" : "Yes, I am totally open to continue working remotely, although I am also willing to work hybrid or face-to-face if the project requires it."
+                },
+                "FAQ7" : {
+                    "title" : "What has been your greatest professional achievement?",
+                    "question" : "One of my greatest achievements was in my current job, when I was asked to improve a web application that was not meeting expectations: it was slow, not intuitive and not accessible. I was given the freedom to choose the most appropriate technologies and working with the Back-End team we managed to create a new web application that solved the problems presented by the previous one, significantly improving the experience of our customers. "
+                },
+                "FAQ8" : {
+                    "title" : "Are you willing to learn new technologies if required by the project?",
+                    "question" : "Of course! I am always willing to keep learning new technologies and to grow professionally."
+                } 
         }
     }
 }
