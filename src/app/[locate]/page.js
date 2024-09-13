@@ -13,6 +13,7 @@ import Education from "./Education";
 import AboutMe from "./AboutMe";
 import Faq from "./Faq";
 import Testimonials from "./Testimonials";
+import Formulary from "./Formulary";
 
 export default function Home() {
   return (
@@ -36,7 +37,7 @@ export default function Home() {
         <AboutMe/>
         <Faq/>
         <Testimonials/>
-         
+         <Formulary />
       {/* <Link href='/about'> <Button>About</Button>  </Link> */}
     </Box>
 
