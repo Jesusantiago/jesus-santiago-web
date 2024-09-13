@@ -152,6 +152,19 @@
                     "title" : "¿Estás dispuesto a aprender nuevas tecnologías si lo requiere el proyecto?",
                     "question" : "¡Por supuesto! Siempre estoy dispuesto a seguir aprendiendo nuevas tecnologías y a crecer profesionalmente."
                 } 
+        },
+        "testimonials" : {
+            "title" : "Testimonios",
+            "memi" : {
+                "name" : "Magdalena Zucal",
+                "description" : "Realicé varios cursos con Jesus y fue un gran compañero, abierto a trabajar en equipo, organizando el grupo según las habilidades y capacidades de cada participante. Su acompañamiento fue importante para permitirme ampliar mis conocimientos en aquellas áreas que no manejaba todavía. También se mostró siempre dispuesto y entusiasmado con aprender de sus compañeros. Ordenado, metódico y responsable!",
+                "title" : "Back-End Developer"
+            },
+            "freelacer" : {
+                "name" : "Tywar Grant",
+                "description" : "Fue realmente fácil trabajar con Jesús, y mantuvo todo claro y profesional. Estuvo abierto a cambios sobre la marcha, y no dejó sin respuesta ninguna de sus preguntas sobre mi proyecto, abriéndome opciones de las que ni siquiera era consciente. Muy accesible y honesto.",
+                "title" : "Encargado del departamento de Marketing de Moorishville"
+            }
         }
     }
 }
