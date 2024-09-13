@@ -152,6 +152,19 @@
                     "title" : "Are you willing to learn new technologies if required by the project?",
                     "question" : "Of course! I am always willing to keep learning new technologies and to grow professionally."
                 } 
+        },
+        "testimonials" : {
+            "title" : "Testimonials",
+            "memi" : {
+                "name" : "Magdalena Zucal",
+                "description" : "I took several courses with Jesus and he was a great partner, open to work as a team, organizing the group according to the skills and abilities of each participant. His accompaniment was important to allow me to expand my knowledge in those areas I had not yet mastered. He was also always willing and enthusiastic to learn from his colleagues. Orderly, methodical and responsible!",
+                "title" : "Back-End Developer"
+            },
+            "freelacer" : {
+                "name" : "Tywan Grant",
+                "description" : "Jesus was really easy to work with, and kept everything clear and professional. He was open to changes on the fly, and left none of his inquiries about my project unanswered, opening options up to me that I wasn't even aware of. Very approachable and honest.",
+                "title" : "Moorishville Marketing Department Manager"
+            }
         }
     }
 }

@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import styles from "../page.module.css";
-import { Link } from "@/i18n/routing";
-import { Box, Button, Container, Typography } from "@mui/material"
+// import { Link } from "@/i18n/routing";
+import { Box } from "@mui/material"
 import HeroSection from "./HeroSection";
 
 import Experience from "./Experience";
@@ -12,6 +12,7 @@ import Project from "./Project";
 import Education from "./Education";
 import AboutMe from "./AboutMe";
 import Faq from "./Faq";
+import Testimonials from "./Testimonials";
 
 export default function Home() {
   return (
@@ -34,9 +35,11 @@ export default function Home() {
         <Education />
         <AboutMe/>
         <Faq/>
+        <Testimonials/>
          
-      <Link href='/about'> <Button>About</Button>  </Link>
+      {/* <Link href='/about'> <Button>About</Button>  </Link> */}
     </Box>
+
   );
 }
 

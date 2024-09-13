@@ -8,6 +8,7 @@ import ClientComponent from '../ClientComponent';
 
 
 
+
 export default async function RootLayout({ children, params : {locale} }) {
   console.log(locale)
 
