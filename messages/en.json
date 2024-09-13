@@ -167,7 +167,10 @@
             }
         },
         "formulary" : {
-            "title" : "Formulary"
+            "title" : "Formulary",
+            "name" : "Your name",
+            "email" : "Your email",
+            "text" : "Your message here"
         }
     }
 }
