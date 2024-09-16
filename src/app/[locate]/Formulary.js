@@ -8,12 +8,25 @@ import { useForm } from 'react-hook-form'
 
 
 
+
 const Formulary = () => {
 
     const t = useTranslations('Home.formulary')
     const { register, handleSubmit, formState: {errors} } = useForm()
 
     const OnSubmit = (data) => {
+        console.log(JSON.stringify(data))
+        fetch('/api/contact', {
+            method: "POST",
+            headers: {
+                "Content-Type" : "application/json"
+            },
+            body: JSON.stringify(data)
+        })
+        .then(res => res.json())
+        .then(data => console.log(data))
+        .catch(err => console.log(err))
+        
         console.log(data)
     }
  
@@ -104,3 +117,4 @@ const Formulary = () => {
 }
 
 export default Formulary
+  
