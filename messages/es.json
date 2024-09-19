@@ -165,17 +165,12 @@
                 "description" : "Fue realmente fácil trabajar con Jesús, y mantuvo todo claro y profesional. Estuvo abierto a cambios sobre la marcha, y no dejó sin respuesta ninguna de sus preguntas sobre mi proyecto, abriéndome opciones de las que ni siquiera era consciente. Muy accesible y honesto.",
                 "title" : "Encargado del departamento de Marketing de Moorishville"
             }
+        },
+        "formulary" : {
+            "title" : "Formulario",
+            "name" : "Tu nombre",
+            "email" : "Tu email",
+            "text" : "Escribe acá lo que quieras decirme"
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
