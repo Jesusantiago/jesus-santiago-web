@@ -167,7 +167,10 @@
             }
         },
         "formulary" : {
-            "title" : "Formulario"
+            "title" : "Formulario",
+            "name" : "Tu nombre",
+            "email" : "Tu email",
+            "text" : "Escribe acá lo que quieras decirme"
         }
     }
 }

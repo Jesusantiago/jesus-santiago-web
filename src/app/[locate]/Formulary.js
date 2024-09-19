@@ -1,37 +1,37 @@
-import { LinkRounded } from "@mui/icons-material"
-import GitHub from "@mui/icons-material/GitHub"
-import { Box, Button, Card, CardContent, CardMedia, Chip, Divider, TextField, Typography } from "@mui/material"
-import Grid from '@mui/material/Unstable_Grid2'
+import { Alert } from "@mui/material"
+import { Box, Button, TextField, Typography } from "@mui/material"
 import { useTranslations } from 'next-intl'
-import { Link } from "@/i18n/routing";
+import { useState } from "react"
 import { useForm } from 'react-hook-form'
 
-
-
-
 const Formulary = () => {
+    const [ alert, setAlert ] = useState(null)
 
     const t = useTranslations('Home.formulary')
     const { register, handleSubmit, formState: {errors} } = useForm()
 
-    const OnSubmit = (data) => {
+    const OnSubmit = async (data) => {
         console.log(JSON.stringify(data))
-        fetch('/api/contact', {
-            method: "POST",
-            headers: {
-                "Content-Type" : "application/json"
-            },
-            body: JSON.stringify(data)
-        })
-        .then(res => res.json())
-        .then(data => console.log(data))
-        .catch(err => console.log(err))
-        
-        console.log(data)
+        try{
+
+            const response = await fetch('/api/contact', {
+                method: "POST",
+                headers: {
+                    "Content-Type" : "application/json"
+                },
+                body: JSON.stringify(data)
+            })
+            if(response.ok) setAlert(true)
+            else setAlert(false)
+        } catch(err){
+            console.log(err)
+        }
     }
  
     return (
+
         <Box
+
             component='section'
             sx={{
                 width: '1',
@@ -62,6 +62,8 @@ const Formulary = () => {
             >
                 {t('title')}
             </Typography>
+
+            {alert && <Alert variant="outlined" severity="success"> Su correo ha sido enviado </Alert>}
 
             <Box
                 component='form'

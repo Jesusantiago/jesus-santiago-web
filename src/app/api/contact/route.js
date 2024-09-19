@@ -1,4 +1,5 @@
 'use server'
+
 import { NextResponse } from 'next/server'
 import nodemailer from 'nodemailer'
 
@@ -6,11 +7,10 @@ const user = process.env.EMAIL;
 const pass = process.env.PASSWORD;
 
 export async function POST(request) {
-    console.log('hola desde server')
-    console.log(request)
+
     try {
-        const { email, text } = await request
-        console.log(email)
+        const { email, text, name } = await request.json()
+        console.log(email, text)
         const transporter = nodemailer.createTransport({
             service: 'gmail',
             port: 465,
@@ -25,7 +25,11 @@ export async function POST(request) {
             from: email,
             to: user,
             subject: "Este correo viene desde tu Portfolio",
-            text: text
+            text: `Consulta de ${name} del correo ${email}`,
+            html: `
+            <p>name: ${name}</p>
+            <p>Email: ${email}</p>
+            <p>text: ${text}</p>`
         }
 
         await transporter.sendMail(mailOption)
@@ -40,4 +44,4 @@ export async function POST(request) {
     }
 }
 
-// export default POST
+// // export default POST
