@@ -14,16 +14,17 @@ import AboutMe from "./AboutMe";
 import Faq from "./Faq";
 import Testimonials from "./Testimonials";
 import Formulary from "./Formulary";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <Box
       component='main'
       sx={{
-        backgroundColor: (theme) => theme.palette.card.main,
-        backgroundImage: (theme) => `linear-gradient(32deg, ${theme.palette.card.shadowSecondary} 30px, transparent)`,
-        backgroundSize: '100px 100px',
-        backgroundPosition: '-5px -5px',
+        // backgroundColor: (theme) => theme.palette.card.main,
+        // backgroundImage: (theme) => `linear-gradient(32deg, ${theme.palette.card.shadowSecondary} 30px, transparent)`,
+        // backgroundSize: '100px 100px',
+        // backgroundPosition: '-5px -5px',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center'
@@ -37,8 +38,6 @@ export default function Home() {
         <AboutMe/>
         <Faq/>
         <Testimonials/>
-         <Formulary />
-      {/* <Link href='/about'> <Button>About</Button>  </Link> */}
     </Box>
 
   );

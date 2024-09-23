@@ -5,6 +5,7 @@ import {CssBaseline} from '@mui/material'
 import { ThemeProvider } from '@mui/material/styles'
 import { lightTheme, darkTheme } from './theme'
 import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 
 export default function ClientComponent({children}) {
     const [ darkMode, setDarkMode ] = useState(false);
@@ -17,6 +18,7 @@ export default function ClientComponent({children}) {
             <CssBaseline/>
             <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
             {children}
+            <Footer darkMode={darkMode}/>
         </ThemeProvider>
     )
 }
