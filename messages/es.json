@@ -171,6 +171,12 @@
             "name" : "Tu nombre",
             "email" : "Tu email",
             "text" : "Escribe acá lo que quieras decirme"
+        },
+        "CTA" : {
+            "title" : "Comencemos un proyecto",
+            "description" : "¿Interesados en trabajar juntos? Deberíamos charlas, yo invito el café.",
+            "cta" : "Hablemos"
         }
+
     }
 }

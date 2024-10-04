@@ -45,123 +45,131 @@ const Footer = ({ darkMode }) => {
         <Box
             component='footer'
             sx={{
-                width: '1',
-                background: 'transparent',
-                backgroundColor: (theme) => theme.palette.card.main,
-                // boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`,
-                py: { xs: 6, md: 10 },
-                px: 2,
-                mt: 10,
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-                gap: 6,
+                width: 1
             }}
         >
-            <Box sx={{ m: 0, p: 0 }}>
-                <Link href='/'>
-                    <Button sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", width: 220, m: 0 }}>
-
-                        {darkMode ? <LogotipoDark /> : <LogotipoLight />}
-                        {darkMode ? <img width="150" src="/imalogotipoLight.svg" alt="imalogotipo de jesus santiago web, diseñamos tu página web" />
-                            : <img width="150" src="/imalogotipoDark.svg" alt="imalogotipo de jesus santiago web, diseñamos tu página web" />}
-
-                    </Button>
-                </Link>
-            </Box>
-
-            <Box>
-                <Button
-                    href="https://www.linkedin.com/in/jesuscsantiago/"
-                    target="_blank"
-                >
-                    <Avatar
-                        variant="square"
-                        sx={{
-                            borderRadius: 2
-                        }}
-                    >
-                        <LinkedIn />
-                    </Avatar>
-                </Button>
-
-                <Button
-                    href="https://github.com/Jesusantiago"
-                    target="_blank"
-                >
-                    <Avatar
-                        variant="square"
-                        sx={{
-                            borderRadius: 2
-                        }}
-                    >
-                        <GitHub />
-                    </Avatar>
-                </Button>
-
-                <Button
-                    href="https://codepen.io/Jesusantiago"
-                    target="_blank"
-                >
-                    <Avatar
-                        variant="square"
-                        sx={{
-                            borderRadius: 2
-                        }}
-                        src="codepen.svg"
-                    >
-                    </Avatar>
-                </Button>
-
-                <Button
-                    href="https://www.linkedin.com/in/jesuscsantiago/"
-                    target="_blank"
-                >
-                    <Avatar>
-                        <Email />
-                    </Avatar>
-                </Button>
-
-            </Box>
 
             <Box
                 sx={{
+                    width: '1',
+                    background: 'transparent',
+                    backgroundColor: (theme) => theme.palette.card.main,
+                    // boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`,
+                    py: { xs: 6, md: 10 },
+                    px: 2,
                     display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
                     justifyContent: 'space-between',
-                    paddingX: 15,
-                    width: 1
+                    gap: 6,
                 }}
             >
-                {pages.map((item) => (
+
+                <Box sx={{ m: 0, p: 0 }}>
+                    <Link href='/'>
+                        <Button sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", width: 220, m: 0 }}>
+
+                            {darkMode ? <LogotipoDark /> : <LogotipoLight />}
+                            {darkMode ? <img width="150" src="/imalogotipoLight.svg" alt="imalogotipo de jesus santiago web, diseñamos tu página web" />
+                                : <img width="150" src="/imalogotipoDark.svg" alt="imalogotipo de jesus santiago web, diseñamos tu página web" />}
+
+                        </Button>
+                    </Link>
+                </Box>
+
+                <Box>
                     <Button
-                        key={item.name}
-                        href={item.page}
-                        sx={{ display: 'block', color: 'primary.main', fontWeight: 700 }}
+                        href="https://www.linkedin.com/in/jesuscsantiago/"
+                        target="_blank"
                     >
-                        {item.name}
+                        <Avatar
+                            variant="square"
+                            sx={{
+                                borderRadius: 2
+                            }}
+                        >
+                            <LinkedIn />
+                        </Avatar>
                     </Button>
-                ))}
+
+                    <Button
+                        href="https://github.com/Jesusantiago"
+                        target="_blank"
+                    >
+                        <Avatar
+                            variant="square"
+                            sx={{
+                                borderRadius: 2
+                            }}
+                        >
+                            <GitHub />
+                        </Avatar>
+                    </Button>
+
+                    <Button
+                        href="https://codepen.io/Jesusantiago"
+                        target="_blank"
+                    >
+                        <Avatar
+                            variant="square"
+                            sx={{
+                                borderRadius: 2
+                            }}
+                            src="codepen.svg"
+                        >
+                        </Avatar>
+                    </Button>
+
+                    <Button
+                        href="https://www.linkedin.com/in/jesuscsantiago/"
+                        target="_blank"
+                    >
+                        <Avatar>
+                            <Email />
+                        </Avatar>
+                    </Button>
+
+                </Box>
+
+                <Box
+                    sx={{
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        paddingX: 15,
+                        width: '.9'
+                    }}
+                >
+                    {pages.map((item) => (
+                        <Button
+                            key={item.name}
+                            href={item.page}
+                            sx={{ display: 'block', color: 'primary.main', fontWeight: 700 }}
+                        >
+                            {item.name}
+                        </Button>
+                    ))}
+                </Box>
+
+                <Divider variant='fullWidth' sx={{borderBottom: '1px solid black', width: '0.9'}}/>
+
+                <Box
+                    sx={{
+                        width: '.5',
+                        paddingX: 15,
+                        display: 'flex',
+                        justifyContent: 'space-between'
+                    }}
+                >
+                    <Typography>
+                        &#169; 2024 Jesus Santiago
+                    </Typography>
+                    <Typography>
+                        Diseñador y Desarrollador por Jesus Santiago
+                    </Typography>
+                </Box>
+
+
             </Box>
-
-            <Divider variant='fullWidth' sx={{borderBottom: '1px solid black', width: 1}}/>
-
-            <Box
-                sx={{
-                    width: 1,
-                    paddingX: 15,
-                    display: 'flex',
-                    justifyContent: 'space-between'
-                }}
-            >
-                <Typography>
-                    &#169; 2024 Jesus Santiago
-                </Typography>
-                <Typography>
-                    Diseñador y Desarrollador por Jesus Santiago
-                </Typography>
-            </Box>
-
 
         </Box>
     )

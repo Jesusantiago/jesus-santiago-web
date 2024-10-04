@@ -171,6 +171,11 @@
             "name" : "Your name",
             "email" : "Your email",
             "text" : "Your message here"
+        },
+        "CTA" : {
+            "title" : "Start a project",
+            "description" : "Interested in working together? We should talk about. I'll buy the coffee.",
+            "cta" : "Let's talk"
         }
     }
 }

@@ -15,6 +15,8 @@ import Faq from "./Faq";
 import Testimonials from "./Testimonials";
 import Formulary from "./Formulary";
 import Footer from "@/components/Footer";
+import SectionForm from "@/app/[locate]/SectionForm";
+
 
 export default function Home() {
   return (
@@ -38,8 +40,8 @@ export default function Home() {
         <AboutMe/>
         <Faq/>
         <Testimonials/>
+        <SectionForm />
+        {/*<Formulary/>*/}
     </Box>
-
   );
 }
-
