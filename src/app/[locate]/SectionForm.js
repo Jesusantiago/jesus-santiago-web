@@ -2,9 +2,15 @@ import {Box, Button, Typography} from "@mui/material";
 import { useTranslations } from "next-intl";
 import {ArrowRight} from "@mui/icons-material";
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
+import {useState} from "react";
+import ModalForm from "@/components/ModalForm";
 
 const SectionForm  = ( ) => {
+    const [ open, setOpen ] = useState( false );
     const t = useTranslations('Home.CTA')
+
+    const handleOpen = () => { setOpen(true) };
+    const handleClose = () => { setOpen( false ); };
 
     return(
         <Box
@@ -73,12 +79,15 @@ const SectionForm  = ( ) => {
                     size='large'
                     color= 'primary'
                     endIcon={<ArrowCircleRightIcon color='secondary' />}
+                    onClick={handleOpen}
                     sx={{
                         width: { xs: 1, md: '0.2' },
                     }}
                 >
                     {t('cta')}
                 </Button>
+
+                <ModalForm open={open} handleClose={handleClose} />
 
             </Box>
 
