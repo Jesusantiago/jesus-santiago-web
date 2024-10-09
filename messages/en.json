@@ -53,12 +53,12 @@
         },
         "education": {
             "title": "Education",
-            "ux": {
-                "title": "UX-UI Course",
+            "epp": {
+                "title": "Full Stack Developer",
                 "date": "Sep. 2024 - Currently",
-                "institute": "Talento Tech",
-                "location": "Buenos Aires, Argentina",
-                "description": "User interface design for mobile apps, focusing on UX/UI principles."
+                "institute": "EEP IGROUP",
+                "location": "Madrid, España",
+                "description": "Multi-platform application development."
             },
             "react": {
                 "title": "Front-End Developer with React",

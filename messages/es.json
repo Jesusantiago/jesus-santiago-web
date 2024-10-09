@@ -53,6 +53,14 @@
         },
         "education" : {
             "title" : "Educación",
+            "eep" : {
+                "title" : "Desarrollador Full Stack",
+                "date" : "Sep 2024 - Actualmente",
+                "institute" : "EEP - IGROUP",
+                "location" : "Madrid, España",
+                "description" : "Desarrollo de aplicaciones Multiplataforma."
+
+            },
             "ux" : {
                 "title" : "UX-UI Course",
                 "date" : "Sep. 2024 - Actualmente",

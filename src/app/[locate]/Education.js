@@ -55,24 +55,28 @@ const Education = () => {
                     gap: 4
                 }}
             >
-                {/* ux-ui course */}
+                {/* eep-igroup */}
                 <Card
                     sx={{
                         height: 1,
                         display: 'flex',
                         flexDirection: { xs: 'column', lg: 'row' },
                         borderRadius: 4,
-                        boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`
+                        boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`,
+
+
                     }}>
 
                     <CardMedia
                         component='img'
-                        image='institute/talentoTech.webp'
+                        image='institute/logo_eepigroup.png'
                         alt='Imagen presentativa de Moorishville'
                         sx={{
                             height: 150,
-                            width: { xs: 1, lg: 345 },
-                            objectPosition: 'center'
+                            width: { xs: 1, lg: 265 },
+                            objectPosition: 'center',
+                            objectFit: 'contain',
+
                         }}
                     />
                     <Box
@@ -83,7 +87,7 @@ const Education = () => {
                             width: 1,
                             gap: 1,
                             py: 2,
-                            px: 4, 
+                            px: 4,
                         }}
                     >
                         <Box
@@ -94,10 +98,10 @@ const Education = () => {
                             }}
                         >
                             <Typography sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                                <BrushIcon /> {t('ux.title')}
+                                <BrushIcon /> {t('eep.title')}
                             </Typography>
                             <Typography sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                                <DateRange /> {t('ux.date')}
+                                <DateRange /> {t('eep.date')}
                             </Typography>
                         </Box>
                         <Divider />
@@ -110,10 +114,10 @@ const Education = () => {
                             }}
                         >
                             <Typography sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                                <SchoolRounded /> {t('ux.institute')}
+                                <SchoolRounded /> {t('eep.institute')}
                             </Typography>
                             <Typography sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                                <LocationOnRounded /> {t('ux.location')}
+                                <LocationOnRounded /> {t('eep.location')}
                             </Typography>
                         </Box>
 
@@ -125,12 +129,12 @@ const Education = () => {
                             }}
                         >
                             <Typography sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                                <DoneRounded /> {t('ux.description')}
+                                <DoneRounded /> {t('eep.description')}
                             </Typography>
                         </Box>
 
                     </Box>
-                   
+
 
                 </Card>
 
@@ -390,6 +394,7 @@ const Education = () => {
                             height: 150,
                             width: { xs: 1, lg: 345 },
                             objectPosition: 'center',
+                            objectFit: 'contain'
                         }}
                     />
                     <Box
