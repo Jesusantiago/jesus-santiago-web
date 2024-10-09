@@ -5,9 +5,16 @@ import DownloadForOfflineRoundedIcon from '@mui/icons-material/DownloadForOfflin
 import { Box, Button, Container, Typography, } from '@mui/material'
 import Grid from '@mui/material/Unstable_Grid2'
 import {useTranslations} from 'next-intl'
+import {useState} from "react";
+import ModalForm from "@/components/ModalForm";
 
 const HeroSection = () => {
+    const [ open, setOpen ] = useState( false)
   const t = useTranslations('Home')
+
+    const handleOpen = () => { setOpen( true ); };
+    const handleClose = () => { setOpen( false ); };
+
   return (
     <Grid
       container
@@ -59,7 +66,7 @@ const HeroSection = () => {
           sx={{
             width:1, 
             textWrap: 'balance',
-            background: (theme) => `linear-gradient(282deg, ${theme.palette.text.secondary} 0%, ${theme.palette.text.main} 53%, ${theme.palette.text.secondary} 108%)`,    
+            background: (theme) => `linear-gradient(282deg, ${theme.palette.text.secondary} 0%, ${theme.palette.text.main} 53%, ${theme.palette.text.secondary} 108%)`,
             WebkitBackgroundClip: 'text',
             backgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
@@ -89,6 +96,7 @@ const HeroSection = () => {
             color='secondary'
             variant='contained'
             size='large'
+            onClick={handleOpen}
             endIcon={
               <ArrowCircleRightIcon/>
             }
@@ -98,6 +106,8 @@ const HeroSection = () => {
           >
             {t('hero.btnCTA')}
           </Button>
+
+            <ModalForm open={open} handleClose={handleClose} />
 
           <Button
               

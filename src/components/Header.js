@@ -1,16 +1,11 @@
-import { AppBar, Box, Button, ButtonGroup, Container, IconButton, Menu, MenuItem, SvgIcon, ToggleButton, Toolbar, Tooltip, Typography } from "@mui/material"
-// import { EmojiObjectsIcon, Brightness4, Brightness7 } from "@mui/icons-material";
-import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects';
+import { Box, Button, ButtonGroup, Container, IconButton, Menu, MenuItem, SvgIcon, ToggleButton, Toolbar, Tooltip } from "@mui/material"
 import { Brightness7 } from "@mui/icons-material";
 import { Brightness4 } from "@mui/icons-material";
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from "@/i18n/routing";
 import { useState } from "react"
-
-const pages = [
-    {name: "Sobre mí", page: "/about"},
-    {name: "Servicios", page: "/service"},
-    {name: "Portfolio", page: "/portfolio"}]
+import ModalForm from "@/components/ModalForm";
+import {useTranslations} from "next-intl";
 
 const LogotipoLight = () => {
     return (
@@ -39,15 +34,22 @@ const LogotipoDark = () => {
 }
 
 const Header = ({ darkMode, toggleDarkMode }) => {
-    const [anchorElNav, setAnchorElNav] = useState(null);
+    const t = useTranslations('header')
+    const [ anchorElNav, setAnchorElNav ] = useState(null);
+    const [ open, setOpen ] = useState(null);
 
-    const handleOpenNavMenu = (event) => {
-        setAnchorElNav(event.currentTarget);
-    };
+    const handleOpen = () => { setOpen(true)};
+    const handleClose = () => { setOpen(false); };
 
-    const handleCloseNavMenu = () => {
-        setAnchorElNav(null);
-    };
+    const handleOpenNavMenu = (event) => {setAnchorElNav(event.currentTarget);};
+    const handleCloseNavMenu = () => {setAnchorElNav(null);};
+
+    const pages = [
+        {name: t('btnExperience'), page: "#experience"},
+        {name: t('btnPortfolio'), page: "#projects"},
+        {name: t('btnEducation'), page: "#education"},
+        {name: t('btnAboutMe'), page: "#aboutMe"}
+    ]
 
     return (
         <Box
@@ -72,13 +74,13 @@ const Header = ({ darkMode, toggleDarkMode }) => {
                     {/* logo */}
                     <Box sx={{m:0, p:0}}>
                         <Link href='/'>
-                        <Button sx={{display: "flex", alignItems: "center", justifyContent: "space-between", width:220, m: 0}}>
+                            <Button sx={{display: "flex", alignItems: "center", justifyContent: "space-between", width:220, m: 0}}>
 
-                         {darkMode ? <LogotipoDark/> : <LogotipoLight/>}
-                          {darkMode ? <img width="150" src="/imalogotipoLight.svg" alt="imalogotipo de jesus santiago web, diseñamos tu página web"/> 
-                         : <img width="150" src="/imalogotipoDark.svg" alt="imalogotipo de jesus santiago web, diseñamos tu página web"/>}
+                             {darkMode ? <LogotipoDark/> : <LogotipoLight/>}
+                              {darkMode ? <img width="150" src="/imalogotipoLight.svg" alt="imalogotipo de jesus santiago web, diseñamos tu página web"/>
+                             : <img width="150" src="/imalogotipoDark.svg" alt="imalogotipo de jesus santiago web, diseñamos tu página web"/>}
 
-                        </Button>
+                            </Button>
                         </Link>
                     </Box>
 
@@ -117,19 +119,22 @@ const Header = ({ darkMode, toggleDarkMode }) => {
                         >
                             {pages.map((item) => (
                                 <MenuItem key={item.name} onClick={handleCloseNavMenu} >
-                                    <Button 
-                                        variant="text" 
+                                    <Button
+                                        variant="text"
                                         href={item.page}
                                         sx={{width:1}}
                                         >
                                         {item.name}
                                     </Button>
+
                                 </MenuItem>
                             ))}
                             <MenuItem>
-                                <Button color="secondary" variant="contained" sx={{margin: 'auto'}}>
-                                    Charlemos!
+                                <Button color="secondary" variant="contained" onClick={handleOpen} sx={{margin: 'auto'}}>
+                                    {t('btnCTA')}
                                 </Button>
+
+                                <ModalForm open={open} handleClose={handleClose} />
                             </MenuItem>
 
                             <Tooltip title={darkMode ? "Modo claro" : "Modo Oscuro"}>
@@ -155,14 +160,17 @@ const Header = ({ darkMode, toggleDarkMode }) => {
                             aria-label="Buttons header of Jesus Santiago web- when we create your web site"
                         >
                         {pages.map((item) => (
-                            <Button
-                                key={item.name}
+
+                                <Button
                                 onClick={handleCloseNavMenu}
                                 href={item.page}
+                                key={item.name}
                                 sx={{display: 'block', color:'primary.main', fontWeight:700}}
-                            >
-                                {item.name}
-                            </Button>
+                                >
+                                    {item.name}
+                                </Button>
+
+
                         ))}
                         </ButtonGroup>
 
@@ -183,9 +191,11 @@ const Header = ({ darkMode, toggleDarkMode }) => {
                         color="secondary" 
                         size="large"
                         sx={{fontWeight:700}}
-                    > 
-                        Charlemos 
+                        onClick={handleOpen}
+                    >
+                            {t('btnCTA')}
                     </Button>
+
                     </Box>
 
                 </Toolbar>

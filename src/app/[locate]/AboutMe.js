@@ -1,9 +1,9 @@
 import { LinkRounded } from "@mui/icons-material"
 import GitHub from "@mui/icons-material/GitHub"
-import { Box, Button, Card, CardContent, CardMedia, Chip, Divider, Typography } from "@mui/material"
+import { Box, CardMedia, Typography, Link } from "@mui/material"
 import Grid from '@mui/material/Unstable_Grid2'
 import { useTranslations } from 'next-intl'
-import { Link } from "@/i18n/routing";
+
 
 
 
@@ -14,6 +14,7 @@ const AboutMe = () => {
     return (
         <Box
             component='section'
+            id='aboutMe'
             sx={{
                 width: '1',
                 backgroundColor: (theme) => theme.palette.card.main,
@@ -89,7 +90,11 @@ const AboutMe = () => {
                             variant="h5"
                             sx={{textWrap:'balance'}}
                         >
-                            {t('paragraph2-1')} <b>{t('paragraph2-2')}</b> {t('paragraph2-3')} <b>{t('paragraph2-4')}</b> {t('paragraph2-5')}
+                            {t('paragraph2-1')}
+                            <Link variant='text' href='https://www.eep-igroup.es/tecnico-superior-doble-titulacion-dam-daw.php' target='_black'><b>{t('paragraph2-2')}</b></Link>
+                            {t('paragraph2-3')}
+                            <Link variant='text' href='https://www.eep-igroup.es' target='_black'><b>{t('paragraph2-4')}</b> </Link>
+                            {t('paragraph2-5')}
                         </Typography>
 
                         <Typography
@@ -111,15 +116,15 @@ const AboutMe = () => {
 
             </Grid>
 
-            <Link href='/about'> 
-                    <Button
-                        variant="contained"
-                        color="secondary"
-                        
-                    >
-                        {t('title')}
-                    </Button>  
-                </Link>
+            {/*<Link href='/about'> */}
+            {/*        <Button*/}
+            {/*            variant="contained"*/}
+            {/*            color="secondary"*/}
+            {/*            */}
+            {/*        >*/}
+            {/*            {t('title')}*/}
+            {/*        </Button>  */}
+            {/*    </Link>*/}
 
         </Box>
     )

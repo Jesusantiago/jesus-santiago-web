@@ -27,7 +27,7 @@ const SectionForm  = ( ) => {
         >
 
             <Box
-                component='articule'
+                component='article'
                 sx={{
                     width: '.9',
                     maxWidth: '1620px',
@@ -78,7 +78,7 @@ const SectionForm  = ( ) => {
                     variant='contained'
                     size='large'
                     color= 'primary'
-                    endIcon={<ArrowCircleRightIcon color='secondary' />}
+                    endIcon={<ArrowCircleRightIcon size={'large'}/>}
                     onClick={handleOpen}
                     sx={{
                         width: { xs: 1, md: '0.2' },

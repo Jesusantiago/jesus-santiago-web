@@ -12,6 +12,7 @@ const Project = () => {
     return (
         <Box
             component='section'
+            id='projects'
             sx={{
                 width: '1',
                 backgroundColor: (theme) => theme.palette.card.main,
@@ -253,15 +254,15 @@ const Project = () => {
 
             </Box>
 
-                <Link href='/portfolio'> 
-                    <Button
-                        variant="contained"
-                        color="secondary"
-                        
-                    >
-                        {t('button')}
-                    </Button>  
-                </Link>
+                {/*<Link href='/portfolio'> */}
+                {/*    <Button*/}
+                {/*        variant="contained"*/}
+                {/*        color="secondary"*/}
+                {/*        */}
+                {/*    >*/}
+                {/*        {t('button')}*/}
+                {/*    </Button>  */}
+                {/*</Link>*/}
 
         </Box>
     )

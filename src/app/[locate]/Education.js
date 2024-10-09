@@ -13,6 +13,7 @@ const Education = () => {
     return (
         <Box
             component='section'
+            id='education'
             sx={{
                 width: '.9',
                 maxWidth: '1620px',

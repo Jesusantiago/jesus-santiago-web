@@ -119,44 +119,17 @@ const Footer = ({ darkMode }) => {
                         >
                         </Avatar>
                     </Button>
-
-                    <Button
-                        href="https://www.linkedin.com/in/jesuscsantiago/"
-                        target="_blank"
-                    >
-                        <Avatar>
-                            <Email />
-                        </Avatar>
-                    </Button>
-
-                </Box>
-
-                <Box
-                    sx={{
-                        display: 'flex',
-                        justifyContent: 'space-between',
-                        paddingX: 15,
-                        width: '.9'
-                    }}
-                >
-                    {pages.map((item) => (
-                        <Button
-                            key={item.name}
-                            href={item.page}
-                            sx={{ display: 'block', color: 'primary.main', fontWeight: 700 }}
-                        >
-                            {item.name}
-                        </Button>
-                    ))}
                 </Box>
 
                 <Divider variant='fullWidth' sx={{borderBottom: '1px solid black', width: '0.9'}}/>
 
                 <Box
                     sx={{
-                        width: '.5',
-                        paddingX: 15,
+                        width: '.7',
+                        paddingX: {xs:0, md:15},
                         display: 'flex',
+                        flexWrap: 'wrap',
+                        alignItems: 'center',
                         justifyContent: 'space-between'
                     }}
                 >

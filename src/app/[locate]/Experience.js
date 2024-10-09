@@ -11,6 +11,7 @@ const Experience = () => {
     return (
         <Box
             component='section'
+            id='experience'
             sx={{
                 width: '.9',
                 maxWidth: '1620px',

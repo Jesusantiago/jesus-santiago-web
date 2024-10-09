@@ -2,7 +2,7 @@ const NewsLetterBD = [{
         article: "8 ramas de la programación",
         description: "Si estas interesado en comenzar en la programación, pero todavía no sabes a que rama dedicarte. Este articulo es para ti.",
         link: "https://www.linkedin.com/feed/update/urn:li:activity:7232331200286138368/",
-        image: "linkedin/hola.png"
+        image: "linkedin/ramasDeLaProgramacion.png"
     },{
         article: "Vuelvete un programador Front-End. Parte 1",
         description: "Quieres ser programador Front-End, comienza por esta guia. Con cursos GRATUITOS", 

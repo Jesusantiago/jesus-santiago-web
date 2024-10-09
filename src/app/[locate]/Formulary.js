@@ -31,20 +31,20 @@ const Formulary = () => {
     return (
 
         <Box
-
             component='section'
             sx={{
-                width: '1',
+                width: 1,
+                height: {xs:'60svh', md:'55svh'},
                 backgroundColor: (theme) => theme.palette.card.main,
                 boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`,
-                py: { xs: 6, md: 10 },
-                px: 2,
-                mt: 10,
+                p: { xs: 3, md: 10 },
+                // mt: 10,
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
-                justifyContent: 'space-between',
+                justifyContent: 'space-around',
                 gap: 6,
+                borderRadius: 4
             }}
         >
             <Typography
@@ -69,10 +69,11 @@ const Formulary = () => {
                 component='form'
                 onSubmit={handleSubmit(OnSubmit)}
                 sx={{
+                    height: 'auto',
                     display: 'flex',
+                    flexWrap: 'wrap',
                     alignItems: 'center',
                     justifyContent: 'space-between',
-                    flexWrap : 'wrap',
                     gap: 2
                 }}
             >
@@ -81,7 +82,7 @@ const Formulary = () => {
                     label={t('name')}
                     variant="filled"
                     sx={{
-                        width: .4,
+                        width: {xs: 1 , md:.4},
 
                     }}
                     {...register('name')}
@@ -91,7 +92,7 @@ const Formulary = () => {
                     label={t('email')}
                     variant="filled"
                     sx={{
-                        width: .4
+                        width: {xs: 1 , md:.4},
                     }}
                     {...register('email')}
 
@@ -101,7 +102,7 @@ const Formulary = () => {
                     label={t('text')}
                     variant="filled"
                     sx={{
-                        width: 1
+                        width: 1,
                     }}
                     {...register('text')}
                 />
@@ -109,8 +110,10 @@ const Formulary = () => {
                 <Button
                     variant="contained"
                     type="submit"
-                > Hola 
-                
+                    color="secondary"
+                    fontWeight='700'
+                >
+                    {t('button')}
                 </Button>
             </Box>
 
