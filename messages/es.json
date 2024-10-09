@@ -1,9 +1,10 @@
 {
     "header" : {
-        "btnAbout" : "Sobre mi",
-        "btnService" : "Servicios",
-        "btnPortfolio" : "Portafolio",
-        "btnCTA" : "Hablemos"
+        "btnExperience" : "Experiencia",
+        "btnPortfolio": "Proyectos",
+        "btnEducation": "Educación",
+        "btnAboutMe": "Sobre mí",
+        "btnCTA": "Charlemos"
     },
     "Home": {
         "hero" : {
@@ -178,7 +179,8 @@
             "title" : "Formulario",
             "name" : "Tu nombre",
             "email" : "Tu email",
-            "text" : "Escribe acá lo que quieras decirme"
+            "text" : "Deja acá tu mensaje",
+            "button" : "Enviar"
         },
         "CTA" : {
             "title" : "Comencemos un proyecto",

@@ -1,8 +1,9 @@
 {
     "header": {
-        "btnAbout": "About",
-        "btnService": "Service",
-        "btnPortfolio": "Portfolio",
+        "btnExperience" : "Experience",
+        "btnPortfolio": "Projects",
+        "btnEducation": "Education",
+        "btnAboutMe": "About me",
         "btnCTA": "Let's talk"
     },
     "Home": {
@@ -53,7 +54,7 @@
         },
         "education": {
             "title": "Education",
-            "epp": {
+            "eep": {
                 "title": "Full Stack Developer",
                 "date": "Sep. 2024 - Currently",
                 "institute": "EEP IGROUP",
@@ -170,7 +171,8 @@
             "title" : "Form",
             "name" : "Your name",
             "email" : "Your email",
-            "text" : "Your message here"
+            "text" : "Your message here",
+            "button" : "Send"
         },
         "CTA" : {
             "title" : "Start a project",
