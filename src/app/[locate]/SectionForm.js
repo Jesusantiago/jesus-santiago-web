@@ -51,7 +51,7 @@ const SectionForm  = ( ) => {
                     fontWeight='700'
                     color='#292929'
                     sx={{
-                        fontFamily: (theme) => theme.typography.lexend.fontFamily,
+                        fontFamily: (theme) => theme.typography.lexend,
                         textAlign: {xs: 'center', md: 'start'},
                         width: {xs: 1, md: '0.2'}
                     }}
@@ -64,7 +64,7 @@ const SectionForm  = ( ) => {
                     fontWeight='700'
                     color='#292929'
                     sx={{
-                        fontFamily: (theme) => theme.typography.lexend.fontFamily,
+                        fontFamily: (theme) => theme.typography.lexend,
                         textWrap: 'balance',
                         textAlign: 'center',
                         flexGrow: 4,

@@ -15,9 +15,8 @@ const lexend = Lexend({
 let lightTheme = createTheme({
     typography:{
         fontFamily: manrope.style.fontFamily,
-        lexend: {
-            fontFamily: lexend.style.fontFamily
-        }
+        lexend: lexend.style.fontFamily
+
     },
     palette: {
         mode: 'light',
@@ -52,9 +51,8 @@ lightTheme = responsiveFontSizes(lightTheme)
 let darkTheme = createTheme({
     typography:{
         fontFamily: manrope.style.fontFamily,
-        lexend: {
-            fontFamily: lexend.style.fontFamily
-        }
+        lexend: lexend.style.fontFamily
+
     },
     palette: {
         mode: 'dark',

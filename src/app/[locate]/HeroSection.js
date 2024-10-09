@@ -70,7 +70,7 @@ const HeroSection = () => {
             WebkitBackgroundClip: 'text',
             backgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
-            fontFamily: (theme) => theme.typography.lexend.fontFamily
+            fontFamily: (theme) => theme.typography.lexend
         }}
         >
           {t('hero.title')}
@@ -101,7 +101,7 @@ const HeroSection = () => {
               <ArrowCircleRightIcon/>
             }
             sx={{
-              fontFamily: (theme) => theme.typography.lexend.fontFamily
+              fontFamily: (theme) => theme.typography.lexend
             }}
           >
             {t('hero.btnCTA')}
@@ -117,7 +117,7 @@ const HeroSection = () => {
               <DownloadForOfflineRoundedIcon/>
             }
             sx={{
-              fontFamily: (theme) => theme.typography.lexend.fontFamily
+              fontFamily: (theme) => theme.typography.lexend
             }}
             target='_blank'
             href='CvJesusSantiago-Front-End.pdf'

@@ -40,7 +40,7 @@ const Education = () => {
                     WebkitBackgroundClip: 'text',
                     backgroundClip: 'text',
                     WebkitTextFillColor: 'transparent',
-                    fontFamily: (theme) => theme.typography.lexend.fontFamily,
+                    fontFamily: (theme) => theme.typography.lexend,
                 }}
             >
                 {t('title')}
