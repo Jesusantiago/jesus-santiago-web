@@ -89,7 +89,7 @@ const Testimonials = () => {
                         mb:2
                     }}
                 >
-                    "{t('memi.description')}"
+                    {t('memi.description')}
                 </Typography>
 
                 <Typography
@@ -143,7 +143,7 @@ const Testimonials = () => {
                         mb:2
                     }}
                 >
-                    "{t('freelacer.description')}"
+                    {t('freelacer.description')}
                 </Typography>
 
                 <Typography
