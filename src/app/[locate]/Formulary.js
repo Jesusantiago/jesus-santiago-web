@@ -1,14 +1,29 @@
-import { Alert } from "@mui/material"
-import { Box, Button, TextField, Typography } from "@mui/material"
+
+import { Alert, Box, Button, TextField, Typography } from "@mui/material";
 import { useTranslations } from 'next-intl'
 import { useState } from "react"
 import { useForm } from 'react-hook-form'
 
 const Formulary = () => {
-    const [ alert, setAlert ] = useState(null)
+    const [ alert, setAlert ] = useState(null);
+    const [ openName, setOpenName ] = useState( false );
+    const [ openEmail, setOpenEmail ] = useState( false );
+    const [ openText, setOpenText ] = useState( false );
+
+    const handleOpenSnackBarName = () => {setOpenName( true );};
+    const handleCloseSnackBarName = () => {setOpenName( false );};
+
+    const handleOpenSnackBarEmail = () => {setOpenEmail( true );};
+    const handleCloseSnackBarEmail = () => {setOpenEmail( false );};
+
+    const handleOpenSnackBarText = () => {setOpenText( true );};
+    const handleCloseSnackBarText = () => {setOpenText( false );};
 
     const t = useTranslations('Home.formulary')
-    const { register, handleSubmit, formState: {errors} } = useForm()
+    const { register,
+        handleSubmit,
+        formState: {errors}
+    } = useForm()
 
     const OnSubmit = async (data) => {
         console.log(JSON.stringify(data))
@@ -34,7 +49,7 @@ const Formulary = () => {
             component='section'
             sx={{
                 width: 1,
-                height: {xs:'60svh', md:'55svh'},
+                height: {xs:'80svh', md:'40svh'},
                 backgroundColor: (theme) => theme.palette.card.main,
                 boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`,
                 p: { xs: 3, md: 10 },
@@ -72,40 +87,89 @@ const Formulary = () => {
                     height: 'auto',
                     display: 'flex',
                     flexWrap: 'wrap',
-                    alignItems: 'center',
+                    alignItems: {xs: 'end', md:'center'},
                     justifyContent: 'space-between',
-                    gap: 2
+                    gap: 4
                 }}
             >
+                {/*INPUT NAME*/}
 
-                <TextField 
-                    label={t('name')}
-                    variant="filled"
+                <Box
                     sx={{
-                        width: {xs: 1 , md:.4},
-
+                        width: {xs: 1 , md:.45},
                     }}
-                    {...register('name')}
-                />
+                >
+                    <TextField
+                        label={t('name')}
+                        variant="filled"
+                        sx={{
+                            width: 1,
+                            pb: '1rem'
+                        }}
+                        {...register('name', {
+                            required: t('error.nameError')
+                        })}
+                    />
+                    {errors.name && <Alert variant="filled" severity="error">{errors.name.message}</Alert>}
+                </Box>
 
-                <TextField 
-                    label={t('email')}
-                    variant="filled"
+                {/*INPUT EMAIL*/}
+
+                <Box
                     sx={{
-                        width: {xs: 1 , md:.4},
+                        width: {xs: 1 , md:.45},
                     }}
-                    {...register('email')}
+                >
+                    <TextField
+                        label={t('email')}
+                        variant="filled"
+                        sx={{
+                            width:1,
+                            pb: '1rem'
+                        }}
+                        {...register('email',{
+                            required: t('error.emailError'),
+                            pattern : {
+                                value: /[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}/,
+                                message: t('error.emailPattern')
+                            }
+                        })}
+                    />
+                    {errors.email && <Alert variant="filled" severity="error">{errors.email.message}</Alert>}
+                </Box>
 
-                />
+                {/*INPUT TEXT*/}
                 
-                <TextField 
-                    label={t('text')}
-                    variant="filled"
+                <Box
                     sx={{
                         width: 1,
                     }}
-                    {...register('text')}
-                />
+                >
+                    <TextField
+                        label={t('text')}
+                        variant="filled"
+                        multiline={true}
+                        minRows='4'
+                        sx={{
+                            width: 1,
+                            pb: '1rem',
+                        }}
+                        {...register('text',{
+                            required: t('error.textError'),
+                            minLength : {
+                                value : 50,
+                                message : t('error.textLength')
+                            }
+                        })}
+                    />
+
+                    {errors.text && <Alert variant="filled" severity="error" sx={{ width: {xs: 1, md :'.5'}, fontWeight: 700 }} > {errors.text.message}</Alert>}
+
+
+                </Box>
+
+                
+
 
                 <Button
                     variant="contained"

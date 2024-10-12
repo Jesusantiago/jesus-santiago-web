@@ -172,7 +172,14 @@
             "name" : "Your name",
             "email" : "Your email",
             "text" : "Your message here",
-            "button" : "Send"
+            "button" : "Send",
+            "error" : {
+                "nameError" : "The name field is required",
+                "emailError" : "The email field is required",
+                "emailPattern" : "The entered email is not valid",
+                "textError" : "This field is required",
+                "textLength" : "Please be more specific, the message is too short"
+            }
         },
         "CTA" : {
             "title" : "Start a project",

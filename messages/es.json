@@ -11,8 +11,8 @@
             "status" : "Disponible",
             "title" : "Jesús Santiago",
             "subtitle" : "Desarrollador Front-End especializado en  React",
-            "btnCTA" : "Hablemos",
-            "btnCV" : "ver CV"
+            "btnCTA" : "Charlemos",
+            "btnCV" : "Ver CV"
        },
        "blog" : {
             "title" : "Blog"
@@ -55,7 +55,7 @@
         "education" : {
             "title" : "Educación",
             "eep" : {
-                "title" : "Desarrollador Full Stack",
+                "title" : "Técnico Superior - Desarrollador Full Stack",
                 "date" : "Sep 2024 - Actualmente",
                 "institute" : "EEP - IGROUP",
                 "location" : "Madrid, España",
@@ -180,13 +180,19 @@
             "name" : "Tu nombre",
             "email" : "Tu email",
             "text" : "Deja acá tu mensaje",
-            "button" : "Enviar"
+            "button" : "Enviar",
+            "error" : {
+                "nameError" : "El campo Nombre es requerido",
+                "emailError" : "El campo Email es requerido",
+                "emailPattern" : "El Email ingresado no es valido",
+                "textError" : "Este campo es obligatorio",
+                "textLength" : "Por favor se mas especifico, el mensaje es muy corto"
+            }
         },
         "CTA" : {
             "title" : "Comencemos un proyecto",
-            "description" : "¿Interesados en trabajar juntos? Deberíamos charlas, yo invito el café.",
-            "cta" : "Hablemos"
+            "description" : "¿Interesados en trabajar juntos? Deberíamos charlar, yo invito el café.",
+            "cta" : "Charlemos"
         }
-
     }
 }

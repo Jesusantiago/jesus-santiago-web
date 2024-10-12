@@ -4,12 +4,14 @@ import { Manrope, Lexend} from 'next/font/google'
 
 const manrope = Manrope({
     subsets: ['latin'],
-    display: 'swap'
+    display: 'swap',
+    preload: true,
 });
 
 const lexend = Lexend({
     subsets: ['latin'],
-    display: 'swap'
+    display: 'swap',
+    preload: true,
 });
 
 let lightTheme = createTheme({
