@@ -38,7 +38,7 @@ const LogotipoDark = () => {
 
 
 const Footer = ({ darkMode }) => {
-    const t = useTranslations('Home.formulary')
+    const t = useTranslations('Footer');
 
     return (
 
@@ -136,9 +136,16 @@ const Footer = ({ darkMode }) => {
                     <Typography>
                         &#169; 2024 Jesus Santiago
                     </Typography>
-                    <Typography>
-                        Diseñador y Desarrollador por Jesus Santiago
-                    </Typography>
+                    <Box>
+                        <Typography>
+                            {t('span')}
+                        </Typography>
+                        
+                        <Typography>
+                            {t('project')}
+                        </Typography>
+
+                    </Box>
                 </Box>
 
 

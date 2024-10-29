@@ -97,11 +97,10 @@
             "paragraph1-3": "and I am a developer specialized in ",
             "paragraph1-4": "Front-End ",
             "paragraph1-5": "with ",
-            "paragraph1-6": "React",
-            "paragraph1-7": ", although I also have Full Stack knowledge. My passion is creating dynamic user experiences and building effective web solutions. I am known for my focus on writing ",
-            "paragraph1-8": "clean, well-documented, up-to-date, and scalable code ",
-            "paragraph1-9": "always striving to find the most efficient solution for each project.",
-            "paragraph2-1": "Currently, I am continuously growing as a professional, and I will soon begin a ",
+            "paragraph1-6": "React,",
+            "paragraph1-7": " although I also have Full Stack knowledge.",
+            "paragraph1-10" : "My passion is creating dynamic user experiences and building effective web solutions. I am known for my focus on writing ",
+            "paragraph2-1": "Currently, I am studying a ",
             "paragraph2-2": "Professional Training in Web Application Development ",
             "paragraph2-3": "at ",
             "paragraph2-4": " EEP iGroup",
@@ -182,9 +181,13 @@
             }
         },
         "CTA" : {
-            "title" : "Start a project",
-            "description" : "Interested in working together? We should talk about. I'll buy the coffee.",
+            "title" : "This is the opportunity",
+            "description" : "I can contribute to the team! We should take about!",
             "cta" : "Let's talk"
         }
+    },
+    "Footer" : {
+        "span" : "Design and Developer by Jesus Santiago",
+        "project" : "This portfolio is built in Next.js"
     }
 }

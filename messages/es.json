@@ -106,10 +106,9 @@
             "paragraph1-4" :  "Front-End ",
             "paragraph1-5" : "con ",
             "paragraph1-6" : "React",
-            "paragraph1-7" : ", aunque también cuento con conocimientos Full Stack. Mi pasión es crear experiencias de usuario dinámicas y soluciones web efectivas. Me destaco por mi enfoque en escribir ", 
-            "paragraph1-8" : "código limpio, bien documentado, actualizado y escalable " ,
-            "paragraph1-9" : "siempre buscando la solución más eficiente para cada proyecto.",
-            "paragraph2-1" : "Actualmente, me encuentro en constante crecimiento profesional, y en breve comenzaré una ",
+            "paragraph1-7" : ", aunque también cuento con conocimientos Full Stack.",
+            "paragraph1-10" : "Mi pasión es crear experiencias de usuario dinámicas y soluciones web efectivas.",
+            "paragraph2-1" : "Actualmente, estoy estudiando una ",
             "paragraph2-2" : " Formación Profesional en Desarrollo de Aplicaciones Web",
             "paragraph2-3" : " en el instituto ",
             "paragraph2-4" : " EEP iGroup",
@@ -190,9 +189,14 @@
             }
         },
         "CTA" : {
-            "title" : "Comencemos un proyecto",
-            "description" : "¿Interesados en trabajar juntos? Deberíamos charlar, yo invito el café.",
+            "title" : "Esta es la oportunidad",
+            "description" : "¡Puedo constribuir al equipo! Nosotros deberíamos hablar.",
             "cta" : "Charlemos"
         }
+    },
+    "Footer" : {
+        "span" : "Diseñado y construído por Jesus Santiago.",
+        "project" : "Este portafolio esta construído en Next.js"
+
     }
 }

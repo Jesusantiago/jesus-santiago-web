@@ -83,7 +83,14 @@ const AboutMe = () => {
                             variant="h5"
                             sx={{textWrap:'balance'}}
                         >
-                            {t('paragraph1-1')} <b>{t('paragraph1-2')}</b> {t('paragraph1-3')} <b>{t('paragraph1-4')}</b> {t('paragraph1-5')} <b>{t('paragraph1-6')}</b> {t('paragraph1-7')} <b>{t('paragraph1-8')}</b> {t('paragraph1-9')}
+                            {t('paragraph1-1')} <b>{t('paragraph1-2')}</b> {t('paragraph1-3')} <b>{t('paragraph1-4')}</b> {t('paragraph1-5')} <b>{t('paragraph1-6')}</b> {t('paragraph1-7')}
+                        </Typography>
+
+                        <Typography
+                            variant="h5"
+                            sx={{textWrap:'balance'}}
+                        >
+                            {t('paragraph1-10')}
                         </Typography>
 
                         <Typography
