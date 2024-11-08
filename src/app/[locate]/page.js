@@ -16,6 +16,7 @@ import Testimonials from "./Testimonials";
 import Formulary from "./Formulary";
 import Footer from "@/components/Footer";
 import SectionForm from "@/app/[locate]/SectionForm";
+import ButtonChange from "@/components/ButtonChange";
 
 
 export default function Home() {
@@ -32,6 +33,7 @@ export default function Home() {
         alignItems: 'center'
       }}
     >
+        <ButtonChange/>
         <HeroSection/>
         <Blog />
         <Experience />
