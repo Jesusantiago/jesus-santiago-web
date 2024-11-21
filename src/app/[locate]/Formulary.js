@@ -49,11 +49,10 @@ const Formulary = () => {
             component='section'
             sx={{
                 width: 1,
-                height: {xs:'80svh', md:'40svh'},
+                height: {xs:'80svh', md:'70svh'},
                 backgroundColor: (theme) => theme.palette.card.main,
                 boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`,
-                p: { xs: 3, md: 10 },
-                // mt: 10,
+                p: { xs: 3, md: 5 },
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
