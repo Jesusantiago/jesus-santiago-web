@@ -1,12 +1,28 @@
 import { Box, Card, CardActionArea, CardContent, CardMedia, Typography, Divider, Link, Button, Stack } from '@mui/material'
 import React from 'react'
 import NewsLetterBD from '@/database/Newletter'
-import {useTranslations} from 'next-intl'
+import {useTranslations} from 'next-intl';
 
+    const path = process.env.EMAIL;
 
 const Blog = () => {
-    const t = useTranslations('Home.blog')
+    const t = useTranslations('Home.blog');
+    console.log(path)
 
+    const blogStrapi = async () => {
+        const res = await fetch(`${path}`);
+        if(res.ok) {
+            throw new Error(`Esto es un error: ` + res.statusText)
+        };
+
+        const { data } = await res.json();
+        console.log(data)
+        return data;
+        }
+
+
+
+    blogStrapi()
 
     return (
         <Box
