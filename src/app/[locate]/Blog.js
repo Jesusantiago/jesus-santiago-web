@@ -2,25 +2,25 @@ import { Box, Card, CardActionArea, CardContent, CardMedia, Typography, Divider,
 import React from 'react'
 import NewsLetterBD from '@/database/Newletter'
 import {useTranslations} from 'next-intl';
+import {useParams} from "next/navigation";
 
-    const path = process.env.EMAIL;
+    const path = process.env.NEXT_PUBLIC_API_URL;
 
 const Blog = () => {
     const t = useTranslations('Home.blog');
-    console.log(path)
+    const {locate} = useParams();
+    console.log(locate);
 
     const blogStrapi = async () => {
-        const res = await fetch(`${path}`);
-        if(res.ok) {
-            throw new Error(`Esto es un error: ` + res.statusText)
+        const res = await fetch(`${path}Blogs?populate=*&locale=${locate}`);
+        if(!res.ok) {
+            throw new Error('Esto es un error: ' + res.statusText)
         };
 
         const { data } = await res.json();
         console.log(data)
         return data;
-        }
-
-
+    }
 
     blogStrapi()
 
