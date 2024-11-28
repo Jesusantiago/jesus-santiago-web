@@ -1,9 +1,8 @@
-import Link from 'next/link';
 import React, {useEffect, useState} from 'react';
 import {Box, Button, Typography} from "@mui/material";
 import {usePathname, useRouter} from '@/i18n/routing';
 import {useParams} from "next/navigation";
-import {lightGreen} from "@mui/material/colors";
+
 
 const spanish = () => {
     return(
@@ -15,7 +14,7 @@ const spanish = () => {
 
 const ButtonChange = () => {
     const params = useParams();
-    const [select, setSelect] = useState(params.locate)
+    const [select, setSelect] = useState(params.locate);
     const router = useRouter();
     const pathname = usePathname();
 
@@ -25,7 +24,6 @@ const ButtonChange = () => {
 
     const onSelectChange = (e) => {
         const nextLocale = e.target.textContent;
-        console.log(nextLocale)
         setSelect(params.locate);
 
         router.replace(
