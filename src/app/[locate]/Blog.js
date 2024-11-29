@@ -1,28 +1,49 @@
-import { Box, Card, CardActionArea, CardContent, CardMedia, Typography, Divider, Link, Button, Stack } from '@mui/material'
-import React from 'react'
+import {
+    Box,
+    Card,
+    CardActionArea,
+    CardContent,
+    CardMedia,
+    Typography,
+    Divider,
+    Link,
+    Button,
+    Stack,
+    Skeleton
+} from '@mui/material'
+import React, {useEffect, useState} from 'react'
 import NewsLetterBD from '@/database/Newletter'
 import {useTranslations} from 'next-intl';
 import {useParams} from "next/navigation";
+import {log} from "next/dist/server/typescript/utils";
+import {createAsyncLocalStorage} from "next/dist/client/components/async-local-storage";
 
     const path = process.env.NEXT_PUBLIC_API_URL;
+    const pathImage = process.env.NEXT_PUBLIC_API_IMAGE ;
 
 const Blog = () => {
+    const [data, setData] = useState();
+    const [loading, setLoading] = useState(true);
     const t = useTranslations('Home.blog');
     const {locate} = useParams();
     console.log(locate);
 
-    const blogStrapi = async () => {
-        const res = await fetch(`${path}Blogs?populate=*&locale=${locate}`);
-        if(!res.ok) {
-            throw new Error('Esto es un error: ' + res.statusText)
-        };
+    useEffect(() => {
+        fetch(`${path}Blogs?populate=*&locale=${locate}`)
+            .then((res) => res.json())
+            .then((res) => {
+                    const { data } = res;
+                    setData(data);
+                    setLoading(false);
+                }
+            );
 
-        const { data } = await res.json();
-        console.log(data)
-        return data;
-    }
+    }, [path]);
 
-    blogStrapi()
+    console.log(data)
+
+
+
 
     return (
         <Box
@@ -56,12 +77,13 @@ const Blog = () => {
             >
                 {t('title')}
             </Typography>
-
             <Stack direction={{xs:'column', md: 'row'}} spacing={{xs:6, lg:10}}>
-                {NewsLetterBD.map((val) => {
+            {loading ? <Skeleton variant="rounded" width={210} height={250} />
+                :
+                data.map((val) => {
                     return (
                         <Card
-                        key={val.article}
+                        key={val.id}
                             component='article'
                             sx={{
                                 width:'1',
@@ -71,13 +93,13 @@ const Blog = () => {
                                 boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`,
                             }}
                         >
-                            <Button href={val.link} target='_black'>
+                            <Button href={val.Link} target='_black'>
                                 <CardActionArea>
                                     <CardMedia
                                         component='img'
                                         height='180'
-                                        image={val.image}
-                                        alt='Imagen de un articulo'
+                                        image={`${pathImage}${val.Picture.url}`}
+                                        alt={val.Picture.alternativeText}
                                         sx={{objectFit:'cover'}}
                                     />
                                     <CardContent
@@ -93,7 +115,7 @@ const Blog = () => {
                                         <Typography
                                             fontWeight='700'
                                         >
-                                            {val.article}
+                                            {val.Article}
                                         </Typography>
                                         <Divider />
                                         <Typography
@@ -102,7 +124,7 @@ const Blog = () => {
                                                 opacity: '.8'
                                             }}
                                         >
-                                            {val.description}
+                                            {val.Description}
                                         </Typography>
                                     </CardContent>
                                 </CardActionArea>
