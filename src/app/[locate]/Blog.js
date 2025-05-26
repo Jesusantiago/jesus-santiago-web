@@ -135,6 +135,12 @@ const Blog = () => {
             </Stack>
 
 
+            <Button
+                variant={'contained'}
+            >
+                Ver mas
+            </Button>
+
         </Box>
     )
 }

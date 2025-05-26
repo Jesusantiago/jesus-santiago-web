@@ -40,6 +40,7 @@ export async function POST(request) {
         )
 
     } catch (error) {
+        console.error(error.message)
         return new NextResponse('Failed to send message.', { status: 500 })
     }
 }
