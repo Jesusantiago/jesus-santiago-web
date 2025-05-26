@@ -1,14 +1,17 @@
-import { Box, Card, CardMedia, Divider, Typography } from '@mui/material'
+import {Box, Button, Card, CardMedia, Divider, Typography} from '@mui/material'
 import BrushIcon from '@mui/icons-material/Brush';
-import { useTranslations } from 'next-intl'
-import { DateRange } from '@mui/icons-material';
-import { SchoolRounded } from '@mui/icons-material';
-import { LocationOnRounded } from '@mui/icons-material';
-import { DoneRounded } from '@mui/icons-material';
-import { ComputerRounded } from '@mui/icons-material';
+import {useTranslations} from 'next-intl'
+import {DateRange} from '@mui/icons-material';
+import {SchoolRounded} from '@mui/icons-material';
+import {LocationOnRounded} from '@mui/icons-material';
+import {DoneRounded} from '@mui/icons-material';
+import {ComputerRounded} from '@mui/icons-material';
+import Link from "next/link";
+import {useParams} from "next/navigation";
 
 const Education = () => {
     const t = useTranslations('Home.education')
+    const {locate} = useParams()
 
     return (
         <Box
@@ -20,7 +23,7 @@ const Education = () => {
                 borderRadius: 4,
                 backgroundColor: (theme) => theme.palette.card.main,
                 boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`,
-                py: { xs: 6, md: 10 },
+                py: {xs: 6, md: 10},
                 px: 2,
                 mt: 10,
                 display: 'flex',
@@ -49,7 +52,7 @@ const Education = () => {
             <Box
                 component='section'
                 sx={{
-                    width: { xs: 0.95, lg: 0.8 },
+                    width: {xs: 0.95, lg: 0.8},
                     maxWidth: '1620px',
                     display: 'flex',
                     flexDirection: 'column',
@@ -61,7 +64,7 @@ const Education = () => {
                     sx={{
                         height: 1,
                         display: 'flex',
-                        flexDirection: { xs: 'column', lg: 'row' },
+                        flexDirection: {xs: 'column', lg: 'row'},
                         borderRadius: 4,
                         boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`,
 
@@ -74,7 +77,7 @@ const Education = () => {
                         alt='Imagen presentativa de Moorishville'
                         sx={{
                             height: 150,
-                            width: { xs: 1, lg: 265 },
+                            width: {xs: 1, lg: 265},
                             objectPosition: 'center',
                             objectFit: 'contain',
 
@@ -98,14 +101,14 @@ const Education = () => {
                                 alignItems: 'center'
                             }}
                         >
-                            <Typography sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                                <BrushIcon /> {t('eep.title')}
+                            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>
+                                <BrushIcon/> {t('eep.title')}
                             </Typography>
-                            <Typography sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                                <DateRange /> {t('eep.date')}
+                            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>
+                                <DateRange/> {t('eep.date')}
                             </Typography>
                         </Box>
-                        <Divider />
+                        <Divider/>
 
                         <Box
                             sx={{
@@ -114,11 +117,11 @@ const Education = () => {
                                 alignItems: 'center'
                             }}
                         >
-                            <Typography sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                                <SchoolRounded /> {t('eep.institute')}
+                            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>
+                                <SchoolRounded/> {t('eep.institute')}
                             </Typography>
-                            <Typography sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                                <LocationOnRounded /> {t('eep.location')}
+                            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>
+                                <LocationOnRounded/> {t('eep.location')}
                             </Typography>
                         </Box>
 
@@ -129,22 +132,37 @@ const Education = () => {
                                 alignItems: 'center'
                             }}
                         >
-                            <Typography sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                                <DoneRounded /> {t('eep.description')}
+                            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>
+                                <DoneRounded/> {t('eep.description')}
                             </Typography>
                         </Box>
+
+                        <Divider/>
+
+                        <Typography>
+                            MySQL - JAVA - SPRING BOOT - PYTHON - C# - ANDROID - TEST
+                        </Typography>
 
                     </Box>
 
 
                 </Card>
 
+                <Link href={`/${locate}/education`}>
+                    <Button
+                        variant="contained"
+                        color = "secondary"
+                    >
+                        Ver más
+                    </Button>
+                </Link>
+
                 {/* react course */}
                 <Card
                     sx={{
                         height: 1,
                         display: 'flex',
-                        flexDirection: { xs: 'column', lg: 'row' },
+                        flexDirection: {xs: 'column', lg: 'row'},
                         borderRadius: 4,
                         boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`
                     }}>
@@ -155,7 +173,7 @@ const Education = () => {
                         alt='Imagen presentativa de Moorishville'
                         sx={{
                             height: 150,
-                            width: { xs: 1, lg: 345 },
+                            width: {xs: 1, lg: 345},
                             objectPosition: 'center',
                         }}
                     />
@@ -167,7 +185,7 @@ const Education = () => {
                             width: 1,
                             gap: 1,
                             py: 2,
-                            px: 4, 
+                            px: 4,
                         }}
                     >
                         <Box
@@ -177,14 +195,14 @@ const Education = () => {
                                 alignItems: 'center'
                             }}
                         >
-                            <Typography sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                                <ComputerRounded /> {t('react.title')}
+                            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>
+                                <ComputerRounded/> {t('react.title')}
                             </Typography>
-                            <Typography sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                                <DateRange /> {t('react.date')}
+                            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>
+                                <DateRange/> {t('react.date')}
                             </Typography>
                         </Box>
-                        <Divider />
+                        <Divider/>
 
                         <Box
                             sx={{
@@ -193,11 +211,11 @@ const Education = () => {
                                 alignItems: 'center'
                             }}
                         >
-                            <Typography sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                                <SchoolRounded /> {t('react.institute')}
+                            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>
+                                <SchoolRounded/> {t('react.institute')}
                             </Typography>
-                            <Typography sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                                <LocationOnRounded /> {t('react.location')}
+                            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>
+                                <LocationOnRounded/> {t('react.location')}
                             </Typography>
                         </Box>
 
@@ -208,13 +226,13 @@ const Education = () => {
                                 alignItems: 'center'
                             }}
                         >
-                            <Typography sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                                <DoneRounded /> {t('react.description')}
+                            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>
+                                <DoneRounded/> {t('react.description')}
                             </Typography>
                         </Box>
 
                     </Box>
-                   
+
 
                 </Card>
 
@@ -223,7 +241,7 @@ const Education = () => {
                     sx={{
                         height: 1,
                         display: 'flex',
-                        flexDirection: { xs: 'column', lg: 'row' },
+                        flexDirection: {xs: 'column', lg: 'row'},
                         borderRadius: 4,
                         boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`
                     }}>
@@ -234,7 +252,7 @@ const Education = () => {
                         alt='Imagen presentativa de Moorishville'
                         sx={{
                             height: 150,
-                            width: { xs: 1, lg: 345 },
+                            width: {xs: 1, lg: 345},
                             objectPosition: 'center',
                             objectFit: 'contain'
                         }}
@@ -247,7 +265,7 @@ const Education = () => {
                             width: 1,
                             gap: 1,
                             py: 2,
-                            px: 4, 
+                            px: 4,
                         }}
                     >
                         <Box
@@ -257,14 +275,14 @@ const Education = () => {
                                 alignItems: 'center'
                             }}
                         >
-                            <Typography sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                                <BrushIcon /> {t('sass.title')}
+                            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>
+                                <BrushIcon/> {t('sass.title')}
                             </Typography>
-                            <Typography sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                                <DateRange /> {t('sass.date')}
+                            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>
+                                <DateRange/> {t('sass.date')}
                             </Typography>
                         </Box>
-                        <Divider />
+                        <Divider/>
 
                         <Box
                             sx={{
@@ -273,11 +291,11 @@ const Education = () => {
                                 alignItems: 'center'
                             }}
                         >
-                            <Typography sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                                <SchoolRounded /> {t('sass.institute')}
+                            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>
+                                <SchoolRounded/> {t('sass.institute')}
                             </Typography>
-                            <Typography sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                                <LocationOnRounded /> {t('sass.location')}
+                            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>
+                                <LocationOnRounded/> {t('sass.location')}
                             </Typography>
                         </Box>
 
@@ -288,13 +306,13 @@ const Education = () => {
                                 alignItems: 'center'
                             }}
                         >
-                            <Typography sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                                <DoneRounded /> {t('sass.description')}
+                            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>
+                                <DoneRounded/> {t('sass.description')}
                             </Typography>
                         </Box>
 
                     </Box>
-                   
+
 
                 </Card>
 
@@ -303,7 +321,7 @@ const Education = () => {
                     sx={{
                         height: 1,
                         display: 'flex',
-                        flexDirection: { xs: 'column', lg: 'row' },
+                        flexDirection: {xs: 'column', lg: 'row'},
                         borderRadius: 4,
                         boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`
                     }}>
@@ -314,7 +332,7 @@ const Education = () => {
                         alt='Imagen representativa del logo de codo a codo'
                         sx={{
                             height: 150,
-                            width: { xs: 1, lg: 345 },
+                            width: {xs: 1, lg: 345},
                             objectPosition: 'center',
                         }}
                     />
@@ -326,7 +344,7 @@ const Education = () => {
                             width: 1,
                             gap: 1,
                             py: 2,
-                            px: 4, 
+                            px: 4,
                         }}
                     >
                         <Box
@@ -336,14 +354,14 @@ const Education = () => {
                                 alignItems: 'center'
                             }}
                         >
-                            <Typography sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                                <BrushIcon /> {t('node.title')}
+                            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>
+                                <BrushIcon/> {t('node.title')}
                             </Typography>
-                            <Typography sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                                <DateRange /> {t('node.date')}
+                            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>
+                                <DateRange/> {t('node.date')}
                             </Typography>
                         </Box>
-                        <Divider />
+                        <Divider/>
 
                         <Box
                             sx={{
@@ -352,11 +370,11 @@ const Education = () => {
                                 alignItems: 'center'
                             }}
                         >
-                            <Typography sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                                <SchoolRounded /> {t('node.institute')}
+                            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>
+                                <SchoolRounded/> {t('node.institute')}
                             </Typography>
-                            <Typography sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                                <LocationOnRounded /> {t('node.location')}
+                            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>
+                                <LocationOnRounded/> {t('node.location')}
                             </Typography>
                         </Box>
 
@@ -367,13 +385,13 @@ const Education = () => {
                                 alignItems: 'center'
                             }}
                         >
-                            <Typography sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                                <DoneRounded /> {t('node.description')}
+                            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>
+                                <DoneRounded/> {t('node.description')}
                             </Typography>
                         </Box>
 
                     </Box>
-                   
+
 
                 </Card>
 
@@ -382,7 +400,7 @@ const Education = () => {
                     sx={{
                         height: 1,
                         display: 'flex',
-                        flexDirection: { xs: 'column', lg: 'row' },
+                        flexDirection: {xs: 'column', lg: 'row'},
                         borderRadius: 4,
                         boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`
                     }}>
@@ -393,7 +411,7 @@ const Education = () => {
                         alt='Imagen representativa del logo de codo a codo'
                         sx={{
                             height: 150,
-                            width: { xs: 1, lg: 345 },
+                            width: {xs: 1, lg: 345},
                             objectPosition: 'center',
                             objectFit: 'contain'
                         }}
@@ -406,7 +424,7 @@ const Education = () => {
                             width: 1,
                             gap: 1,
                             py: 2,
-                            px: 4, 
+                            px: 4,
                         }}
                     >
                         <Box
@@ -416,14 +434,14 @@ const Education = () => {
                                 alignItems: 'center'
                             }}
                         >
-                            <Typography sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                                <BrushIcon /> {t('alura.title')}
+                            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>
+                                <BrushIcon/> {t('alura.title')}
                             </Typography>
-                            <Typography sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                                <DateRange /> {t('alura.date')}
+                            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>
+                                <DateRange/> {t('alura.date')}
                             </Typography>
                         </Box>
-                        <Divider />
+                        <Divider/>
 
                         <Box
                             sx={{
@@ -432,11 +450,11 @@ const Education = () => {
                                 alignItems: 'center'
                             }}
                         >
-                            <Typography sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                                <SchoolRounded /> {t('alura.institute')}
+                            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>
+                                <SchoolRounded/> {t('alura.institute')}
                             </Typography>
-                            <Typography sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                                <LocationOnRounded /> {t('alura.location')}
+                            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>
+                                <LocationOnRounded/> {t('alura.location')}
                             </Typography>
                         </Box>
 
@@ -447,13 +465,13 @@ const Education = () => {
                                 alignItems: 'center'
                             }}
                         >
-                            <Typography sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                                <DoneRounded /> {t('alura.description')}
+                            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>
+                                <DoneRounded/> {t('alura.description')}
                             </Typography>
                         </Box>
 
                     </Box>
-                   
+
 
                 </Card>
 

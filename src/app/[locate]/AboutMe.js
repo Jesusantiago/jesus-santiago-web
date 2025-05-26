@@ -1,7 +1,8 @@
 import { LinkRounded } from "@mui/icons-material"
 import GitHub from "@mui/icons-material/GitHub"
-import { Box, CardMedia, Typography, Link } from "@mui/material"
+import {Box, CardMedia, Typography, Link, Button} from "@mui/material"
 import Grid from '@mui/material/Unstable_Grid2'
+import { useParams } from "next/navigation";
 import { useTranslations } from 'next-intl'
 
 
@@ -10,6 +11,7 @@ import { useTranslations } from 'next-intl'
 const AboutMe = () => {
 
     const t = useTranslations('Home.about')
+    const {locate} = useParams()
 
     return (
         <Box
@@ -122,16 +124,18 @@ const AboutMe = () => {
 
 
             </Grid>
+            <Link href={`/${locate}/about`}>About</Link>
 
-            {/*<Link href='/about'> */}
-            {/*        <Button*/}
-            {/*            variant="contained"*/}
-            {/*            color="secondary"*/}
-            {/*            */}
-            {/*        >*/}
-            {/*            {t('title')}*/}
-            {/*        </Button>  */}
-            {/*    </Link>*/}
+            {/*<Link href="/${locate}/about">*/}
+                    {/*<Button*/}
+                    {/*    variant="contained"*/}
+                    {/*    color="secondary"*/}
+
+                    {/*>*/}
+                    {/*    {t('title')}*/}
+                    {/*</Button>*/}
+                {/*About*/}
+                {/*</Link>*/}
 
         </Box>
     )
