@@ -37,7 +37,12 @@ let lightTheme = createTheme({
         text: {
             main: '#5c5c5c',
             textPrimary: '#1F1F1F',
-            secondary: '#141414'
+            secondary: '#141414',
+            neutral: "#0a0a0a",
+            muted: "#666666",
+            accent: "#383838"
+
+
         },
         error: {
             main: '#ff1744',
@@ -73,7 +78,11 @@ let darkTheme = createTheme({
         text: {
             main: '#e0e0e0',
             textPrimary: '#bebebe',
-            secondary: '#4f4f4f'
+            secondary: '#a6a6a6',
+            neutral: "#8c8c8c",
+            muted: "#a6a6a6",
+            accent: "#e5e5e5"
+
         },
         error: {
             main: '#ff5252',

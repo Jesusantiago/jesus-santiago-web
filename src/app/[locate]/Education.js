@@ -70,7 +70,9 @@ const Education = () => {
                         // flexDirection: {xs: 'column', lg: 'row'},
                         flexDirection: 'column',
                         borderRadius: 4,
-                        boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`,
+                        paddingBottom: 2,
+                        boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary},
+                         -15px -15px 30px ${theme.palette.card.shadowSecondary}`,
 
 
                     }}>
@@ -106,10 +108,15 @@ const Education = () => {
                                 alignItems: 'center'
                             }}
                         >
-                            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>
+                            <Typography
+                                color={({palette}) => palette.primary.main}
+                                sx={{display: 'flex', alignItems: 'center', gap: 1, fontSize:"22px", fontWeight: "bold"}}>
                                 <BrushIcon/> {t('eep.title')}
                             </Typography>
-                            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>
+                            <Typography
+                                // color='primary.text.neutral'
+                                color='text.neutral'
+                                sx={{display: 'flex', alignItems: 'center', gap: 1, fontSize:"16px",}}>
                                 <DateRange/> {t('eep.date')}
                             </Typography>
                         </Box>
@@ -122,11 +129,16 @@ const Education = () => {
                                 alignItems: 'center'
                             }}
                         >
-                            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>
+                            <Typography
+                                color='text.main'
+                                sx={{display: 'flex', alignItems: 'center', gap: 1, fontSize:"18px", fontWeight: "600"}}>
                                 <SchoolRounded/> {t('eep.institute')}
                             </Typography>
-                            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>
-                                <LocationOnRounded/> {t('eep.location')}
+                            <Typography
+                                color='text.secondary'
+                                sx={{display: 'flex', alignItems: 'center', gap: 1, fontSize:"15px", fontWeight:"regular"}}>
+                                <LocationOnRounded
+                                /> {t('eep.location')}
                             </Typography>
                         </Box>
 
@@ -137,17 +149,21 @@ const Education = () => {
                                 alignItems: 'center'
                             }}
                         >
-                            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>
+                            <Typography 
+                                color='text.main'
+                                sx={{display: 'flex', alignItems: 'center', gap: 1, fontSize:"16px", fontWeight: "Regular"}}>
                                 <DoneRounded/> {t('eep.description')}
                             </Typography>
                         </Box>
 
                         <Divider/>
 
-                        <Typography>
+                        <Typography
+                            color='text.muted'
+                            sx={{fontSize:"16px", fontWeight: "medium"}}>
                             Durante este ciclo he profundizado en desarrollo Backend con Java y Spring Boot, y en
-                            desarrollo móvil con Android. Destaco la creación de una app completa desde cero
-                            (RentalCar), además de proyectos en Python, C# y Java que me permitieron trabajar con
+                            desarrollo móvil con Android. Destaco la creación de una app completa desde cero, además de
+                            proyectos en Python, C# y Java que me permitieron trabajar con
                             interfaces gráficas, archivos locales y estructuras de datos. Este camino formativo ha sido
                             clave para definir mi perfil como desarrollador, afianzando tanto mis habilidades técnicas
                             como mi pasión por crear soluciones funcionales y bien estructuradas.
@@ -155,7 +171,10 @@ const Education = () => {
 
                         <Divider/>
 
-                        <Typography>
+                        <Typography
+                            color='text.accent'
+                            fontWeight='600'
+                        >
                             MySQL - JAVA - SPRING BOOT - PYTHON - C# - ANDROID - TEST
                         </Typography>
 
@@ -168,328 +187,16 @@ const Education = () => {
                     <Button
                         variant="contained"
                         color="secondary"
+                        sx={{
+                            fontWeight:"600",
+                            letterSpacing: '0.5px',
+                        }}
                     >
                         Ver más
                     </Button>
                 </Link>
 
-                {/*/!* react course *!/*/}
-                {/*<Card*/}
-                {/*    sx={{*/}
-                {/*        height: 1,*/}
-                {/*        display: 'flex',*/}
-                {/*        flexDirection: {xs: 'column', lg: 'row'},*/}
-                {/*        borderRadius: 4,*/}
-                {/*        boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`*/}
-                {/*    }}>*/}
 
-                {/*    <CardMedia*/}
-                {/*        component='img'*/}
-                {/*        image='institute/codoAcodo.jpg'*/}
-                {/*        alt='Imagen presentativa de Moorishville'*/}
-                {/*        sx={{*/}
-                {/*            height: 150,*/}
-                {/*            width: {xs: 1, lg: 345},*/}
-                {/*            objectPosition: 'center',*/}
-                {/*        }}*/}
-                {/*    />*/}
-                {/*    <Box*/}
-                {/*        sx={{*/}
-                {/*            display: 'flex',*/}
-                {/*            flexDirection: 'column',*/}
-                {/*            justifyContent: 'space-around',*/}
-                {/*            width: 1,*/}
-                {/*            gap: 1,*/}
-                {/*            py: 2,*/}
-                {/*            px: 4,*/}
-                {/*        }}*/}
-                {/*    >*/}
-                {/*        <Box*/}
-                {/*            sx={{*/}
-                {/*                display: 'flex',*/}
-                {/*                justifyContent: 'space-between',*/}
-                {/*                alignItems: 'center'*/}
-                {/*            }}*/}
-                {/*        >*/}
-                {/*            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>*/}
-                {/*                <ComputerRounded/> {t('react.title')}*/}
-                {/*            </Typography>*/}
-                {/*            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>*/}
-                {/*                <DateRange/> {t('react.date')}*/}
-                {/*            </Typography>*/}
-                {/*        </Box>*/}
-                {/*        <Divider/>*/}
-
-                {/*        <Box*/}
-                {/*            sx={{*/}
-                {/*                display: 'flex',*/}
-                {/*                justifyContent: 'space-between',*/}
-                {/*                alignItems: 'center'*/}
-                {/*            }}*/}
-                {/*        >*/}
-                {/*            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>*/}
-                {/*                <SchoolRounded/> {t('react.institute')}*/}
-                {/*            </Typography>*/}
-                {/*            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>*/}
-                {/*                <LocationOnRounded/> {t('react.location')}*/}
-                {/*            </Typography>*/}
-                {/*        </Box>*/}
-
-                {/*        <Box*/}
-                {/*            sx={{*/}
-                {/*                display: 'flex',*/}
-                {/*                justifyContent: 'space-between',*/}
-                {/*                alignItems: 'center'*/}
-                {/*            }}*/}
-                {/*        >*/}
-                {/*            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>*/}
-                {/*                <DoneRounded/> {t('react.description')}*/}
-                {/*            </Typography>*/}
-                {/*        </Box>*/}
-
-                {/*    </Box>*/}
-
-
-                {/*</Card>*/}
-
-                {/*/!* sass course *!/*/}
-                {/*<Card*/}
-                {/*    sx={{*/}
-                {/*        height: 1,*/}
-                {/*        display: 'flex',*/}
-                {/*        flexDirection: {xs: 'column', lg: 'row'},*/}
-                {/*        borderRadius: 4,*/}
-                {/*        boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`*/}
-                {/*    }}>*/}
-
-                {/*    <CardMedia*/}
-                {/*        component='img'*/}
-                {/*        image='institute/codigoFacilito.png'*/}
-                {/*        alt='Imagen presentativa de Moorishville'*/}
-                {/*        sx={{*/}
-                {/*            height: 150,*/}
-                {/*            width: {xs: 1, lg: 345},*/}
-                {/*            objectPosition: 'center',*/}
-                {/*            objectFit: 'contain'*/}
-                {/*        }}*/}
-                {/*    />*/}
-                {/*    <Box*/}
-                {/*        sx={{*/}
-                {/*            display: 'flex',*/}
-                {/*            flexDirection: 'column',*/}
-                {/*            justifyContent: 'space-around',*/}
-                {/*            width: 1,*/}
-                {/*            gap: 1,*/}
-                {/*            py: 2,*/}
-                {/*            px: 4,*/}
-                {/*        }}*/}
-                {/*    >*/}
-                {/*        <Box*/}
-                {/*            sx={{*/}
-                {/*                display: 'flex',*/}
-                {/*                justifyContent: 'space-between',*/}
-                {/*                alignItems: 'center'*/}
-                {/*            }}*/}
-                {/*        >*/}
-                {/*            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>*/}
-                {/*                <BrushIcon/> {t('sass.title')}*/}
-                {/*            </Typography>*/}
-                {/*            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>*/}
-                {/*                <DateRange/> {t('sass.date')}*/}
-                {/*            </Typography>*/}
-                {/*        </Box>*/}
-                {/*        <Divider/>*/}
-
-                {/*        <Box*/}
-                {/*            sx={{*/}
-                {/*                display: 'flex',*/}
-                {/*                justifyContent: 'space-between',*/}
-                {/*                alignItems: 'center'*/}
-                {/*            }}*/}
-                {/*        >*/}
-                {/*            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>*/}
-                {/*                <SchoolRounded/> {t('sass.institute')}*/}
-                {/*            </Typography>*/}
-                {/*            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>*/}
-                {/*                <LocationOnRounded/> {t('sass.location')}*/}
-                {/*            </Typography>*/}
-                {/*        </Box>*/}
-
-                {/*        <Box*/}
-                {/*            sx={{*/}
-                {/*                display: 'flex',*/}
-                {/*                justifyContent: 'space-between',*/}
-                {/*                alignItems: 'center'*/}
-                {/*            }}*/}
-                {/*        >*/}
-                {/*            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>*/}
-                {/*                <DoneRounded/> {t('sass.description')}*/}
-                {/*            </Typography>*/}
-                {/*        </Box>*/}
-
-                {/*    </Box>*/}
-
-
-                {/*</Card>*/}
-
-                {/*/!* Full Stack Node course *!/*/}
-                {/*<Card*/}
-                {/*    sx={{*/}
-                {/*        height: 1,*/}
-                {/*        display: 'flex',*/}
-                {/*        flexDirection: {xs: 'column', lg: 'row'},*/}
-                {/*        borderRadius: 4,*/}
-                {/*        boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`*/}
-                {/*    }}>*/}
-
-                {/*    <CardMedia*/}
-                {/*        component='img'*/}
-                {/*        image='institute/codoAcodo.jpg'*/}
-                {/*        alt='Imagen representativa del logo de codo a codo'*/}
-                {/*        sx={{*/}
-                {/*            height: 150,*/}
-                {/*            width: {xs: 1, lg: 345},*/}
-                {/*            objectPosition: 'center',*/}
-                {/*        }}*/}
-                {/*    />*/}
-                {/*    <Box*/}
-                {/*        sx={{*/}
-                {/*            display: 'flex',*/}
-                {/*            flexDirection: 'column',*/}
-                {/*            justifyContent: 'space-around',*/}
-                {/*            width: 1,*/}
-                {/*            gap: 1,*/}
-                {/*            py: 2,*/}
-                {/*            px: 4,*/}
-                {/*        }}*/}
-                {/*    >*/}
-                {/*        <Box*/}
-                {/*            sx={{*/}
-                {/*                display: 'flex',*/}
-                {/*                justifyContent: 'space-between',*/}
-                {/*                alignItems: 'center'*/}
-                {/*            }}*/}
-                {/*        >*/}
-                {/*            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>*/}
-                {/*                <BrushIcon/> {t('node.title')}*/}
-                {/*            </Typography>*/}
-                {/*            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>*/}
-                {/*                <DateRange/> {t('node.date')}*/}
-                {/*            </Typography>*/}
-                {/*        </Box>*/}
-                {/*        <Divider/>*/}
-
-                {/*        <Box*/}
-                {/*            sx={{*/}
-                {/*                display: 'flex',*/}
-                {/*                justifyContent: 'space-between',*/}
-                {/*                alignItems: 'center'*/}
-                {/*            }}*/}
-                {/*        >*/}
-                {/*            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>*/}
-                {/*                <SchoolRounded/> {t('node.institute')}*/}
-                {/*            </Typography>*/}
-                {/*            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>*/}
-                {/*                <LocationOnRounded/> {t('node.location')}*/}
-                {/*            </Typography>*/}
-                {/*        </Box>*/}
-
-                {/*        <Box*/}
-                {/*            sx={{*/}
-                {/*                display: 'flex',*/}
-                {/*                justifyContent: 'space-between',*/}
-                {/*                alignItems: 'center'*/}
-                {/*            }}*/}
-                {/*        >*/}
-                {/*            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>*/}
-                {/*                <DoneRounded/> {t('node.description')}*/}
-                {/*            </Typography>*/}
-                {/*        </Box>*/}
-
-                {/*    </Box>*/}
-
-
-                {/*</Card>*/}
-
-                {/*/!* Full Stack Java course *!/*/}
-                {/*<Card*/}
-                {/*    sx={{*/}
-                {/*        height: 1,*/}
-                {/*        display: 'flex',*/}
-                {/*        flexDirection: {xs: 'column', lg: 'row'},*/}
-                {/*        borderRadius: 4,*/}
-                {/*        boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`*/}
-                {/*    }}>*/}
-
-                {/*    <CardMedia*/}
-                {/*        component='img'*/}
-                {/*        image='institute/aluraLatam.png'*/}
-                {/*        alt='Imagen representativa del logo de codo a codo'*/}
-                {/*        sx={{*/}
-                {/*            height: 150,*/}
-                {/*            width: {xs: 1, lg: 345},*/}
-                {/*            objectPosition: 'center',*/}
-                {/*            objectFit: 'contain'*/}
-                {/*        }}*/}
-                {/*    />*/}
-                {/*    <Box*/}
-                {/*        sx={{*/}
-                {/*            display: 'flex',*/}
-                {/*            flexDirection: 'column',*/}
-                {/*            justifyContent: 'space-around',*/}
-                {/*            width: 1,*/}
-                {/*            gap: 1,*/}
-                {/*            py: 2,*/}
-                {/*            px: 4,*/}
-                {/*        }}*/}
-                {/*    >*/}
-                {/*        <Box*/}
-                {/*            sx={{*/}
-                {/*                display: 'flex',*/}
-                {/*                justifyContent: 'space-between',*/}
-                {/*                alignItems: 'center'*/}
-                {/*            }}*/}
-                {/*        >*/}
-                {/*            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>*/}
-                {/*                <BrushIcon/> {t('alura.title')}*/}
-                {/*            </Typography>*/}
-                {/*            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>*/}
-                {/*                <DateRange/> {t('alura.date')}*/}
-                {/*            </Typography>*/}
-                {/*        </Box>*/}
-                {/*        <Divider/>*/}
-
-                {/*        <Box*/}
-                {/*            sx={{*/}
-                {/*                display: 'flex',*/}
-                {/*                justifyContent: 'space-between',*/}
-                {/*                alignItems: 'center'*/}
-                {/*            }}*/}
-                {/*        >*/}
-                {/*            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>*/}
-                {/*                <SchoolRounded/> {t('alura.institute')}*/}
-                {/*            </Typography>*/}
-                {/*            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>*/}
-                {/*                <LocationOnRounded/> {t('alura.location')}*/}
-                {/*            </Typography>*/}
-                {/*        </Box>*/}
-
-                {/*        <Box*/}
-                {/*            sx={{*/}
-                {/*                display: 'flex',*/}
-                {/*                justifyContent: 'space-between',*/}
-                {/*                alignItems: 'center'*/}
-                {/*            }}*/}
-                {/*        >*/}
-                {/*            <Typography sx={{display: 'flex', alignItems: 'center', gap: 1}}>*/}
-                {/*                <DoneRounded/> {t('alura.description')}*/}
-                {/*            </Typography>*/}
-                {/*        </Box>*/}
-
-                {/*    </Box>*/}
-
-
-                {/*</Card>*/}
 
             </Box>
         </Box>

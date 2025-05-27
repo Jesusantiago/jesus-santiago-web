@@ -64,12 +64,12 @@ const Header = ({ darkMode, toggleDarkMode }) => {
                 left:'50%',
                 transform: 'translate(-50%)',
                 top:'32px',
-                width:{xs:.8, md: 0.7},
+                width:{xs:.8, md: 0.8},
                 boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`,
             }}
         >
             <Container maxWidth='xl'>
-                <Toolbar sx={{ display: "flex", justifyContent: "space-between", py: 1, }} >
+                <Toolbar sx={{ display: "flex", justifyContent: "space-between", py: 1, px:0}} >
 
                     {/* logo */}
                     <Box sx={{m:0, p:0}}>
