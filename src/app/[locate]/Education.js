@@ -116,7 +116,7 @@ const Education = () => {
                             <Typography
                                 // color='primary.text.neutral'
                                 color='text.neutral'
-                                sx={{display: 'flex', alignItems: 'center', gap: 1, fontSize:"16px",}}>
+                                sx={{display: 'flex', alignItems: 'center', gap: 1, fontSize:"16px"}}>
                                 <DateRange/> {t('eep.date')}
                             </Typography>
                         </Box>
