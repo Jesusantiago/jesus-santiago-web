@@ -8,14 +8,16 @@ import Image from "next/image";
 import {ComputerRounded, DateRange, DoneRounded, LocationOnRounded, SchoolRounded} from "@mui/icons-material";
 import BrushIcon from "@mui/icons-material/Brush";
 import {useTranslations} from "next-intl";
+import ButtonChange from "@/components/ButtonChange";
 
 export default function Education() {
     const router = useRouter();
-    const t = useTranslations('Home.education')
+    const t = useTranslations('Education')
 
 
     return (
-
+        <>
+        <ButtonChange/>
         <Box
             sx={{
                 display: 'flex',
@@ -34,15 +36,15 @@ export default function Education() {
                     borderRadius: 4,
                     backgroundColor: (theme) => theme.palette.card.main,
                     boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`,
-                    pt: {xs: 14, md: 20},
-                    px: 2,
+                    pt: {xs: 14, lg: 20},
+                    // px: {xs: 2, lg: 6},
                     pb: 6,
-                    pl: {xs: 2, md: 8},
+                    px: {xs: 2, lg: 8},
                     mt: 2,
                     display: 'flex',
                     flexDirection: 'column',
-                    alignItems: {xs: 'end', md: 'center'},
-                    justifyContent: {xs: 'center', md: 'space-between'}
+                    alignItems: {xs: 'end', lg: 'center'},
+                    justifyContent: {xs: 'center', lg: 'space-between'}
                 }}
             >
                 <Box
@@ -52,7 +54,7 @@ export default function Education() {
                     alignItems='end'
                     sx={{
                         // px: 5,
-                        paddingBottom: {xs: 0, sm: 5}
+                        paddingBottom: {xs: 0, lg: 5}
                     }}
                 >
 
@@ -63,7 +65,7 @@ export default function Education() {
                         textAlign='start'
                         width='1'
                     >
-                        Cursos y formaciones complementarias
+                        {t('title')}
                     </Typography>
 
                     <Typography
@@ -73,10 +75,10 @@ export default function Education() {
                         sx={{
                             paddingTop: 6,
                             textAlign: 'end',
+                            textWrap: 'balance'
                         }}
                     >
-                        Estos cursos han sido claves para complementar mi formación técnica, explorando nuevas herramientas,
-                        metodologías y enfoques prácticos en desarrollo.
+                        {t('subtitle')}
                     </Typography>
 
                 </Box>
@@ -88,7 +90,7 @@ export default function Education() {
                         paddingY: 5,
                         gap: 5,
                         display: 'grid',
-                        gridTemplateColumns: {xs: '1fr', sm: '1fr 1fr'},
+                        gridTemplateColumns: {xs: '1fr', lg: '1fr 1fr'},
                     }}
                 >
 
@@ -119,18 +121,18 @@ export default function Education() {
                                 flexDirection: 'column',
                                 justifyContent: 'space-around',
                                 width: 1,
-                                gap: {xs: 2, sm: 1},
+                                gap: {xs: 2, lg: 1},
                                 py: 2,
-                                px: {xs: 2, sm: 4},
+                                px: {xs: 2, lg: 4},
                             }}
                         >
                             <Box
                                 sx={{
                                     display: 'flex',
                                     justifyContent: 'space-between',
-                                    alignItems: {xs: 'start', sm: 'center'},
+                                    alignItems: {xs: 'start', lg: 'center'},
                                     flexDirection: {xs: 'column', lg: 'row'},
-                                    gap: {xs: 2, sm: 0},
+                                    gap: {xs: 2, lg: 0},
 
                                 }}
                             >
@@ -142,7 +144,7 @@ export default function Education() {
                                 </Typography>
                                 <Typography
                                     color='text.neutral'
-                                    sx={{display: 'flex', alignItems: 'center', gap: 1, fontSize:"16px"}}
+                                    sx={{display: 'flex', gap: 1, fontSize:"16px"}}
                                 >
                                     <DateRange/> {t('react.date')}
                                 </Typography>
@@ -153,9 +155,9 @@ export default function Education() {
                                 sx={{
                                     display: 'flex',
                                     justifyContent: 'space-between',
-                                    alignItems: {xs: 'start', sm: 'center'},
+                                    alignItems: {xs: 'start', lg: 'center'},
                                     flexDirection: {xs: 'column', lg: 'row'},
-                                    gap: {xs: 2, sm: 0},
+                                    gap: {xs: 2, lg: 0},
 
                                 }}
                             >
@@ -177,9 +179,9 @@ export default function Education() {
                                 sx={{
                                     display: 'flex',
                                     justifyContent: 'space-between',
-                                    alignItems: {xs: 'start', sm: 'center'},
+                                    alignItems: {xs: 'start', lg: 'center'},
                                     flexDirection: {xs: 'column', lg: 'row'},
-                                    gap: {xs: 2, sm: 0},
+                                    gap: {xs: 2, lg: 0},
 
                                 }}
                             >
@@ -223,18 +225,18 @@ export default function Education() {
                                 flexDirection: 'column',
                                 justifyContent: 'space-around',
                                 width: 1,
-                                gap: {xs: 2, sm: 1},
+                                gap: {xs: 2, lg: 1},
                                 py: 2,
-                                px: {xs: 2, sm: 4},
+                                px: {xs: 2, lg: 4},
                             }}
                         >
                             <Box
                                 sx={{
                                     display: 'flex',
                                     justifyContent: 'space-between',
-                                    alignItems: {xs: 'start', sm: 'center'},
+                                    alignItems: {xs: 'start', lg: 'center'},
                                     flexDirection: {xs: 'column', lg: 'row'},
-                                    gap: {xs: 2, sm: 0},
+                                    gap: {xs: 2, lg: 0},
                                 }}
                             >
                                 <Typography
@@ -256,9 +258,9 @@ export default function Education() {
                                 sx={{
                                     display: 'flex',
                                     justifyContent: 'space-between',
-                                    alignItems: {xs: 'start', sm: 'center'},
+                                    alignItems: {xs: 'start', lg: 'center'},
                                     flexDirection: {xs: 'column', lg: 'row'},
-                                    gap: {xs: 2, sm: 0},
+                                    gap: {xs: 2, lg: 0},
                                 }}
                             >
                                 <Typography
@@ -279,9 +281,9 @@ export default function Education() {
                                 sx={{
                                     display: 'flex',
                                     justifyContent: 'space-between',
-                                    alignItems: {xs: 'start', sm: 'center'},
+                                    alignItems: {xs: 'start', lg: 'center'},
                                     flexDirection: {xs: 'column', lg: 'row'},
-                                    gap: {xs: 2, sm: 0},
+                                    gap: {xs: 2, lg: 0},
                                 }}
                             >
                                 <Typography
@@ -324,18 +326,18 @@ export default function Education() {
                                 flexDirection: 'column',
                                 justifyContent: 'space-around',
                                 width: 1,
-                                gap: {xs: 2, sm: 1},
+                                gap: {xs: 2, lg: 1},
                                 py: 2,
-                                px: {xs: 2, sm: 4},
+                                px: {xs: 2, lg: 4},
                             }}
                         >
                             <Box
                                 sx={{
                                     display: 'flex',
                                     justifyContent: 'space-between',
-                                    alignItems: {xs: 'start', sm: 'center'},
+                                    alignItems: {xs: 'start', lg: 'center'},
                                     flexDirection: {xs: 'column', lg: 'row'},
-                                    gap: {xs: 2, sm: 0},
+                                    gap: {xs: 2, lg: 0},
                                 }}
                             >
                                 <Typography
@@ -356,9 +358,9 @@ export default function Education() {
                                 sx={{
                                     display: 'flex',
                                     justifyContent: 'space-between',
-                                    alignItems: {xs: 'start', sm: 'center'},
+                                    alignItems: {xs: 'start', lg: 'center'},
                                     flexDirection: {xs: 'column', lg: 'row'},
-                                    gap: {xs: 2, sm: 0},
+                                    gap: {xs: 2, lg: 0},
                                 }}
                             >
                                 <Typography
@@ -379,9 +381,9 @@ export default function Education() {
                                 sx={{
                                     display: 'flex',
                                     justifyContent: 'space-between',
-                                    alignItems: {xs: 'start', sm: 'center'},
+                                    alignItems: {xs: 'start', lg: 'center'},
                                     flexDirection: {xs: 'column', lg: 'row'},
-                                    gap: {xs: 2, sm: 0},
+                                    gap: {xs: 2, lg: 0},
                                 }}
                             >
                                 <Typography
@@ -425,18 +427,18 @@ export default function Education() {
                                 flexDirection: 'column',
                                 justifyContent: 'space-around',
                                 width: 1,
-                                gap: {xs: 2, sm: 1},
+                                gap: {xs: 2, lg: 1},
                                 py: 2,
-                                px: {xs: 2, sm: 4},
+                                px: {xs: 2, lg: 4},
                             }}
                         >
                             <Box
                                 sx={{
                                     display: 'flex',
                                     justifyContent: 'space-between',
-                                    alignItems: {xs: 'start', sm: 'center'},
+                                    alignItems: {xs: 'start', lg: 'center'},
                                     flexDirection: {xs: 'column', lg: 'row'},
-                                    gap: {xs: 2, sm: 0},
+                                    gap: {xs: 2, lg: 0},
                                 }}
                             >
                                 <Typography
@@ -458,9 +460,9 @@ export default function Education() {
                                 sx={{
                                     display: 'flex',
                                     justifyContent: 'space-between',
-                                    alignItems: {xs: 'start', sm: 'center'},
+                                    alignItems: {xs: 'start', lg: 'center'},
                                     flexDirection: {xs: 'column', lg: 'row'},
-                                    gap: {xs: 2, sm: 0},
+                                    gap: {xs: 2, lg: 0},
                                 }}
                             >
                                 <Typography
@@ -481,9 +483,9 @@ export default function Education() {
                                 sx={{
                                     display: 'flex',
                                     justifyContent: 'space-between',
-                                    alignItems: {xs: 'start', sm: 'center'},
+                                    alignItems: {xs: 'start', lg: 'center'},
                                     flexDirection: {xs: 'column', lg: 'row'},
-                                    gap: {xs: 2, sm: 0},
+                                    gap: {xs: 2, lg: 0},
                                 }}
                             >
                                 <Typography
@@ -512,9 +514,10 @@ export default function Education() {
                         alignSelf: 'center'
                     }}
                 >
-                    Volver a la landing
+                    {t('button')}
                 </Button>
             </Box>
         </Box>
+        </>
     )
 }

@@ -60,7 +60,7 @@ const AboutMe = () => {
                 <Grid xs={12} md={5}>
                     <CardMedia
                         component='img'
-                        image='aboutMe1.webp'
+                        image='cerebro.png'
                         alt='Imagen representativa del projecto de NebulaWear'
                         sx={{
                             height: {xs: 300, md: 1},
@@ -82,43 +82,49 @@ const AboutMe = () => {
                 >
 
                         <Typography
-                            variant="h5"
-                            sx={{textWrap:'balance'}}
+                            sx={{
+                                color: 'text.secondary',
+                                lineHeight: 1.7,
+                                textWrap:'balance',
+                                fontSize: {xs: '16px', sm: '18px'}
+                        }}
                         >
-                            {t('paragraph1-1')} <b>{t('paragraph1-2')}</b> {t('paragraph1-3')} <b>{t('paragraph1-4')}</b> {t('paragraph1-5')} <b>{t('paragraph1-6')}</b> {t('paragraph1-7')}
+                            {t('paragraph1-1')}
                         </Typography>
 
                         <Typography
-                            variant="h5"
-                            sx={{textWrap:'balance'}}
+                            sx={{
+                                color: 'text.secondary',
+                                lineHeight: 1.7,
+                                textWrap:'balance',
+                                fontSize: {xs: '16px', sm: '18px'}
+                        }}
                         >
-                            {t('paragraph1-10')}
+                            {t('paragraph2-1')} <b> {t('paragraph2-2')} </b>
                         </Typography>
 
                         <Typography
-                            variant="h5"
-                            sx={{textWrap:'balance'}}
+                            sx={{
+                                color: 'text.secondary',
+                                lineHeight: 1.7,
+                                textWrap:'balance',
+                                fontSize: {xs: '16px', sm: '18px'}
+                        }}
                         >
-                            {t('paragraph2-1')}
-                            <Link variant='text' href='https://www.eep-igroup.es/tecnico-superior-doble-titulacion-dam-daw.php' target='_black'><b>{t('paragraph2-2')}</b></Link>
-                            {t('paragraph2-3')}
-                            <Link variant='text' href='https://www.eep-igroup.es' target='_black'><b>{t('paragraph2-4')}</b> </Link>
-                            {t('paragraph2-5')}
+                            {t('paragraph3-1')}
                         </Typography>
 
                         <Typography
-                            variant="h5"
-                            sx={{textWrap:'balance'}}
+                            sx={{
+                                color: 'text.secondary',
+                                lineHeight: 1.7,
+                                textWrap:'balance',
+                                fontSize: {xs: '16px', sm: '18px'}
+                        }}
                         >
-                            {t('paragraph3-1')} <b>{t('paragraph3-2')}</b> {t('paragraph3-3')} <b>{t('paragraph3-4')}</b> {t('paragraph3-5')} <b>{t('paragraph3-6')}</b> {t('paragraph3-7')} <b>{t('paragraph3-8')}</b>
+                            {t('paragraph4-1')}
                         </Typography>
 
-                        <Typography
-                            variant="h5"
-                            sx={{textWrap:'balance'}}
-                        >
-                            {t('paragraph4-1')} <b>{t('paragraph4-2')}</b> {t('paragraph4-3')} <b>{t('paragraph4-4')}</b>
-                        </Typography>
 
                 </Grid>
 

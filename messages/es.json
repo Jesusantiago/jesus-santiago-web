@@ -1,205 +1,178 @@
 {
-    "header" : {
-        "btnExperience" : "Experiencia",
-        "btnPortfolio": "Proyectos",
-        "btnEducation": "Educación",
-        "btnAboutMe": "Sobre mí",
-        "btnCTA": "Charlemos"
+  "header": {
+    "btnExperience": "Experiencia",
+    "btnPortfolio": "Proyectos",
+    "btnEducation": "Educación",
+    "btnAboutMe": "Sobre mí",
+    "btnCTA": "Charlemos"
+  },
+  "Education": {
+    "title" : "Cursos y formaciones complementarias",
+    "subtitle" : "Estos cursos han sido claves para complementar mi formación técnica, explorando nuevas herramientas, metodologías y enfoques prácticos en desarrollo.",
+    "button" : "Volver al inicio",
+    "react": {
+      "title": "Front-End Developer with React",
+      "date": "Nov. - Dic. 2023",
+      "institute": "Codo a Codo",
+      "location": "Buenos Aires, Argentina",
+      "description": "Aprendí a construir interfaces de usuarios con el Framework de React"
     },
-    "education": [
-
-    ],
-    "Home": {
-        "hero" : {
-            "status" : "Disponible",
-            "title" : "Jesús Santiago",
-            "subtitle" : "Desarrollador Front-End especializado en  React",
-            "btnCTA" : "Charlemos",
-            "btnCV" : "Ver CV"
-       },
-       "blog" : {
-            "title" : "Blog"
-       },
-       "experience" : {
-            "title" : "Experiencia",
-            "projectAgiliza" : {
-                "status" : "Actualmente",
-                "date": "Agosto 2023 - Actualmente",
-                "name" : "Agiliza",
-                "description" : "Startup dedicada a la centralización y presentación de datos empresariales. Lideré la creación de la app, desarrollando la interfaz que muestra gráficos BI y gestionando la autenticación, control de usuarios y permisos.",
-                "myRole" : "Desarrollador Front-End.",
-                "technologies" : "React, ReactStrap (estilos)."
-            },
-            "projectMoorishville" : {
-                "status" : "Finalizado",
-                "date" : "Abril - Mayo 2024",
-                "name" : "Moorishville",
-                "description" : "Es un condado en los Estados Unidos para el que he trabajado como freelancer. Mi projecto más destacado para ellos fue el desarrollo de un sistema de búsqueda de archivos en una base de datos local.",
-                "myRole" : "Desarrollador Front-End.",
-                "technologies" : "HTML, CSS, JavaScript"
-            }
-        },
-        "project" : {
-            "title" : "Proyectos",
-            "button" : "Ver más",
-            "projectNebula" : {
-                "status" : "En desarrollo",
-                "name" : "Nebula Wear",
-                "description" : " Marca de ropa de lujo y plataforma de comercio electrónico enfocada en crear una solución robusta y escalable. Lidero el equipo técnico, guiando el desarrollo y aplicando nuestras habilidades especializadas en cada área. Mi enfoque es llevar este projecto a su máximo potencial.",
-                "myRole" : "Lider Técnico y desarrollador Front-End"
-            },
-            "projectFunko" : {
-                "status" : "Finalizado en 2023",
-                "name" : "Funko Shop",
-                "description" : " Es el proyecto de grado del curso de Full Stack con Node.js de Codo a codo. Funko shop es una tienda en linea de venta de productos Funko.",
-                "myRole" : "Desarrollador Full Stack - proyecto individual"
-            }
-        },
-        "education" : {
-            "title" : "Educación",
-            "eep" : {
-                "title" : "Técnico Superior - Desarrollador Full Stack",
-                "date" : "Sep 2024 - Actualmente",
-                "institute" : "EEP - IGROUP",
-                "location" : "Madrid, España",
-                "description" : "Desarrollo de aplicaciones Multiplataforma."
-
-            },
-            "ux" : {
-                "title" : "UX-UI Course",
-                "date" : "Sep. 2024 - Actualmente",
-                "institute" : "Talento Tech",
-                "location" : "Buenos Aires, Argentina",
-                "description" : "Diseño de interfaces de usuarios en dispositivos mobiles, enfocado en los principios UX-UI"
-            },
-            "react" : {
-                "title" : "Front-End Developer with React",
-                "date" : "Nov. - Dic. 2023",
-                "institute" : "Codo a Codo",
-                "location" : "Buenos Aires, Argentina",
-                "description" : "Aprendí a construir interfaces de usuarios con el Framework de React"
-            },
-            "sass" : {
-                "title" : "Sass course",
-                "date" : "Mar. - Apr. 2023",
-                "institute" : "Codigo Facilito",
-                "location" : "Buenos Aires, Argentina",
-                "description" : "Uno de los frameworks actuales más importantes de CSS."
-            },
-            "node" : {
-                "title" : "Full Stack con Node.js",
-                "date" : "Feb. - Jul. 2023",
-                "institute" : "Codo a Codo",
-                "location" : "Buenos Aires, Argentina",
-                "description" : "Obtuve conocimientos para construir esquemas y servicios funcionales, trabajando tanto el lado del client (Front-end) con del servidor (back-end)."
-            },
-            "alura" : {
-                "title" : "Full Stack with Java",
-                "date" : "Ago. - Feb. 2023",
-                "institute" : "Alura Latam con Oracle ONE",
-                "location" : "Buenos Aires, Argentina",
-                "description" : "Bootcamp especialmente pensando en formar desarrolladores full stack de calidad con bases solidas y buenas practicas de codigo."
-            }
-        },
-        "about" : {
-            "title" : "Sobre mí",
-            "paragraph1-1" : "Mi nombre es",
-            "paragraph1-2" : "Jesús Santiago",
-            "paragraph1-3" : " y soy un desarrollador especializado en ",
-            "paragraph1-4" :  "Front-End ",
-            "paragraph1-5" : "con ",
-            "paragraph1-6" : "React",
-            "paragraph1-7" : ", aunque también cuento con conocimientos Full Stack.",
-            "paragraph1-10" : "Mi pasión es crear experiencias de usuario dinámicas y soluciones web efectivas.",
-            "paragraph2-1" : "Actualmente, estoy estudiando una ",
-            "paragraph2-2" : " Formación Profesional en Desarrollo de Aplicaciones Web",
-            "paragraph2-3" : " en el instituto ",
-            "paragraph2-4" : " EEP iGroup",
-            "paragraph2-5" : ", lo que refuerza mi compromiso con el aprendizaje continuo.", 
-            "paragraph3-1" : "A lo largo de mi carrera, he tenido la oportunidad de ",
-            "paragraph3-2" : "liderar equipos de trabajo ", 
-            "paragraph3-3" : "y ",
-            "paragraph3-4" : "gestionar proyectos ",
-            "paragraph3-5" : "en todas sus fases, lo que me ha permitido desarrollar habilidades interpersonales clave como la ",
-            "paragraph3-6" : "comunicación ",
-            "paragraph3-7" : "y el ", 
-            "paragraph3-8" : " trabajo en equipo.",
-            "paragraph4-1" : "Si estás buscando un ",
-            "paragraph4-2" : "Desarrollador Front-End ",
-            "paragraph4-3" : "apasionado, comprometido y con ganas de seguir creciendo, estaré encantado de conversar sobre cómo puedo aportar a tu equipo. Actualmente, estoy en búsqueda de un ", 
-            "paragraph4-4" : "desafío profesional."
-        },
-        "FAQ" : {
-            "title" : "FAQ",
-                "FAQ1" : {
-                    "title" : "¿Tienes permiso de trabajo en España?",
-                    "question" : "Sí, cuento con permiso de trabajo y estoy completamente habilidado para ejecer en España y en la Unión Europea."
-                },
-                "FAQ2" : {
-                    "title" : "¿Cuál es tu especiaización?",
-                    "question" : "Aunque tengo conocimientos Full Stack, me especializo en el desarrolla Front-End, principalmente con React, que es donde más disfruto aplicar mis habilidades."
-                },
-                "FAQ3" : {
-                    "title" : "¿Cuánto tiempo llevas trabajando en desarrollo web?",
-                    "question" : "Comencé a estudiar de forma autodidacta en 2021 y me uní al programa ORACLE ONE en 2022, lo que me dio una base más sólida y un panorama mas claro y desde entonces no he parado de seguir aprendiendo."
-                },
-                "FAQ4" : {
-                    "title" : "¿Tienes experiencia en metodologías ágiles?",
-                    "question" : "Sí, he trabajado con metodologías ágiles como Scrum y Kanban. También me gusta implementar estas metodologías en los proyectos colaborativos que lidero."
-                },
-                "FAQ5" : {
-                    "title" : "¿Qué tipo de proyecto estás buscando?",
-                    "question" : "Estoy buscando proyectos que no solo sean técnicamente desafiantes, sino que también tengan un impacto real en la sociedad, ayudando a mejorar la vida de las personas."
-                },
-                "FAQ6" : {
-                    "title" : "¿Estás abierto a trabajar de forma remota o híbrida?",
-                    "question" : "Sí, estoy totalmente abierto a seguir trabajando de forma remota, aunque también estoy dispuesto a trabajar de forma híbrida o presencial si el proyecto lo requiere."
-                },
-                "FAQ7" : {
-                    "title" : "¿Cuál ha sido tu mayor logro profesional?",
-                    "question" : "Uno de mis mayores logros fue en mi trabajo actual, cuando me pidieron mejorar una aplicación web que no cumplía con las expectativas: era lenta, poco intuitiva y no accesible. Me dieron la libertad de elegir las tecnologías más adecuadas y trabajando con el equipo de Back-End logramos crear una nueva aplicación web que resolvío los problemas que presentaba la anterior, mejorando esto significativamente la experiencia de nuestros clientes. "
-                },
-                "FAQ8" : {
-                    "title" : "¿Estás dispuesto a aprender nuevas tecnologías si lo requiere el proyecto?",
-                    "question" : "¡Por supuesto! Siempre estoy dispuesto a seguir aprendiendo nuevas tecnologías y a crecer profesionalmente."
-                } 
-        },
-        "testimonials" : {
-            "title" : "Testimonios",
-            "memi" : {
-                "name" : "Magdalena Zucal",
-                "description" : "Realicé varios cursos con Jesus y fue un gran compañero, abierto a trabajar en equipo, organizando el grupo según las habilidades y capacidades de cada participante. Su acompañamiento fue importante para permitirme ampliar mis conocimientos en aquellas áreas que no manejaba todavía. También se mostró siempre dispuesto y entusiasmado con aprender de sus compañeros. Ordenado, metódico y responsable!",
-                "title" : "Back-End Developer"
-            },
-            "freelacer" : {
-                "name" : "Tywar Grant",
-                "description" : "Fue realmente fácil trabajar con Jesús, y mantuvo todo claro y profesional. Estuvo abierto a cambios sobre la marcha, y no dejó sin respuesta ninguna de sus preguntas sobre mi proyecto, abriéndome opciones de las que ni siquiera era consciente. Muy accesible y honesto.",
-                "title" : "Encargado del departamento de Marketing de Moorishville"
-            }
-        },
-        "formulary" : {
-            "title" : "Formulario",
-            "name" : "Tu nombre",
-            "email" : "Tu email",
-            "text" : "Deja acá tu mensaje",
-            "button" : "Enviar",
-            "error" : {
-                "nameError" : "El campo Nombre es requerido",
-                "emailError" : "El campo Email es requerido",
-                "emailPattern" : "El Email ingresado no es valido",
-                "textError" : "Este campo es obligatorio",
-                "textLength" : "Por favor se mas especifico, el mensaje es muy corto"
-            }
-        },
-        "CTA" : {
-            "title" : "Esta es la oportunidad",
-            "description" : "¡Puedo constribuir al equipo! Nosotros deberíamos hablar.",
-            "cta" : "Charlemos"
-        }
+    "sass": {
+      "title": "Sass course",
+      "date": "Mar. - Apr. 2023",
+      "institute": "Codigo Facilito",
+      "location": "Buenos Aires, Argentina",
+      "description": "Uno de los frameworks actuales más importantes de CSS."
     },
-    "Footer" : {
-        "span" : "Diseñado y construído por Jesus Santiago.",
-        "project" : "Este portafolio esta construído en Next.js"
-
+    "node": {
+      "title": "Full Stack con Node.js",
+      "date": "Feb. - Jul. 2023",
+      "institute": "Codo a Codo",
+      "location": "Buenos Aires, Argentina",
+      "description": "Obtuve conocimientos para construir esquemas y servicios funcionales, trabajando tanto el lado del client (Front-end) con del servidor (back-end)."
+    },
+    "alura": {
+      "title": "Full Stack with Java",
+      "date": "Ago. - Feb. 2023",
+      "institute": "Alura Latam con Oracle ONE",
+      "location": "Buenos Aires, Argentina",
+      "description": "Bootcamp especialmente pensando en formar desarrolladores full stack de calidad con bases solidas y buenas practicas de codigo."
     }
+  },
+  "Home": {
+    "hero": {
+      "status": "Disponible",
+      "title": "Jesús Santiago",
+      "subtitle": "Desarrollador Front-End especializado en  React",
+      "btnCTA": "Charlemos",
+      "btnCV": "Ver CV"
+    },
+    "blog": {
+      "title": "Blog"
+    },
+    "experience": {
+      "title": "Experiencia",
+      "projectAgiliza": {
+        "status": "Actualmente",
+        "date": "Agosto 2023 - Actualmente",
+        "name": "Agiliza",
+        "description": "Startup dedicada a la centralización y presentación de datos empresariales. Lideré la creación de la app, desarrollando la interfaz que muestra gráficos BI y gestionando la autenticación, control de usuarios y permisos.",
+        "myRole": "Desarrollador Front-End.",
+        "technologies": "React, ReactStrap (estilos)."
+      },
+      "projectMoorishville": {
+        "status": "Finalizado",
+        "date": "Abril - Mayo 2024",
+        "name": "Moorishville",
+        "description": "Es un condado en los Estados Unidos para el que he trabajado como freelancer. Mi projecto más destacado para ellos fue el desarrollo de un sistema de búsqueda de archivos en una base de datos local.",
+        "myRole": "Desarrollador Front-End.",
+        "technologies": "HTML, CSS, JavaScript"
+      }
+    },
+    "project": {
+      "title": "Proyectos",
+      "button": "Ver más",
+      "projectNebula": {
+        "status": "En desarrollo",
+        "name": "Nebula Wear",
+        "description": " Marca de ropa de lujo y plataforma de comercio electrónico enfocada en crear una solución robusta y escalable. Lidero el equipo técnico, guiando el desarrollo y aplicando nuestras habilidades especializadas en cada área. Mi enfoque es llevar este projecto a su máximo potencial.",
+        "myRole": "Lider Técnico y desarrollador Front-End"
+      },
+      "projectFunko": {
+        "status": "Finalizado en 2023",
+        "name": "Funko Shop",
+        "description": " Es el proyecto de grado del curso de Full Stack con Node.js de Codo a codo. Funko shop es una tienda en linea de venta de productos Funko.",
+        "myRole": "Desarrollador Full Stack - proyecto individual"
+      }
+    },
+    "education": {
+      "title": "Educación",
+      "eep": {
+        "title": "Técnico Superior - Desarrollador Full Stack",
+        "date": "Sep 2024 - Actualmente",
+        "institute": "EEP - IGROUP",
+        "location": "Madrid, España",
+        "description": "Desarrollo de aplicaciones Multiplataforma."
+      }
+    },
+    "about": {
+      "title": "Sobre mí",
+      "paragraph1-1": "Soy Jesús Santiago, Desarrollador Full Stack en formación constante. Me apasiona crear soluciones útiles, bien pensadas y con impacto real, tanto en el lado del cliente como del servidor.",
+      "paragraph2-1": "Actualmente curso el segundo año del ciclo de Desarrollo de Aplicaciones Multiplataforma (DAM) en EEP iGroup, y ",
+      "paragraph2-2": "estoy en búsqueda de una empresa donde realizar mis prácticas profesionales.",
+      "paragraph3-1": "A lo largo de mi recorrido he combinado formación autodidacta, proyectos personales y trabajo en equipo, desarrollando no solo habilidades técnicas, sino también comunicación, liderazgo y compromiso. Me defino por mi iniciativa, mis ganas de aprender y mi enfoque práctico a la hora de construir software.",
+      "paragraph4-1": "Busco un entorno desafiante, donde pueda crecer rodeado de personas que compartan la pasión por la tecnología, el aprendizaje y el trabajo bien hecho."
+    },
+    "FAQ": {
+      "title": "FAQ",
+      "FAQ1": {
+        "title": "¿Tienes permiso de trabajo en España?",
+        "question": "Sí, cuento con permiso de trabajo y estoy completamente habilidado para ejecer en España y en la Unión Europea."
+      },
+      "FAQ2": {
+        "title": "¿Cuál es tu especiaización?",
+        "question": "Aunque tengo conocimientos Full Stack, me especializo en el desarrolla Front-End, principalmente con React, que es donde más disfruto aplicar mis habilidades."
+      },
+      "FAQ3": {
+        "title": "¿Cuánto tiempo llevas trabajando en desarrollo web?",
+        "question": "Comencé a estudiar de forma autodidacta en 2021 y me uní al programa ORACLE ONE en 2022, lo que me dio una base más sólida y un panorama mas claro y desde entonces no he parado de seguir aprendiendo."
+      },
+      "FAQ4": {
+        "title": "¿Tienes experiencia en metodologías ágiles?",
+        "question": "Sí, he trabajado con metodologías ágiles como Scrum y Kanban. También me gusta implementar estas metodologías en los proyectos colaborativos que lidero."
+      },
+      "FAQ5": {
+        "title": "¿Qué tipo de proyecto estás buscando?",
+        "question": "Estoy buscando proyectos que no solo sean técnicamente desafiantes, sino que también tengan un impacto real en la sociedad, ayudando a mejorar la vida de las personas."
+      },
+      "FAQ6": {
+        "title": "¿Estás abierto a trabajar de forma remota o híbrida?",
+        "question": "Sí, estoy totalmente abierto a seguir trabajando de forma remota, aunque también estoy dispuesto a trabajar de forma híbrida o presencial si el proyecto lo requiere."
+      },
+      "FAQ7": {
+        "title": "¿Cuál ha sido tu mayor logro profesional?",
+        "question": "Uno de mis mayores logros fue en mi trabajo actual, cuando me pidieron mejorar una aplicación web que no cumplía con las expectativas: era lenta, poco intuitiva y no accesible. Me dieron la libertad de elegir las tecnologías más adecuadas y trabajando con el equipo de Back-End logramos crear una nueva aplicación web que resolvío los problemas que presentaba la anterior, mejorando esto significativamente la experiencia de nuestros clientes. "
+      },
+      "FAQ8": {
+        "title": "¿Estás dispuesto a aprender nuevas tecnologías si lo requiere el proyecto?",
+        "question": "¡Por supuesto! Siempre estoy dispuesto a seguir aprendiendo nuevas tecnologías y a crecer profesionalmente."
+      }
+    },
+    "testimonials": {
+      "title": "Testimonios",
+      "memi": {
+        "name": "Magdalena Zucal",
+        "description": "Realicé varios cursos con Jesus y fue un gran compañero, abierto a trabajar en equipo, organizando el grupo según las habilidades y capacidades de cada participante. Su acompañamiento fue importante para permitirme ampliar mis conocimientos en aquellas áreas que no manejaba todavía. También se mostró siempre dispuesto y entusiasmado con aprender de sus compañeros. Ordenado, metódico y responsable!",
+        "title": "Back-End Developer"
+      },
+      "freelacer": {
+        "name": "Tywar Grant",
+        "description": "Fue realmente fácil trabajar con Jesús, y mantuvo todo claro y profesional. Estuvo abierto a cambios sobre la marcha, y no dejó sin respuesta ninguna de sus preguntas sobre mi proyecto, abriéndome opciones de las que ni siquiera era consciente. Muy accesible y honesto.",
+        "title": "Encargado del departamento de Marketing de Moorishville"
+      }
+    },
+    "formulary": {
+      "title": "Formulario",
+      "name": "Tu nombre",
+      "email": "Tu email",
+      "text": "Deja acá tu mensaje",
+      "button": "Enviar",
+      "error": {
+        "nameError": "El campo Nombre es requerido",
+        "emailError": "El campo Email es requerido",
+        "emailPattern": "El Email ingresado no es valido",
+        "textError": "Este campo es obligatorio",
+        "textLength": "Por favor se mas especifico, el mensaje es muy corto"
+      }
+    },
+    "CTA": {
+      "title": "Esta es la oportunidad",
+      "description": "¡Puedo constribuir al equipo! Nosotros deberíamos hablar.",
+      "cta": "Charlemos"
+    }
+  },
+  "Footer": {
+    "span": "Diseñado y construído por Jesus Santiago.",
+    "project": "Este portafolio esta construído en Next.js"
+  }
 }
