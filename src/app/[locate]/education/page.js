@@ -512,7 +512,7 @@ export default function Education() {
                         alignSelf: 'center'
                     }}
                 >
-                    Ir a la raiz
+                    Volver a la landing
                 </Button>
             </Box>
         </Box>

@@ -105,7 +105,9 @@ const Education = () => {
                             sx={{
                                 display: 'flex',
                                 justifyContent: 'space-between',
-                                alignItems: 'center'
+                                alignItems: {xs: 'start', sm: 'center'},
+                                flexDirection: {xs: 'column', lg: 'row'},
+                                gap: {xs: 2, sm: 0},
                             }}
                         >
                             <Typography
@@ -126,7 +128,9 @@ const Education = () => {
                             sx={{
                                 display: 'flex',
                                 justifyContent: 'space-between',
-                                alignItems: 'center'
+                                alignItems: {xs: 'start', sm: 'center'},
+                                flexDirection: {xs: 'column', lg: 'row'},
+                                gap: {xs: 2, sm: 0},
                             }}
                         >
                             <Typography
