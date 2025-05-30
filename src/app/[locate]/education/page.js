@@ -3,8 +3,6 @@
 import Box from "@mui/material/Box";
 import {useRouter} from "next/navigation";
 import {Button, Card, CardMedia, Divider, Typography} from "@mui/material";
-// import MyEducationSvg from "educationCard.svg";
-import Image from "next/image";
 import {ComputerRounded, DateRange, DoneRounded, LocationOnRounded, SchoolRounded} from "@mui/icons-material";
 import BrushIcon from "@mui/icons-material/Brush";
 import {useTranslations} from "next-intl";

@@ -1,13 +1,10 @@
 'use client'
 
-import {Avatar, Button, Card, CardMedia, Container, Divider, Typography} from "@mui/material"
+import {Avatar, Container, Typography} from "@mui/material"
 import {useRouter} from "next/navigation"
 import ButtonChange from "@/components/ButtonChange";
 import Box from "@mui/material/Box";
-import {ComputerRounded, DateRange, DoneRounded, LocationOnRounded, SchoolRounded} from "@mui/icons-material";
-import BrushIcon from "@mui/icons-material/Brush";
 import {useTranslations} from "next-intl";
-// import Grid from "@mui/material/Unstable_Grid2";
 import Grid from '@mui/material/Grid';
 
 export default function About() {
@@ -122,7 +119,7 @@ export default function About() {
                             <Grid item xs={12} md={7}>
                                 <Box
                                     component="img"
-                                    src="/airsoft.jpeg"
+                                    src="/me.jpg"
                                     alt="Foto practicando Airsoft"
                                     sx={{
                                         width: '100%',
@@ -130,6 +127,7 @@ export default function About() {
                                         objectFit: 'cover',
                                         borderRadius: 3,
                                         boxShadow: 4,
+                                        objectPosition: 'top'
                                     }}
                                 />
                                 <Typography
@@ -175,7 +173,6 @@ export default function About() {
                                         borderRadius: 3,
                                         boxShadow: 4,
                                         mt: 2,
-                                        // objectPosition: 'bottom'
                                     }}
                                 />
                                 <Typography
@@ -188,59 +185,6 @@ export default function About() {
                             </Grid>
                         </Grid>
                     </Container>
-
-
-
-                    {/*<Box*/}
-                    {/*    width='1'*/}
-                    {/*    display='flex'*/}
-                    {/*    flexDirection='column'*/}
-                    {/*    alignItems='end'*/}
-                    {/*    sx={{*/}
-                    {/*        // px: 5,*/}
-                    {/*        paddingBottom: {xs: 0, lg: 5}*/}
-                    {/*    }}*/}
-                    {/*>*/}
-
-                    {/*    <Typography*/}
-                    {/*        color='primary.main'*/}
-                    {/*        fontSize='32px'*/}
-                    {/*        fontWeight='bold'*/}
-                    {/*        textAlign='start'*/}
-                    {/*        width='1'*/}
-                    {/*    >*/}
-                    {/*        {t('title')}*/}
-                    {/*    </Typography>*/}
-
-                    {/*    <Typography*/}
-                    {/*        fontSize='22px'*/}
-                    {/*        fw='medium'*/}
-                    {/*        width='.8'*/}
-                    {/*        sx={{*/}
-                    {/*            paddingTop: 6,*/}
-                    {/*            textAlign: 'end',*/}
-                    {/*            textWrap: 'balance'*/}
-                    {/*        }}*/}
-                    {/*    >*/}
-                    {/*        {t('subtitle')}*/}
-                    {/*    </Typography>*/}
-
-                    {/*</Box>*/}
-
-                    {/*<Divider/>*/}
-
-
-                    {/*<Button*/}
-                    {/*    variant='contained'*/}
-                    {/*    color='secondary'*/}
-                    {/*    onClick={() => router.push("/")}*/}
-                    {/*    sx={{*/}
-                    {/*        fontWeight:'Bold',*/}
-                    {/*        alignSelf: 'center'*/}
-                    {/*    }}*/}
-                    {/*>*/}
-                    {/*    {t('button')}*/}
-                    {/*</Button>*/}
                 </Box>
             </Box>
         </>

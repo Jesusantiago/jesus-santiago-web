@@ -1,5 +1,3 @@
-import {LinkRounded} from "@mui/icons-material"
-import GitHub from "@mui/icons-material/GitHub"
 import {Box, CardMedia, Typography, Link, Button} from "@mui/material"
 import Grid from '@mui/material/Unstable_Grid2'
 import {useParams} from "next/navigation";
