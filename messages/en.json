@@ -6,45 +6,11 @@
     "btnAboutMe": "About me",
     "btnCTA": "Let's talk"
   },
-  "Education": {
-    "title": "Courses and Additional Training",
-    "subtitle" : "These courses have been key to complementing my technical training, exploring new tools, methodologies, and practical approaches in development.",
-    "button": "Back to Home",
-    "react": {
-      "title": "Front-End Developer with React",
-      "date": "Nov. - Dec. 2023",
-      "institute": "Codo a Codo",
-      "location": "Buenos Aires, Argentina",
-      "description": "I learned how to build user interfaces with React's FrameWork."
-    },
-    "sass": {
-      "title": "Sass course",
-      "date": "Mar. - Apr. 2023",
-      "institute": "Codigo Facilito",
-      "location": "Buenos Aires, Argentina",
-      "description": "One of the most important CSS frameWorks today."
-    },
-    "node": {
-      "title": "Full Stack with Node.js",
-      "date": "Feb. - Jul. 2023",
-      "institute": "Codo a Codo",
-      "location": "Buenos Aires, Argentina",
-      "description": "I gained knowledge to build functional schemes and services, working both on the client side (Front-end) and the server side (Back-end)."
-    },
-    "alura": {
-      "title": "Full Stack with Java",
-      "date": "Aug. 2022 - Feb. 2023",
-      "institute": "Alura Latam & Oracle ONE ",
-      "location": "Buenos Aires, Argentina",
-      "description": "Bootcamp especially designed to train quality full stack developers with solid foundations and good coding practices."
-    }
-
-  },
   "Home": {
     "hero": {
-      "status": "Available",
+      "status": "Available for internships",
       "title": "Jesus Santiago",
-      "subtitle": "Front-End Developer React Specialist",
+      "subtitle": "Full Stack Developer",
       "btnCTA": "Let's talk",
       "btnCV": "see CV"
     },
@@ -93,7 +59,8 @@
         "date": "Sep. 2024 - Currently",
         "institute": "EEP IGROUP",
         "location": "Madrid, España",
-        "description": "Multi-platform application development."
+        "description": "Multi-platform application development.",
+        "experience" : "During this program, I’ve delved into Backend development with Java and Spring Boot, as well as mobile development with Android. A highlight has been building a complete app from scratch, along with projects in Python, C#, and Java that allowed me to work with graphical interfaces, local file handling, and data structures. This educational journey has been key in shaping my profile as a developer, strengthening both my technical skills and my passion for creating functional, well-structured solutions."
       }
     },
     "about": {
@@ -102,7 +69,8 @@
       "paragraph2-1": "I'm currently in my second year of the Multiplatform Application Development (DAM) program at EEP iGroup, and",
       "paragraph2-2": "I’m looking for a company where I can carry out my professional internship.",
       "paragraph3-1": "Throughout my journey, I’ve combined self-taught learning, personal projects, and teamwork — developing not only technical skills, but also communication, leadership, and commitment. I define myself by my initiative, eagerness to learn, and practical approach to building software.",
-      "paragraph4-1": "I’m looking for a challenging environment where I can grow alongside people who share a passion for technology, learning, and doing things right."
+      "paragraph4-1": "I’m looking for a challenging environment where I can grow alongside people who share a passion for technology, learning, and doing things right.",
+      "button" : "Get to know my personal side"
     },
     "FAQ": {
       "title": "FAQ",
@@ -112,7 +80,7 @@
       },
       "FAQ2": {
         "title": "What is your specialization?",
-        "question": "Although I have Full Stack knowledge, I specialize in Front-End development, mainly with React, which is where I most enjoy applying my skills."
+        "question": "I’m comfortable working on both the Front-End and the Back-End. I enjoy creating intuitive, functional interfaces, but I also feel confident handling server-side logic. My focus is Full Stack development, combining both areas to build complete and cohesive solutions."
       },
       "FAQ3": {
         "title": "How long have you been working in web development?",
@@ -175,5 +143,53 @@
   "Footer": {
     "span": "Design and Developer by Jesus Santiago",
     "project": "This portfolio is built in Next.js"
+  },
+  "Education": {
+    "title": "Courses and Additional Training",
+    "subtitle" : "These courses have been key to complementing my technical training, exploring new tools, methodologies, and practical approaches in development.",
+    "button": "Back to Home",
+    "react": {
+      "title": "Front-End Developer with React",
+      "date": "Nov. - Dec. 2023",
+      "institute": "Codo a Codo",
+      "location": "Buenos Aires, Argentina",
+      "description": "I learned how to build user interfaces with React's FrameWork."
+    },
+    "sass": {
+      "title": "Sass course",
+      "date": "Mar. - Apr. 2023",
+      "institute": "Codigo Facilito",
+      "location": "Buenos Aires, Argentina",
+      "description": "One of the most important CSS frameWorks today."
+    },
+    "node": {
+      "title": "Full Stack with Node.js",
+      "date": "Feb. - Jul. 2023",
+      "institute": "Codo a Codo",
+      "location": "Buenos Aires, Argentina",
+      "description": "I gained knowledge to build functional schemes and services, working both on the client side (Front-end) and the server side (Back-end)."
+    },
+    "alura": {
+      "title": "Full Stack with Java",
+      "date": "Aug. 2022 - Feb. 2023",
+      "institute": "Alura Latam & Oracle ONE ",
+      "location": "Buenos Aires, Argentina",
+      "description": "Bootcamp especially designed to train quality full stack developers with solid foundations and good coding practices."
+    }
+
+  },
+  "AboutMe" : {
+    "title": "More About Me",
+    "subtitle": "A more human look into my personal and professional story",
+    "paragraph1": "I'm Venezuelan, and if life has taught me anything, it's that we’re always beginning again. I lived in Argentina for eight years, and just over a year ago, I arrived in Spain. Each move has been a mix of uncertainty, excitement, and lessons that helped me grow far beyond what I expected.",
+    "paragraph2": "Since I was a kid, I’ve been drawn to technology. I can’t pinpoint exactly when it started, but anything with a screen fascinated me. Computers, video games, devices… it felt like there was a whole universe inside them, waiting to be explored. Today, years later, I still feel that same wonder—only now, I get to build inside that universe.",
+    "paragraph3": "I love programming not just because it’s logical or challenging, but because there’s something deeply satisfying about solving things. You start with a blank idea, hit walls, get frustrated, try again, and suddenly... it works. That moment makes it all worth it. No matter how complex the problem, I enjoy the challenge—because in the end, it always teaches me something new.",
+    "paragraph4": "I also have an adventurous side that needs to step out into the real world. I play airsoft, and in the past, I did rock climbing and long hikes. I’ve spent more than 10 days straight in the mountains—and while it may sound intense, those are some of the most meaningful memories I carry with me. Being out there, away from distractions, teaches you to trust yourself, listen to your surroundings, and appreciate the simple things.",
+    "paragraph5": "I keep learning every single day. I’m not aiming to be perfect—I aim to be authentic, to move forward step by step, and to enjoy the journey, both in code and in life.",
+    "paragraph6": "Thanks for reading. If you made it this far, then we already share something: curiosity.",
+    "titleTwo": "Some photos that represent me",
+    "caption1": "Airsoft replica — not a real weapon.",
+    "caption2":"Where the magic happens.",
+    "caption3" : "With Zeus at La Bola del Mundo. Spain – Madrid."
   }
 }

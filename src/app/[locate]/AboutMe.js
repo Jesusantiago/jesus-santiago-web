@@ -1,11 +1,9 @@
-import { LinkRounded } from "@mui/icons-material"
+import {LinkRounded} from "@mui/icons-material"
 import GitHub from "@mui/icons-material/GitHub"
 import {Box, CardMedia, Typography, Link, Button} from "@mui/material"
 import Grid from '@mui/material/Unstable_Grid2'
-import { useParams } from "next/navigation";
-import { useTranslations } from 'next-intl'
-
-
+import {useParams} from "next/navigation";
+import {useTranslations} from 'next-intl'
 
 
 const AboutMe = () => {
@@ -21,7 +19,8 @@ const AboutMe = () => {
                 width: '1',
                 backgroundColor: (theme) => theme.palette.card.main,
                 boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`,
-                py: { xs: 6, md: 10 },
+                py: {xs: 6, md: 10},
+                // px: {xs: 2, md: 0},
                 px: 2,
                 mt: 10,
                 display: 'flex',
@@ -51,97 +50,111 @@ const AboutMe = () => {
                 container
                 component='section'
                 sx={{
-                    width: { xs: 0.8, lg: .7 },
+                    width: {xs: 0.8, lg: .8},
                     maxWidth: '1620px',
-                    gap: {xs: 4, md: 0}
+                    gap: {xs: 4, md: 0},
+                    justifyContent: 'space-between'
                 }}
             >
 
-                <Grid xs={12} md={5}>
+                <Grid
+                    item
+                    xs={12} md={6}>
                     <CardMedia
                         component='img'
                         image='cerebro.png'
                         alt='Imagen representativa del projecto de NebulaWear'
                         sx={{
                             height: {xs: 300, md: 1},
-                            width: { xs: 1, md: 350 },
+                            width: {xs: 1, md: 350},
                             objectPosition: 'center',
                             objectFit: 'contain'
                         }}
                     />
                 </Grid>
 
-                <Grid xs={12} md={7}
+                <Grid
+                    item
+                    xs={12} md={6}
                     sx={{
-                        display:'flex',
-                        flexDirection:'column',
-                        alignItems: 'center',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'start',
                         justifyContent: 'center',
-                        gap: 6,
+                        gap: 2,
                     }}
                 >
 
-                        <Typography
-                            sx={{
-                                color: 'text.secondary',
-                                lineHeight: 1.7,
-                                textWrap:'balance',
-                                fontSize: {xs: '16px', sm: '18px'}
+                    <Typography
+                        sx={{
+                            color: 'text.secondary',
+                            lineHeight: 1.7,
+                            textWrap: 'balance',
+                            fontSize: {xs: '16px', sm: '18px'}
                         }}
-                        >
-                            {t('paragraph1-1')}
-                        </Typography>
+                    >
+                        {t('paragraph1-1')}
+                    </Typography>
 
-                        <Typography
-                            sx={{
-                                color: 'text.secondary',
-                                lineHeight: 1.7,
-                                textWrap:'balance',
-                                fontSize: {xs: '16px', sm: '18px'}
+                    <Typography
+                        sx={{
+                            color: 'text.secondary',
+                            lineHeight: 1.7,
+                            textWrap: 'balance',
+                            fontSize: {xs: '16px', sm: '18px'}
                         }}
-                        >
-                            {t('paragraph2-1')} <b> {t('paragraph2-2')} </b>
-                        </Typography>
+                    >
+                        {t('paragraph2-1')} <b> {t('paragraph2-2')} </b>
+                    </Typography>
 
-                        <Typography
-                            sx={{
-                                color: 'text.secondary',
-                                lineHeight: 1.7,
-                                textWrap:'balance',
-                                fontSize: {xs: '16px', sm: '18px'}
+                    <Typography
+                        sx={{
+                            color: 'text.secondary',
+                            lineHeight: 1.7,
+                            textWrap: 'balance',
+                            fontSize: {xs: '16px', sm: '18px'}
                         }}
-                        >
-                            {t('paragraph3-1')}
-                        </Typography>
+                    >
+                        {t('paragraph3-1')}
+                    </Typography>
 
-                        <Typography
-                            sx={{
-                                color: 'text.secondary',
-                                lineHeight: 1.7,
-                                textWrap:'balance',
-                                fontSize: {xs: '16px', sm: '18px'}
+                    <Typography
+                        sx={{
+                            color: 'text.secondary',
+                            lineHeight: 1.7,
+                            textWrap: 'balance',
+                            fontSize: {xs: '16px', sm: '18px'}
                         }}
+                    >
+                        {t('paragraph4-1')}
+                    </Typography>
+
+                    <Link href={`/${locate}/about`}>
+                        <Button
+                            variant="outlined"
+                            sx={{
+                                borderColor: 'button.aboutme',
+                                color: 'button.aboutme',
+                                textTransform: 'none',
+                                fontWeight: 500,
+                                '&:hover': {
+                                    backgroundColor: theme => theme.palette.mode === 'dark'
+                                        ? 'rgba(183, 242, 94, 0.1)'
+                                        : 'rgba(0,0,0,0.05)',
+                                    borderColor: 'button.aboutme',
+                                }
+                            }}
                         >
-                            {t('paragraph4-1')}
-                        </Typography>
+                            {t('button')}
+                        </Button>
+                    </Link>
 
 
                 </Grid>
 
 
             </Grid>
-            <Link href={`/${locate}/about`}>About</Link>
 
-            {/*<Link href="/${locate}/about">*/}
-                    {/*<Button*/}
-                    {/*    variant="contained"*/}
-                    {/*    color="secondary"*/}
-
-                    {/*>*/}
-                    {/*    {t('title')}*/}
-                    {/*</Button>*/}
-                {/*About*/}
-                {/*</Link>*/}
 
         </Box>
     )

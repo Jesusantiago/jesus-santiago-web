@@ -47,40 +47,14 @@ export default function Education() {
                     justifyContent: {xs: 'center', lg: 'space-between'}
                 }}
             >
-                <Box
-                    width='1'
-                    display='flex'
-                    flexDirection='column'
-                    alignItems='end'
-                    sx={{
-                        // px: 5,
-                        paddingBottom: {xs: 0, lg: 5}
-                    }}
-                >
 
-                    <Typography
-                        color='primary.main'
-                        fontSize='32px'
-                        fontWeight='bold'
-                        textAlign='start'
-                        width='1'
-                    >
+                <Box component="section" sx={{ py: 8, textAlign: 'center' }}>
+                    <Typography variant="h3" sx={{ fontWeight: 600 }}>
                         {t('title')}
                     </Typography>
-
-                    <Typography
-                        fontSize='22px'
-                        fw='medium'
-                        width='.8'
-                        sx={{
-                            paddingTop: 6,
-                            textAlign: 'end',
-                            textWrap: 'balance'
-                        }}
-                    >
+                    <Typography variant="subtitle1" sx={{ color: 'text.secondary', mt: 2 }}>
                         {t('subtitle')}
                     </Typography>
-
                 </Box>
 
                 <Divider/>

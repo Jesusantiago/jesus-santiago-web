@@ -165,12 +165,7 @@ const Education = () => {
                         <Typography
                             color='text.muted'
                             sx={{fontSize:"16px", fontWeight: "medium"}}>
-                            Durante este ciclo he profundizado en desarrollo Backend con Java y Spring Boot, y en
-                            desarrollo móvil con Android. Destaco la creación de una app completa desde cero, además de
-                            proyectos en Python, C# y Java que me permitieron trabajar con
-                            interfaces gráficas, archivos locales y estructuras de datos. Este camino formativo ha sido
-                            clave para definir mi perfil como desarrollador, afianzando tanto mis habilidades técnicas
-                            como mi pasión por crear soluciones funcionales y bien estructuradas.
+                            {t('eep.experience')}
                         </Typography>
 
                         <Divider/>

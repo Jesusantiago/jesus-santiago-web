@@ -50,6 +50,9 @@ let lightTheme = createTheme({
         background: {
             default: '#F0F0F0',
         },
+        button: {
+            aboutme : "#4A4A4A"
+        }
     },
 });
 
@@ -90,6 +93,9 @@ let darkTheme = createTheme({
         background: {
             default: '#070707',
         },
+        button: {
+            aboutme : "#B7F25E"
+        }
     },
 });
 

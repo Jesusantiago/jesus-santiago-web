@@ -6,44 +6,11 @@
     "btnAboutMe": "Sobre mí",
     "btnCTA": "Charlemos"
   },
-  "Education": {
-    "title" : "Cursos y formaciones complementarias",
-    "subtitle" : "Estos cursos han sido claves para complementar mi formación técnica, explorando nuevas herramientas, metodologías y enfoques prácticos en desarrollo.",
-    "button" : "Volver al inicio",
-    "react": {
-      "title": "Front-End Developer with React",
-      "date": "Nov. - Dic. 2023",
-      "institute": "Codo a Codo",
-      "location": "Buenos Aires, Argentina",
-      "description": "Aprendí a construir interfaces de usuarios con el Framework de React"
-    },
-    "sass": {
-      "title": "Sass course",
-      "date": "Mar. - Apr. 2023",
-      "institute": "Codigo Facilito",
-      "location": "Buenos Aires, Argentina",
-      "description": "Uno de los frameworks actuales más importantes de CSS."
-    },
-    "node": {
-      "title": "Full Stack con Node.js",
-      "date": "Feb. - Jul. 2023",
-      "institute": "Codo a Codo",
-      "location": "Buenos Aires, Argentina",
-      "description": "Obtuve conocimientos para construir esquemas y servicios funcionales, trabajando tanto el lado del client (Front-end) con del servidor (back-end)."
-    },
-    "alura": {
-      "title": "Full Stack with Java",
-      "date": "Ago. - Feb. 2023",
-      "institute": "Alura Latam con Oracle ONE",
-      "location": "Buenos Aires, Argentina",
-      "description": "Bootcamp especialmente pensando en formar desarrolladores full stack de calidad con bases solidas y buenas practicas de codigo."
-    }
-  },
   "Home": {
     "hero": {
-      "status": "Disponible",
+      "status": "Disponible para practicas FP",
       "title": "Jesús Santiago",
-      "subtitle": "Desarrollador Front-End especializado en  React",
+      "subtitle": "Desarrollador Full Stack",
       "btnCTA": "Charlemos",
       "btnCV": "Ver CV"
     },
@@ -92,7 +59,8 @@
         "date": "Sep 2024 - Actualmente",
         "institute": "EEP - IGROUP",
         "location": "Madrid, España",
-        "description": "Desarrollo de aplicaciones Multiplataforma."
+        "description": "Desarrollo de aplicaciones Multiplataforma.",
+        "experience" : "Durante este ciclo he profundizado en desarrollo Backend con Java y Spring Boot, y en desarrollo móvil con Android. Destaco la creación de una app completa desde cero, además de proyectos en Python, C# y Java que me permitieron trabajar con interfaces gráficas, archivos locales y estructuras de datos. Este camino formativo ha sido clave para definir mi perfil como desarrollador, afianzando tanto mis habilidades técnicas como mi pasión por crear soluciones funcionales y bien estructuradas.Durante este ciclo he profundizado en desarrollo Backend con Java y Spring Boot, y en desarrollo móvil con Android. Destaco la creación de una app completa desde cero, además de proyectos en Python, C# y Java que me permitieron trabajar con interfaces gráficas, archivos locales y estructuras de datos. Este camino formativo ha sido clave para definir mi perfil como desarrollador, afianzando tanto mis habilidades técnicas como mi pasión por crear soluciones funcionales y bien estructuradas."
       }
     },
     "about": {
@@ -101,21 +69,22 @@
       "paragraph2-1": "Actualmente curso el segundo año del ciclo de Desarrollo de Aplicaciones Multiplataforma (DAM) en EEP iGroup, y ",
       "paragraph2-2": "estoy en búsqueda de una empresa donde realizar mis prácticas profesionales.",
       "paragraph3-1": "A lo largo de mi recorrido he combinado formación autodidacta, proyectos personales y trabajo en equipo, desarrollando no solo habilidades técnicas, sino también comunicación, liderazgo y compromiso. Me defino por mi iniciativa, mis ganas de aprender y mi enfoque práctico a la hora de construir software.",
-      "paragraph4-1": "Busco un entorno desafiante, donde pueda crecer rodeado de personas que compartan la pasión por la tecnología, el aprendizaje y el trabajo bien hecho."
+      "paragraph4-1": "Busco un entorno desafiante, donde pueda crecer rodeado de personas que compartan la pasión por la tecnología, el aprendizaje y el trabajo bien hecho.",
+      "button": "Conocer mi lado más personal"
     },
     "FAQ": {
       "title": "FAQ",
       "FAQ1": {
         "title": "¿Tienes permiso de trabajo en España?",
-        "question": "Sí, cuento con permiso de trabajo y estoy completamente habilidado para ejecer en España y en la Unión Europea."
+        "question": "Sí, cuento con permiso de trabajo y estoy completamente habilitado para ejercer en España y en la Unión Europea."
       },
       "FAQ2": {
-        "title": "¿Cuál es tu especiaización?",
-        "question": "Aunque tengo conocimientos Full Stack, me especializo en el desarrolla Front-End, principalmente con React, que es donde más disfruto aplicar mis habilidades."
+        "title": "¿Cuál es tu especialización?",
+        "question": "Me desenvuelvo con soltura tanto en el desarrollo Front-End como en el Back-End. Disfruto creando interfaces intuitivas y funcionales, pero también me siento muy cómodo trabajando en la lógica del servidor. Mi enfoque es Full Stack, combinando ambos mundos para construir soluciones completas y coherentes."
       },
       "FAQ3": {
         "title": "¿Cuánto tiempo llevas trabajando en desarrollo web?",
-        "question": "Comencé a estudiar de forma autodidacta en 2021 y me uní al programa ORACLE ONE en 2022, lo que me dio una base más sólida y un panorama mas claro y desde entonces no he parado de seguir aprendiendo."
+        "question": "Comencé a estudiar de forma autodidacta en 2021 y me uní al programa ORACLE ONE en 2022, lo que me dio una base más sólida y un panorama más claro y desde entonces no he parado de seguir aprendiendo."
       },
       "FAQ4": {
         "title": "¿Tienes experiencia en metodologías ágiles?",
@@ -174,5 +143,52 @@
   "Footer": {
     "span": "Diseñado y construído por Jesus Santiago.",
     "project": "Este portafolio esta construído en Next.js"
+  },
+  "Education": {
+    "title" : "Cursos y formaciones complementarias",
+    "subtitle" : "Estos cursos han sido claves para complementar mi formación técnica, explorando nuevas herramientas, metodologías y enfoques prácticos en desarrollo.",
+    "button" : "Volver al inicio",
+    "react": {
+      "title": "Front-End Developer with React",
+      "date": "Nov. - Dic. 2023",
+      "institute": "Codo a Codo",
+      "location": "Buenos Aires, Argentina",
+      "description": "Aprendí a construir interfaces de usuarios con el Framework de React"
+    },
+    "sass": {
+      "title": "Sass course",
+      "date": "Mar. - Apr. 2023",
+      "institute": "Codigo Facilito",
+      "location": "Buenos Aires, Argentina",
+      "description": "Uno de los frameworks actuales más importantes de CSS."
+    },
+    "node": {
+      "title": "Full Stack con Node.js",
+      "date": "Feb. - Jul. 2023",
+      "institute": "Codo a Codo",
+      "location": "Buenos Aires, Argentina",
+      "description": "Obtuve conocimientos para construir esquemas y servicios funcionales, trabajando tanto el lado del client (Front-end) con del servidor (back-end)."
+    },
+    "alura": {
+      "title": "Full Stack with Java",
+      "date": "Ago. - Feb. 2023",
+      "institute": "Alura Latam con Oracle ONE",
+      "location": "Buenos Aires, Argentina",
+      "description": "Bootcamp especialmente pensando en formar desarrolladores full stack de calidad con bases solidas y buenas practicas de codigo."
+    }
+  },
+  "AboutMe" : {
+    "title": "Más sobre mí",
+    "subtitle": "Un vistazo más humano a mi historia personal y profesional",
+    "paragraph1": "Soy venezolano, y si algo me ha enseñado la vida es que uno nunca deja de empezar de nuevo. Viví ocho años en Argentina, y hace poco más de un año llegué a España. Cada cambio ha sido una mezcla de incertidumbre, entusiasmo y muchas lecciones que me han hecho crecer más de lo que imaginé.",
+    "paragraph2": "Desde pequeño me sentí atraído por la tecnología. No sabría decir exactamente cuándo empezó, pero recuerdo que todo lo que tuviera una pantalla me fascinaba. Las computadoras, los videojuegos, los dispositivos… era como si hubiera un universo ahí dentro esperando a ser descubierto. Hoy, años después, no solo sigo sintiendo esa misma fascinación, sino que además tengo la suerte de poder crear dentro de ese universo.",
+    "paragraph3": "Me gusta programar no solo porque sea desafiante o lógico, sino porque hay algo profundamente satisfactorio en resolver cosas. Empezar con una idea en blanco, chocar con errores, frustrarse, probar, intentar, y de pronto… funciona. Ese momento lo vale todo. No importa cuán complejo sea el problema, me encantan los retos porque en el fondo siempre terminan enseñándome algo nuevo.",
+    "paragraph4": "También tengo un lado aventurero que necesita salir al mundo real. Practico airsoft, y en el pasado hice escalada y senderismo. He pasado más de 10 días seguidos en la montaña, y aunque suene extremo, son de los momentos más valiosos que guardo. Estar ahí, sin distracciones, te enseña a confiar en ti mismo, a escuchar el entorno y a valorar lo simple.",
+    "paragraph5":"Sigo aprendiendo todos los días. No me interesa ser perfecto, me interesa ser auténtico, avanzar paso a paso y disfrutar el camino, tanto en el código como en la vida.",
+    "paragraph6" : "Gracias por leerme. Si llegaste hasta acá, ya nos une algo: la curiosidad.",
+    "titleTwo": "Algunas fotos que me representan",
+    "caption1": "Replica de Airsoft (no es un arma real).",
+    "caption2":"Lugar donde sucede la mágia.",
+    "caption3" : "La bola del mundo. España - Madrid."
   }
 }
