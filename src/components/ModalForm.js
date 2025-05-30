@@ -1,7 +1,23 @@
-import {Box, Modal, Typography} from "@mui/material";
+import {Box, Modal, Snackbar} from "@mui/material";
+import MuiAlert from '@mui/material/Alert';
 import Formulary from "@/app/[locate]/Formulary";
+import {useState} from "react";
+import {useTranslations} from "next-intl";
 
-const ModalForm = ({ open, handleClose }) => {
+const ModalForm = ({open, handleClose, onSuccess}) => {
+    const t = useTranslations('Home.formulary');
+    const [snackbarOpen, setSnackbarOpen] = useState(false);
+    console.log("📦 ModalForm render - snackbarOpen:", snackbarOpen);
+    console.log("🧭 ModalForm recibido onSuccess:", typeof onSuccess);
+
+    const handleShowSnackbar = () => {
+        setSnackbarOpen(true);
+    };
+
+    const handleCloseSnackbar = () => {
+        setSnackbarOpen(false);
+        handleClose();
+    };
 
     return (
         <Modal
@@ -15,22 +31,22 @@ const ModalForm = ({ open, handleClose }) => {
         >
             <Box
                 sx={{
-                    width: {xs:.9, md: .8},
-                    maxWidth: '1620px',
                     position: 'absolute',
                     top: '50%',
                     left: '50%',
                     transform: 'translate(-50%, -50%)',
-                    backgroundColor: (theme) => theme.palette.background.default,
-                    p: {xs:2, sm:10},
-                    // border: '1px solid black',
+                    width: '90%',
+                    maxWidth: 600,
+                    maxHeight: '90vh',
+                    bgcolor: 'background.default',
+                    p: {xs: 3, md: 5},
                     borderRadius: 4,
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center'
+                    boxShadow: 24,
+                    overflowY: 'auto',
                 }}
+
             >
-                <Formulary/>
+                <Formulary onSuccess={onSuccess}/>
             </Box>
 
         </Modal>

@@ -2,8 +2,9 @@ import {Box, Button, Typography} from "@mui/material";
 import { useTranslations } from "next-intl";
 import {ArrowRight} from "@mui/icons-material";
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
-import {useState} from "react";
+import React, {useState} from "react";
 import ModalForm from "@/components/ModalForm";
+import ParentComponent from "@/components/ParentComponent";
 
 const SectionForm  = ( ) => {
     const [ open, setOpen ] = useState( false );
@@ -74,20 +75,35 @@ const SectionForm  = ( ) => {
                     {t('description')}
                 </Typography>
 
-                <Button
-                    variant='contained'
-                    size='large'
-                    color= 'primary'
-                    endIcon={<ArrowCircleRightIcon size={'large'}/>}
-                    onClick={handleOpen}
-                    sx={{
-                        width: { xs: 1, md: '0.2' },
-                    }}
-                >
-                    {t('cta')}
-                </Button>
+                {/*<Button*/}
+                {/*    variant='contained'*/}
+                {/*    size='large'*/}
+                {/*    color= 'primary'*/}
+                {/*    endIcon={<ArrowCircleRightIcon size={'large'}/>}*/}
+                {/*    onClick={handleOpen}*/}
+                {/*    sx={{*/}
+                {/*        width: { xs: 1, md: '0.2' },*/}
+                {/*    }}*/}
+                {/*>*/}
+                {/*    {t('cta')}*/}
+                {/*</Button>*/}
 
-                <ModalForm open={open} handleClose={handleClose} />
+                <ParentComponent>
+                    {/*<Button*/}
+                    {/*    variant='contained'*/}
+                    {/*    size='large'*/}
+                    {/*    color= 'primary'*/}
+                    {/*    endIcon={<ArrowCircleRightIcon size={'large'}/>}*/}
+                    {/*    onClick={handleOpen}*/}
+                    {/*    sx={{*/}
+                    {/*        width: { xs: 1, md: '0.2' },*/}
+                    {/*    }}*/}
+                    {/*>*/}
+                    {/*    {t('cta')}*/}
+                    {/*</Button>*/}
+                </ParentComponent>
+
+                {/*<ModalForm open={open} handleClose={handleClose} />*/}
 
             </Box>
 

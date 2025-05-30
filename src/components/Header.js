@@ -3,9 +3,11 @@ import { Brightness7 } from "@mui/icons-material";
 import { Brightness4 } from "@mui/icons-material";
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from "@/i18n/routing";
-import { useState } from "react"
+import React, { useState } from "react"
 import ModalForm from "@/components/ModalForm";
 import {useTranslations} from "next-intl";
+import ParentComponent from "@/components/ParentComponent";
+import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 
 const LogotipoLight = () => {
     return (
@@ -130,11 +132,13 @@ const Header = ({ darkMode, toggleDarkMode }) => {
                                 </MenuItem>
                             ))}
                             <MenuItem>
-                                <Button color="secondary" variant="contained" onClick={handleOpen} sx={{margin: 'auto'}}>
-                                    {t('btnCTA')}
-                                </Button>
-
-                                <ModalForm open={open} handleClose={handleClose} />
+                                <ParentComponent>
+                                    {/*<Button*/}
+                                    {/*    color="error.main" variant="text" onClick={handleOpen} sx={{margin: 'auto'}}*/}
+                                    {/*>*/}
+                                    {/*    {t('btnCTA')}*/}
+                                    {/*</Button>*/}
+                                </ParentComponent>
                             </MenuItem>
 
                             <Tooltip title={darkMode ? "Modo claro" : "Modo Oscuro"}>
@@ -186,15 +190,28 @@ const Header = ({ darkMode, toggleDarkMode }) => {
                     </Box>
 
                     <Box sx={{display: { xs: 'none', lg:'block'}}}>
-                        <Button 
-                        variant="contained"
-                        color="secondary" 
-                        size="large"
-                        sx={{fontWeight:700}}
-                        onClick={handleOpen}
-                    >
-                            {t('btnCTA')}
-                    </Button>
+                    {/*    <Button*/}
+                    {/*    variant="contained"*/}
+                    {/*    color="secondary"*/}
+                    {/*    size="large"*/}
+                    {/*    sx={{fontWeight:700}}*/}
+                    {/*    onClick={handleOpen}*/}
+                    {/*>*/}
+                    {/*        {t('btnCTA')}*/}
+                    {/*</Button>*/}
+
+                        <ParentComponent>
+                            {/*<Button*/}
+                            {/*    variant='text'*/}
+                            {/*    size='large'*/}
+                            {/*    color= 'error.main'*/}
+                            {/*    onClick={handleOpen}*/}
+                            {/*    sx={{fontWeight:700}}*/}
+                            {/*>*/}
+                            {/*    /!*{t('btnCTA')}*!/*/}
+                            {/*    hola*/}
+                            {/*</Button>*/}
+                        </ParentComponent>
 
                     </Box>
 

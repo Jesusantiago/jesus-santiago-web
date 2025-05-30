@@ -126,12 +126,16 @@
       "email": "Tu email",
       "text": "Deja acá tu mensaje",
       "button": "Enviar",
+      "success": "El correo fue enviado exitosamente",
       "error": {
         "nameError": "El campo Nombre es requerido",
         "emailError": "El campo Email es requerido",
         "emailPattern": "El Email ingresado no es valido",
         "textError": "Este campo es obligatorio",
-        "textLength": "Por favor se mas especifico, el mensaje es muy corto"
+        "textLength": "Por favor se mas especifico, el mensaje es muy corto",
+        "server": "Error de conexión. Verifica tu conexión a Internet, vuelve a intentarlo mas tarde ó enviame el correo a ",
+        "else": "Hubo un problema al enviar el mensaje. Intentelo mas tarde ó enviame un correo a ",
+        "email": "jesuscsantiago27@gmail.com"
       }
     },
     "CTA": {

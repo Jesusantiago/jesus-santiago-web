@@ -126,12 +126,16 @@
       "email": "Your email",
       "text": "Your message here",
       "button": "Send",
+      "success": "The email was sent successfully",
       "error": {
         "nameError": "The name field is required",
         "emailError": "The email field is required",
         "emailPattern": "The entered email is not valid",
         "textError": "This field is required",
-        "textLength": "Please be more specific, the message is too short"
+        "textLength": "Please be more specific, the message is too short",
+        "server": "Connection error. Check your internet connection, try again later, or send me an email at",
+        "else": "There was a problem sending the message. Please try again later or send me an email at",
+        "email": "jesuscsantiago27@gmail.com"
       }
     },
     "CTA": {
