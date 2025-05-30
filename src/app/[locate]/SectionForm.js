@@ -89,18 +89,18 @@ const SectionForm  = ( ) => {
                 {/*</Button>*/}
 
                 <ParentComponent>
-                    {/*<Button*/}
-                    {/*    variant='contained'*/}
-                    {/*    size='large'*/}
-                    {/*    color= 'primary'*/}
-                    {/*    endIcon={<ArrowCircleRightIcon size={'large'}/>}*/}
-                    {/*    onClick={handleOpen}*/}
-                    {/*    sx={{*/}
-                    {/*        width: { xs: 1, md: '0.2' },*/}
-                    {/*    }}*/}
-                    {/*>*/}
-                    {/*    {t('cta')}*/}
-                    {/*</Button>*/}
+                    <Button
+                        variant='contained'
+                        size='large'
+                        color= 'primary'
+                        endIcon={<ArrowCircleRightIcon size={'large'}/>}
+                        // onClick={handleOpen}
+                        sx={{
+                            width: { xs: 1, md: '0.2' },
+                        }}
+                    >
+                        {t('cta')}
+                    </Button>
                 </ParentComponent>
 
                 {/*<ModalForm open={open} handleClose={handleClose} />*/}
@@ -111,8 +111,5 @@ const SectionForm  = ( ) => {
 
     )
 }
-
-
-
 
 export default SectionForm;

@@ -6,7 +6,7 @@ import {useTranslations} from "next-intl";
 import {Button} from "@mui/material";
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 
-const ParentComponent = () => {
+const ParentComponent = ({ children }) => {
     const t = useTranslations('Home');
 
     const [modalOpen, setModalOpen] = useState(false);
@@ -16,7 +16,7 @@ const ParentComponent = () => {
     const handleCloseModal = () => setModalOpen(false);
 
     const handleCloseSnackbar = (event, reason) => {
-        if (reason === 'clickaway') return;
+        // if (reason === 'clickaway') return;
         setSnackbarOpen(false);
     };
 
@@ -26,21 +26,14 @@ const ParentComponent = () => {
         setModalOpen(false);
     };
 
+    const childWithProps = React.isValidElement(children)
+        ? React.cloneElement(children, { onClick: handleOpenModal })
+        : null;
+
+
     return (
         <>
-            <Button
-                variant='contained'
-                size='large'
-                color='primary'
-                endIcon={<ArrowCircleRightIcon size={'large'} />}
-                onClick={handleOpenModal} // botón controla la apertura del modal
-                sx={{
-                    width: { xs: 1, md: '0.2' },
-                }}
-            >
-                {t('CTA.cta')}
-            </Button>
-
+            {childWithProps}
             <ModalForm
                 open={modalOpen}
                 handleClose={handleCloseModal}
@@ -51,6 +44,13 @@ const ParentComponent = () => {
                 autoHideDuration={4000}
                 onClose={handleCloseSnackbar}
                 anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
+                sx={{
+                    zIndex: 9000000000, // ya es 1400 por defecto
+                    position: 'fixed',
+                    bottom: { xs: 20, sm: 40 },
+                    width: 'auto',
+                }}
+
             >
                 <MuiAlert
                     elevation={6}

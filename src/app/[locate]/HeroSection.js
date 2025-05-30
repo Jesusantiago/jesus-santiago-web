@@ -7,6 +7,7 @@ import Grid from '@mui/material/Grid';
 import {useTranslations} from 'next-intl'
 import {useState} from "react";
 import ModalForm from "@/components/ModalForm";
+import ParentComponent from "@/components/ParentComponent";
 
 const HeroSection = () => {
     const [ open, setOpen ] = useState( false)
@@ -93,11 +94,12 @@ const HeroSection = () => {
             mt: {xs: 2, sm: 4, gap: '1rem'},
           }}
         >
+            <ParentComponent>
+
           <Button
             color='secondary'
             variant='contained'
             size='large'
-            onClick={handleOpen}
             endIcon={
               <ArrowCircleRightIcon/>
             }
@@ -107,8 +109,10 @@ const HeroSection = () => {
           >
             {t('hero.btnCTA')}
           </Button>
+            </ParentComponent>
 
-            <ModalForm open={open} handleClose={handleClose} />
+
+            {/*<ModalForm open={open} handleClose={handleClose} />*/}
 
           <Button
               

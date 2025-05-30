@@ -133,11 +133,11 @@ const Header = ({ darkMode, toggleDarkMode }) => {
                             ))}
                             <MenuItem>
                                 <ParentComponent>
-                                    {/*<Button*/}
-                                    {/*    color="error.main" variant="text" onClick={handleOpen} sx={{margin: 'auto'}}*/}
-                                    {/*>*/}
-                                    {/*    {t('btnCTA')}*/}
-                                    {/*</Button>*/}
+                                    <Button
+                                        color="secondary" variant="contained" sx={{margin: 'auto'}}
+                                    >
+                                        {t('btnCTA')}
+                                    </Button>
                                 </ParentComponent>
                             </MenuItem>
 
@@ -201,16 +201,14 @@ const Header = ({ darkMode, toggleDarkMode }) => {
                     {/*</Button>*/}
 
                         <ParentComponent>
-                            {/*<Button*/}
-                            {/*    variant='text'*/}
-                            {/*    size='large'*/}
-                            {/*    color= 'error.main'*/}
-                            {/*    onClick={handleOpen}*/}
-                            {/*    sx={{fontWeight:700}}*/}
-                            {/*>*/}
-                            {/*    /!*{t('btnCTA')}*!/*/}
-                            {/*    hola*/}
-                            {/*</Button>*/}
+                            <Button
+                                variant='contained'
+                                size='large'
+                                color= 'secondary'
+                                sx={{fontWeight:700}}
+                            >
+                                {t('btnCTA')}
+                            </Button>
                         </ParentComponent>
 
                     </Box>
