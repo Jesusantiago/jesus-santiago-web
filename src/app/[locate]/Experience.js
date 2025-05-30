@@ -1,7 +1,3 @@
-import GitHub from '@mui/icons-material/GitHub'
-import Build from '@mui/icons-material/Build'
-import Done from '@mui/icons-material/Done'
-import EngineeringIcon from '@mui/icons-material/Engineering';
 import { Box, Button, Card, CardMedia, Chip, Divider, Typography } from '@mui/material';
 import { useTranslations } from 'next-intl'
 

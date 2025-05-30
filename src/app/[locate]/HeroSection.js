@@ -3,7 +3,7 @@ import Circle  from '@mui/icons-material/Circle'
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import DownloadForOfflineRoundedIcon from '@mui/icons-material/DownloadForOfflineRounded';
 import { Box, Button, Container, Typography, } from '@mui/material'
-import Grid from '@mui/material/Unstable_Grid2'
+import Grid from '@mui/material/Grid';
 import {useTranslations} from 'next-intl'
 import {useState} from "react";
 import ModalForm from "@/components/ModalForm";

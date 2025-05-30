@@ -45,10 +45,10 @@ const Header = ({ darkMode, toggleDarkMode }) => {
     const handleCloseNavMenu = () => {setAnchorElNav(null);};
 
     const pages = [
-        {name: t('btnExperience'), page: "#experience"},
-        {name: t('btnPortfolio'), page: "#projects"},
-        {name: t('btnEducation'), page: "#education"},
-        {name: t('btnAboutMe'), page: "#aboutMe"}
+        {name: t('btnExperience'), page: "/#experience"},
+        {name: t('btnPortfolio'), page: "/#projects"},
+        {name: t('btnEducation'), page: "/#education"},
+        {name: t('btnAboutMe'), page: "/#aboutMe"}
     ]
 
     return (
