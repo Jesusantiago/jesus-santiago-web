@@ -146,14 +146,8 @@ const AboutMe = () => {
                             {t('button')}
                         </Button>
                     </Link>
-
-
                 </Grid>
-
-
             </Grid>
-
-
         </Box>
     )
 }

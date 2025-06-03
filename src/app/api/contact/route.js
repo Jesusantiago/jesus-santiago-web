@@ -1,6 +1,6 @@
 'use server'
 
-import { NextResponse } from 'next/server'
+import {NextResponse} from 'next/server'
 import nodemailer from 'nodemailer'
 
 const user = process.env.EMAIL;
@@ -9,7 +9,7 @@ const pass = process.env.PASSWORD;
 export async function POST(request) {
 
     try {
-        const { email, text, name } = await request.json()
+        const {email, text, name} = await request.json()
         console.log(email, text)
         const transporter = nodemailer.createTransport({
             service: 'gmail',
@@ -35,13 +35,11 @@ export async function POST(request) {
         await transporter.sendMail(mailOption)
 
         return NextResponse.json(
-            { message: 'Messsage sent successfully' },
-            { status: 200 }
+            {message: 'Messsage sent successfully'},
+            {status: 200}
         )
 
     } catch (error) {
-        return new NextResponse('Failed to send message.', { status: 500 })
+        return new NextResponse('Failed to send message.', {status: 500})
     }
 }
-
-// // export default POST

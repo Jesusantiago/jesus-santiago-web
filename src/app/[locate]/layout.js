@@ -6,11 +6,7 @@ import Head from '../head';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter'
 import ClientComponent from '../ClientComponent';
 
-
-
-
 export default async function RootLayout({ children, params : {locale} }) {
-  console.log(locale)
 
   const messages = await getMessages()
 

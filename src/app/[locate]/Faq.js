@@ -1,7 +1,7 @@
-import { Accordion, AccordionDetails, AccordionSummary, Box, Card, CardMedia, Fade, Typography } from '@mui/material'
+import {Accordion, AccordionDetails, AccordionSummary, Box, Card, CardMedia, Fade, Typography} from '@mui/material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMoreRounded'
-import { useTranslations } from 'next-intl'
-import { useState } from 'react';
+import {useTranslations} from 'next-intl'
+import {useState} from 'react';
 import GitHub from '@mui/icons-material/GitHub';
 
 const Faq = () => {
@@ -16,7 +16,7 @@ const Faq = () => {
                 borderRadius: 4,
                 backgroundColor: (theme) => theme.palette.card.main,
                 boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`,
-                py: { xs: 6, md: 10 },
+                py: {xs: 6, md: 10},
                 px: 2,
                 mt: 10,
                 display: 'flex',
@@ -45,11 +45,11 @@ const Faq = () => {
             <Box
                 component='section'
                 sx={{
-                    width: { xs: 0.95, lg: 0.8 },
+                    width: {xs: 0.95, lg: 0.8},
                     maxWidth: '1620px',
                     display: 'flex',
                     flexDirection: 'column',
-                    gap:4
+                    gap: 4
                 }}
             >
 
@@ -59,9 +59,9 @@ const Faq = () => {
                         boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`,
                         borderRadius: 4,
                     }}
-                    >
+                >
                     <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
+                        expandIcon={<ExpandMoreIcon/>}
                         aria-controls="panel1-content"
                         id="panel1-header"
                     >
@@ -86,9 +86,9 @@ const Faq = () => {
                         backgroundColor: 'none',
                         boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`,
                     }}
-                    >
+                >
                     <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
+                        expandIcon={<ExpandMoreIcon/>}
                         aria-controls="panel1-content"
                         id="panel1-header"
                     >
@@ -115,7 +115,7 @@ const Faq = () => {
                     }}
                 >
                     <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
+                        expandIcon={<ExpandMoreIcon/>}
                         aria-controls="panel1-content"
                         id="panel1-header"
                     >
@@ -142,7 +142,7 @@ const Faq = () => {
                     }}
                 >
                     <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
+                        expandIcon={<ExpandMoreIcon/>}
                         aria-controls="panel1-content"
                         id="panel1-header"
                     >
@@ -169,7 +169,7 @@ const Faq = () => {
                     }}
                 >
                     <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
+                        expandIcon={<ExpandMoreIcon/>}
                         aria-controls="panel1-content"
                         id="panel1-header"
                     >
@@ -196,7 +196,7 @@ const Faq = () => {
                     }}
                 >
                     <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
+                        expandIcon={<ExpandMoreIcon/>}
                         aria-controls="panel1-content"
                         id="panel1-header"
                     >
@@ -223,7 +223,7 @@ const Faq = () => {
                     }}
                 >
                     <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
+                        expandIcon={<ExpandMoreIcon/>}
                         aria-controls="panel1-content"
                         id="panel1-header"
                     >
@@ -250,7 +250,7 @@ const Faq = () => {
                     }}
                 >
                     <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
+                        expandIcon={<ExpandMoreIcon/>}
                         aria-controls="panel1-content"
                         id="panel1-header"
                     >
@@ -264,11 +264,10 @@ const Faq = () => {
                         <Typography
                             variant='body1'
                         >
-                           {t('FAQ8.question')}
+                            {t('FAQ8.question')}
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
-
 
 
             </Box>

@@ -1,17 +1,7 @@
-import Link from 'next/link';
 import React, {useEffect, useState} from 'react';
 import {Box, Button, Typography} from "@mui/material";
 import {usePathname, useRouter} from '@/i18n/routing';
 import {useParams} from "next/navigation";
-import {lightGreen} from "@mui/material/colors";
-
-const spanish = () => {
-    return(
-        <>
-            <img src="spanish.png" alt="" width="24px" height="24px" />
-        </>
-    )
-}
 
 const ButtonChange = () => {
     const params = useParams();
@@ -37,13 +27,13 @@ const ButtonChange = () => {
     return (
         <Box
             sx={{
-                width: {xs: '40px', md:'100px'},
-                height: {xs:'40px', md:'70px'},
+                width: {xs: '40px', md: '100px'},
+                height: {xs: '40px', md: '70px'},
                 backgroundColor: (theme) => theme.palette.secondary.main,
                 border: '1px solid #fefefe',
                 position: 'fixed',
-                zIndex:'3000',
-                top: {xs: 180, md:250},
+                zIndex: '3000',
+                top: {xs: 180, md: 250},
                 right: 0,
                 borderTopLeftRadius: {xs: 10, md: 20},
                 borderBottomLeftRadius: {xs: 10, md: 20},

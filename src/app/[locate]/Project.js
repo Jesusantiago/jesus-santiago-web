@@ -2,8 +2,6 @@ import { LinkRounded } from "@mui/icons-material"
 import GitHub from "@mui/icons-material/GitHub"
 import { Box, Button, Card, CardMedia, Chip, Divider, Typography } from "@mui/material"
 import { useTranslations } from 'next-intl'
-import Link from "next/link"
-
 
 const Project = () => {
 

@@ -1,5 +1,5 @@
-import { Box, Button, Card, CardMedia, Chip, Divider, Typography } from '@mui/material';
-import { useTranslations } from 'next-intl'
+import {Box, Button, Card, CardMedia, Chip, Divider, Typography} from '@mui/material';
+import {useTranslations} from 'next-intl'
 
 const Experience = () => {
     const t = useTranslations('Home.experience')
@@ -14,7 +14,7 @@ const Experience = () => {
                 borderRadius: 4,
                 backgroundColor: (theme) => theme.palette.card.main,
                 boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`,
-                py: { xs: 6, md: 10 },
+                py: {xs: 6, md: 10},
                 px: 2,
                 mt: 10,
                 display: 'flex',
@@ -30,7 +30,7 @@ const Experience = () => {
                 textAlign='center'
                 fontWeight='500'
                 sx={{
-                    background: (theme) => `linear-gradient(282deg, ${theme.palette.text.secondary} 0%, ${theme.palette.text.main} 53%, ${theme.palette.text.secondary} 108%)`,    
+                    background: (theme) => `linear-gradient(282deg, ${theme.palette.text.secondary} 0%, ${theme.palette.text.main} 53%, ${theme.palette.text.secondary} 108%)`,
                     WebkitBackgroundClip: 'text',
                     backgroundClip: 'text',
                     WebkitTextFillColor: 'transparent',
@@ -43,7 +43,7 @@ const Experience = () => {
             <Box
                 component='section'
                 sx={{
-                    width: { xs: 0.95, lg: 0.8 },
+                    width: {xs: 0.95, lg: 0.8},
                     maxWidth: '1620px',
                     display: 'flex',
                     flexDirection: 'column',
@@ -58,7 +58,7 @@ const Experience = () => {
                     <Card
                         sx={{
                             display: 'flex',
-                            flexDirection: { xs: 'column', lg: 'row' },
+                            flexDirection: {xs: 'column', lg: 'row'},
                             borderRadius: 4,
                             boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`
                         }}>
@@ -68,7 +68,7 @@ const Experience = () => {
                             alt='Imagen presentativa de Agiliza'
                             sx={{
                                 height: 320,
-                                width: { xs: 1, lg: 345 },
+                                width: {xs: 1, lg: 345},
                                 objectPosition: 'center'
                             }}
                         />
@@ -92,7 +92,7 @@ const Experience = () => {
                             >
                                 <Typography
                                     variant='h6'
-                                    width={1/2}
+                                    width={1 / 2}
                                     textAlign={'start'}
                                     fontWeight={'700'}
                                 >
@@ -100,14 +100,14 @@ const Experience = () => {
                                 </Typography>
                                 <Typography
                                     variant='button'
-                                    width={1/2}
+                                    width={1 / 2}
                                     textAlign={'right'}
                                 >
                                     {t('projectAgiliza.date')}
                                 </Typography>
 
                             </Box>
-                            <Divider />
+                            <Divider/>
                             <Typography
                                 variant='body1'
                                 color='primary.transparent'
@@ -122,10 +122,10 @@ const Experience = () => {
 
                             <Box
                                 sx={{
-                                    display : 'flex',
-                                    flexWrap : 'wrap',
+                                    display: 'flex',
+                                    flexWrap: 'wrap',
                                     gap: 1,
-                                    mt:6
+                                    mt: 6
                                 }}
                             >
                                 <Chip
@@ -148,7 +148,7 @@ const Experience = () => {
                     <Card
                         sx={{
                             display: 'flex',
-                            flexDirection: { xs: 'column', lg: 'row' },
+                            flexDirection: {xs: 'column', lg: 'row'},
                             borderRadius: 4,
                             boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`
                         }}>
@@ -158,7 +158,7 @@ const Experience = () => {
                             alt='Imagen presentativa de Moorishville'
                             sx={{
                                 height: 300,
-                                width: { xs: 1, lg: 345 },
+                                width: {xs: 1, lg: 345},
                                 objectPosition: 'center'
                             }}
                         />
@@ -177,12 +177,12 @@ const Experience = () => {
                                 sx={{
                                     display: 'flex',
                                     justifyContent: 'space-between',
-                                    alignItems : 'center'
+                                    alignItems: 'center'
                                 }}
                             >
                                 <Typography
                                     variant='h6'
-                                    width={1/2}
+                                    width={1 / 2}
                                     textAlign={'start'}
                                     fontWeight={'700'}
                                 >
@@ -190,7 +190,7 @@ const Experience = () => {
                                 </Typography>
                                 <Typography
                                     variant='button'
-                                    width={1/2}
+                                    width={1 / 2}
                                     textAlign={'right'}
                                 >
                                     {t('projectMoorishville.date')}
@@ -198,7 +198,7 @@ const Experience = () => {
 
                             </Box>
 
-                            <Divider />
+                            <Divider/>
                             <Typography
                                 variant='body1'
                                 color='primary.transparent'
@@ -213,10 +213,10 @@ const Experience = () => {
 
                             <Box
                                 sx={{
-                                    display : 'flex',
-                                    flexWrap : 'wrap',
+                                    display: 'flex',
+                                    flexWrap: 'wrap',
                                     gap: 1,
-                                    mt:8
+                                    mt: 8
                                 }}
                             >
                                 <Chip

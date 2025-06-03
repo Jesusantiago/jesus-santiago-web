@@ -5,7 +5,6 @@ import {DateRange} from '@mui/icons-material';
 import {SchoolRounded} from '@mui/icons-material';
 import {LocationOnRounded} from '@mui/icons-material';
 import {DoneRounded} from '@mui/icons-material';
-import {ComputerRounded} from '@mui/icons-material';
 import Link from "next/link";
 import {useParams} from "next/navigation";
 
@@ -61,7 +60,6 @@ const Education = () => {
                     gap: 8
                 }}
             >
-                {/* eep-igroup */}
                 <Card
                     sx={{
                         width: 1,
@@ -112,13 +110,19 @@ const Education = () => {
                         >
                             <Typography
                                 color={({palette}) => palette.primary.main}
-                                sx={{display: 'flex', alignItems: 'center', gap: 1, fontSize:"22px", fontWeight: "bold"}}>
+                                sx={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    gap: 1,
+                                    fontSize: "22px",
+                                    fontWeight: "bold"
+                                }}>
                                 <BrushIcon/> {t('eep.title')}
                             </Typography>
                             <Typography
                                 // color='primary.text.neutral'
                                 color='text.neutral'
-                                sx={{display: 'flex', alignItems: 'center', gap: 1, fontSize:"16px"}}>
+                                sx={{display: 'flex', alignItems: 'center', gap: 1, fontSize: "16px"}}>
                                 <DateRange/> {t('eep.date')}
                             </Typography>
                         </Box>
@@ -135,12 +139,24 @@ const Education = () => {
                         >
                             <Typography
                                 color='text.main'
-                                sx={{display: 'flex', alignItems: 'center', gap: 1, fontSize:"18px", fontWeight: "600"}}>
+                                sx={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    gap: 1,
+                                    fontSize: "18px",
+                                    fontWeight: "600"
+                                }}>
                                 <SchoolRounded/> {t('eep.institute')}
                             </Typography>
                             <Typography
                                 color='text.secondary'
-                                sx={{display: 'flex', alignItems: 'center', gap: 1, fontSize:"15px", fontWeight:"regular"}}>
+                                sx={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    gap: 1,
+                                    fontSize: "15px",
+                                    fontWeight: "regular"
+                                }}>
                                 <LocationOnRounded
                                 /> {t('eep.location')}
                             </Typography>
@@ -153,9 +169,15 @@ const Education = () => {
                                 alignItems: 'center'
                             }}
                         >
-                            <Typography 
+                            <Typography
                                 color='text.main'
-                                sx={{display: 'flex', alignItems: 'center', gap: 1, fontSize:"16px", fontWeight: "Regular"}}>
+                                sx={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    gap: 1,
+                                    fontSize: "16px",
+                                    fontWeight: "Regular"
+                                }}>
                                 <DoneRounded/> {t('eep.description')}
                             </Typography>
                         </Box>
@@ -164,7 +186,7 @@ const Education = () => {
 
                         <Typography
                             color='text.muted'
-                            sx={{fontSize:"16px", fontWeight: "medium"}}>
+                            sx={{fontSize: "16px", fontWeight: "medium"}}>
                             {t('eep.experience')}
                         </Typography>
 
@@ -176,27 +198,21 @@ const Education = () => {
                         >
                             MySQL - JAVA - SPRING BOOT - PYTHON - C# - ANDROID - TEST
                         </Typography>
-
                     </Box>
 
-
                 </Card>
-
                 <Link href={`/${locate}/education`}>
                     <Button
                         variant="contained"
                         color="secondary"
                         sx={{
-                            fontWeight:"600",
+                            fontWeight: "600",
                             letterSpacing: '0.5px',
                         }}
                     >
                         Ver más
                     </Button>
                 </Link>
-
-
-
             </Box>
         </Box>
     )

@@ -7,17 +7,6 @@ import {useTranslations} from "next-intl";
 const ModalForm = ({open, handleClose, onSuccess}) => {
     const t = useTranslations('Home.formulary');
     const [snackbarOpen, setSnackbarOpen] = useState(false);
-    console.log("📦 ModalForm render - snackbarOpen:", snackbarOpen);
-    console.log("🧭 ModalForm recibido onSuccess:", typeof onSuccess);
-
-    const handleShowSnackbar = () => {
-        setSnackbarOpen(true);
-    };
-
-    const handleCloseSnackbar = () => {
-        setSnackbarOpen(false);
-        handleClose();
-    };
 
     return (
         <Modal

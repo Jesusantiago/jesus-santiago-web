@@ -115,7 +115,6 @@ export default function About() {
                         </Typography>
 
                         <Grid container spacing={2}>
-                            {/* Airsoft - imagen grande */}
                             <Grid item xs={12} md={7}>
                                 <Box
                                     component="img"
@@ -138,7 +137,6 @@ export default function About() {
                                 </Typography>
                             </Grid>
 
-                            {/* Setup - imagen mediana */}
                             <Grid item xs={12} md={5}>
                                 <Box
                                     component="img"
@@ -160,7 +158,6 @@ export default function About() {
                                 </Typography>
                             </Grid>
 
-                            {/* Montaña - imagen ancha abajo */}
                             <Grid item xs={12}>
                                 <Box
                                     component="img"

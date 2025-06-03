@@ -10,9 +10,6 @@ const SectionForm  = ( ) => {
     const [ open, setOpen ] = useState( false );
     const t = useTranslations('Home.CTA')
 
-    const handleOpen = () => { setOpen(true) };
-    const handleClose = () => { setOpen( false ); };
-
     return(
         <Box
             component='section'
@@ -75,26 +72,12 @@ const SectionForm  = ( ) => {
                     {t('description')}
                 </Typography>
 
-                {/*<Button*/}
-                {/*    variant='contained'*/}
-                {/*    size='large'*/}
-                {/*    color= 'primary'*/}
-                {/*    endIcon={<ArrowCircleRightIcon size={'large'}/>}*/}
-                {/*    onClick={handleOpen}*/}
-                {/*    sx={{*/}
-                {/*        width: { xs: 1, md: '0.2' },*/}
-                {/*    }}*/}
-                {/*>*/}
-                {/*    {t('cta')}*/}
-                {/*</Button>*/}
-
                 <ParentComponent>
                     <Button
                         variant='contained'
                         size='large'
                         color= 'primary'
                         endIcon={<ArrowCircleRightIcon size={'large'}/>}
-                        // onClick={handleOpen}
                         sx={{
                             width: { xs: 1, md: '0.2' },
                         }}
@@ -102,9 +85,6 @@ const SectionForm  = ( ) => {
                         {t('cta')}
                     </Button>
                 </ParentComponent>
-
-                {/*<ModalForm open={open} handleClose={handleClose} />*/}
-
             </Box>
 
         </Box>

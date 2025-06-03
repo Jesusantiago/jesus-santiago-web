@@ -1,4 +1,15 @@
-import { Box, Card, CardActionArea, CardContent, CardMedia, Typography, Divider, Link, Button, Stack } from '@mui/material'
+import {
+    Box,
+    Card,
+    CardActionArea,
+    CardContent,
+    CardMedia,
+    Typography,
+    Divider,
+    Link,
+    Button,
+    Stack
+} from '@mui/material'
 import React from 'react'
 import NewsLetterBD from '@/database/Newletter'
 import {useTranslations} from 'next-intl'
@@ -6,7 +17,6 @@ import {useTranslations} from 'next-intl'
 
 const Blog = () => {
     const t = useTranslations('Home.blog')
-
 
     return (
         <Box
@@ -18,7 +28,7 @@ const Blog = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
-                justifyContent: { xs: 'center', md: 'space-between' },
+                justifyContent: {xs: 'center', md: 'space-between'},
                 gap: 4,
             }}
         >
@@ -31,7 +41,7 @@ const Blog = () => {
                     textWrap: 'balance',
                     width: '1',
                     px: 2,
-                    background: (theme) => `linear-gradient(282deg, ${theme.palette.text.secondary} 0%, ${theme.palette.text.main} 53%, ${theme.palette.text.secondary} 108%)`,    
+                    background: (theme) => `linear-gradient(282deg, ${theme.palette.text.secondary} 0%, ${theme.palette.text.main} 53%, ${theme.palette.text.secondary} 108%)`,
                     WebkitBackgroundClip: 'text',
                     backgroundClip: 'text',
                     WebkitTextFillColor: 'transparent',
@@ -41,14 +51,14 @@ const Blog = () => {
                 {t('title')}
             </Typography>
 
-            <Stack direction={{xs:'column', md: 'row'}} spacing={{xs:6, lg:10}}>
+            <Stack direction={{xs: 'column', md: 'row'}} spacing={{xs: 6, lg: 10}}>
                 {NewsLetterBD.map((val) => {
                     return (
                         <Card
-                        key={val.article}
+                            key={val.article}
                             component='article'
                             sx={{
-                                width:'1',
+                                width: '1',
                                 maxWidth: 345,
                                 minHeight: 345,
                                 backgroundColor: (theme) => theme.palette.card.main,
@@ -62,7 +72,7 @@ const Blog = () => {
                                         height='180'
                                         image={val.image}
                                         alt='Imagen de un articulo'
-                                        sx={{objectFit:'cover'}}
+                                        sx={{objectFit: 'cover'}}
                                     />
                                     <CardContent
                                         sx={{
@@ -79,7 +89,7 @@ const Blog = () => {
                                         >
                                             {val.article}
                                         </Typography>
-                                        <Divider />
+                                        <Divider/>
                                         <Typography
                                             sx={{
                                                 color: 'primary.main',
@@ -95,8 +105,6 @@ const Blog = () => {
                     )
                 })}
             </Stack>
-
-
         </Box>
     )
 }
