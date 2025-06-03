@@ -39,6 +39,8 @@
     "project": {
       "title": "Proyectos",
       "button": "Ver más",
+      "button2": "Ver código",
+      "button1": "Ver página",
       "projectRentalCar": {
         "status": "En desarrollo",
         "name": "RentalCar",

@@ -39,17 +39,33 @@
     "project": {
       "title": "Projects",
       "button": "See more",
-      "projectNebula": {
+      "button2": "View code",
+      "button1": "View page",
+      "projectRentalCar": {
         "status": "In development",
-        "name": "Nebula Wear",
-        "description": "Luxury apparel brand and e-commerce platform focused on creating a robust and scalable solution. I lead the technical team, guiding the development and applying our specialized skills in each area. My focus is to take this project to its full potential.",
-        "myRole": "Technical leader and Front-End developer."
+        "name": "RentalCar",
+        "description": "Full Stack project with a backend in Java Spring Boot and a mobile app in Kotlin. Development of secure REST APIs, microservices, and clean architecture."
       },
       "projectFunko": {
-        "status": "Completed in 2023",
         "name": "Funko Shop",
-        "description": " Is the degree project of the Full Stack with Node.js course of Elbow to Elbow. Funko shop is an online store selling Funko products.",
-        "myRole": "Full Stack Developer - individual project"
+        "description": "Full e-commerce built with Node, Express, and MySQL. Layout, routing, database, and business logic following the MVC pattern."
+      },
+      "projectAhorcado": {
+        "status": "In development",
+        "name": "Hangman Game",
+        "description": "Web game developed with HTML5 canvas, CSS, and JavaScript. Responsive interface and game logic implemented from scratch."
+      },
+      "projectJardín": {
+        "status": "In development",
+        "name": "Bubble Garden",
+        "description": "Landing page for an educational center with a working form. HTML, CSS, and JS applied to a clear and accessible interface.",
+        "myRole": "Tech Lead and Front-End Developer"
+      },
+      "projectOtro": {
+        "status": "Completed in 2023",
+        "name": "Shop",
+        "description": "Online store connected to a public API. Layout and JavaScript logic to filter products and simulate a shopping flow.",
+        "myRole": "Full Stack Developer – individual project"
       }
     },
     "education": {

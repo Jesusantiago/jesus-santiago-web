@@ -99,12 +99,13 @@ const Project = () => {
                         >
                             <Typography
                                 variant='h6'
-                                fontWeight='600'
+                                fontWeight='700'
                                 width={1 / 2}
                             >
                                 {t('projectRentalCar.name')}
                             </Typography>
                             <Typography
+                                fontWeight='500'
                                 variant='button'
                                 width={1 / 2}
                                 textAlign={'right'}
@@ -124,16 +125,16 @@ const Project = () => {
                             sx={{display: 'flex', flexWrap: 'wrap', gap: 1}}
                         >
                             <Chip
-                                label='Java'
+                                label={<Typography variant='caption' color='text.accent' fontWeight='500'>JAVA</Typography>}
                             />
                             <Chip
-                                label='Spring Boot'
+                                label={<Typography variant='caption' color='text.accent' fontWeight='500'>SPRING BOOT</Typography>}
                             />
                             <Chip
-                                label='Kotlin - Android'
+                                label={<Typography variant='caption' color='text.accent' fontWeight='500'>KOTLIN - ANDROID</Typography>}
                             />
                             <Chip
-                                label='J-unit'
+                                label={<Typography variant='caption' color='text.accent' fontWeight='500'>JUNIT 5</Typography>}
                             />
 
                         </Box>
@@ -153,7 +154,7 @@ const Project = () => {
                                 fullWidth
                                 variant='outlined'
                             >
-                                Código fuente
+                                {t('button2')}
                             </Button>
                         </Box>
                     </Box>
@@ -210,7 +211,7 @@ const Project = () => {
                             <Typography
                                 variant='h6'
                                 width= '1'
-                                fontWeight='600'
+                                fontWeight='700'
                             >
                                 {t('projectFunko.name')}
                             </Typography>
@@ -219,7 +220,7 @@ const Project = () => {
 
                         <Divider/>
 
-                        <Typography variant='body1'>
+                        <Typography variant='body1' fontWeight='400'>
                             {t('projectFunko.description')}
                         </Typography>
 
@@ -227,25 +228,25 @@ const Project = () => {
                             sx={{display: 'flex', flexWrap: 'wrap', gap: 1}}
                         >
                             <Chip
-                                label='HTML'
+                                label={<Typography variant='caption' color='text.accent' fontWeight='500'>HTML</Typography>}
                             />
                             <Chip
-                                label='CSS'
+                                label={<Typography variant='caption' color='text.accent' fontWeight='500'>CSS</Typography>}
                             />
                             <Chip
-                                label='SASS'
+                                label={<Typography variant='caption' color='text.accent' fontWeight='500'>SASS</Typography>}
                             />
                             <Chip
-                                label='JavaScript'
+                                label={<Typography variant='caption' color='text.accent' fontWeight='500'>JAVASCRIPT</Typography>}
                             />
                             <Chip
-                                label='Node'
+                                label={<Typography variant='caption' color='text.accent' fontWeight='500'>NODE</Typography>}
                             />
                             <Chip
-                                label='Express'
+                                label={<Typography variant='caption' color='text.accent' fontWeight='500'>EXPRESS</Typography>}
                             />
                             <Chip
-                                label='MySql'
+                                label={<Typography variant='caption' color='text.accent' fontWeight='500'>MYSQL</Typography>}
                             />
                         </Box>
 
@@ -268,7 +269,7 @@ const Project = () => {
                                     width: {xs: '100%', lg: '1/2'}
                                 }}
                             >
-                                Ver Proyecto
+                                {t('button1')}
                             </Button>
 
                             <Button
@@ -279,7 +280,7 @@ const Project = () => {
                                     width: {xs: '100%', lg: '1/2'}
                                 }}
                             >
-                                Código fuente
+                                {t('button2')}
                             </Button>
                         </Box>
 
@@ -351,13 +352,13 @@ const Project = () => {
                             sx={{display: 'flex', flexWrap: 'wrap', gap: 1}}
                         >
                             <Chip
-                                label='HTML'
+                                label={<Typography variant='caption' color='text.accent' fontWeight='500'>HTML</Typography>}
                             />
                             <Chip
-                                label='CSS'
+                                label={<Typography variant='caption' color='text.accent' fontWeight='500'>CSS</Typography>}
                             />
                             <Chip
-                                label='JavaScript'
+                                label={<Typography variant='caption' color='text.accent' fontWeight='500'>JAVASCRIPT</Typography>}
                             />
                         </Box>
 
@@ -380,7 +381,7 @@ const Project = () => {
                                     width: {xs: '100%', lg: '1/2'}
                                 }}
                             >
-                                Ver Proyecto
+                                {t('button1')}
                             </Button>
 
                             <Button
@@ -391,7 +392,7 @@ const Project = () => {
                                     width: {xs: '100%', lg: '1/2'}
                                 }}
                             >
-                                Código fuente
+                                {t('button2')}
                             </Button>
                         </Box>
                     </Box>
@@ -447,7 +448,7 @@ const Project = () => {
                             <Typography
                                 variant='h6'
                                 width='1'
-                                fontWeight='600'
+                                fontWeight='700'
                             >
                                 {t('projectJardín.name')}
                             </Typography>
@@ -456,7 +457,7 @@ const Project = () => {
 
                         <Divider/>
 
-                        <Typography variant='body1'>
+                        <Typography variant='body1' fw='400'>
                             {t('projectJardín.description')}
                         </Typography>
 
@@ -464,13 +465,13 @@ const Project = () => {
                             sx={{display: 'flex', flexWrap: 'wrap', gap: 1}}
                         >
                             <Chip
-                                label='HTML'
+                                label={<Typography variant='caption' color='text.accent' fontWeight='500'>HTML</Typography>}
                             />
                             <Chip
-                                label='CSS'
+                                label={<Typography variant='caption' color='text.accent' fontWeight='500'>CSS</Typography>}
                             />
                             <Chip
-                                label='JavaScript'
+                                label={<Typography variant='caption' color='text.accent' fontWeight='500'>JAVASCRIPT</Typography>}
                             />
                         </Box>
 
@@ -493,7 +494,7 @@ const Project = () => {
                                     width: {xs: '100%', lg: '1/2'}
                                 }}
                             >
-                                Ver Proyecto
+                                {t('button1')}
                             </Button>
 
                             <Button
@@ -504,7 +505,7 @@ const Project = () => {
                                     width: {xs: '100%', lg: '1/2'}
                                 }}
                             >
-                                Código fuente
+                                {t('button2')}
                             </Button>
                         </Box>
                     </Box>
@@ -560,7 +561,7 @@ const Project = () => {
                             <Typography
                                 variant='h6'
                                 width='1'
-                                fontWeight='600'
+                                fontWeight='700'
                             >
                                 {t('projectOtro.name')}
                             </Typography>
@@ -568,7 +569,7 @@ const Project = () => {
 
                         <Divider/>
 
-                        <Typography variant='body1'>
+                        <Typography variant='body1'fontWeight='400'>
                             {t('projectOtro.description')}
                         </Typography>
 
@@ -576,13 +577,13 @@ const Project = () => {
                             sx={{display: 'flex', flexWrap: 'wrap', gap: 1}}
                         >
                             <Chip
-                                label='HTML'
+                                label={<Typography variant='caption' color='text.accent' fontWeight='500'>HTML</Typography>}
                             />
                             <Chip
-                                label='CSS'
+                                label={<Typography variant='caption' color='text.accent' fontWeight='500'>CSS</Typography>}
                             />
                             <Chip
-                                label='JavaScript'
+                                label={<Typography variant='caption' color='text.accent' fontWeight='500'>JAVASCRIPT</Typography>}
                             />
                         </Box>
 
@@ -605,7 +606,7 @@ const Project = () => {
                                     width: {xs: '100%', lg: '1/2'}
                                 }}
                             >
-                                Ver Proyecto
+                                {t('button1')}
                             </Button>
 
                             <Button
@@ -616,7 +617,7 @@ const Project = () => {
                                     width: {xs: '100%', lg: '1/2'}
                                 }}
                             >
-                                Código fuente
+                                {t('button2')}
                             </Button>
                         </Box>
                     </Box>
