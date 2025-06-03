@@ -107,9 +107,6 @@ const HeroSection = () => {
                         </Button>
                     </ParentComponent>
 
-
-                    {/*<ModalForm open={open} handleClose={handleClose} />*/}
-
                     <Button
 
                         variant='outlined'
@@ -121,7 +118,7 @@ const HeroSection = () => {
                             fontFamily: (theme) => theme.typography.lexend
                         }}
                         target='_blank'
-                        href='CvJesusSantiago-Front-End.pdf'
+                        href='jesusSantiago-FullStack.pdf'
                     >
                         {t('hero.btnCV')}
                     </Button>
