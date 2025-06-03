@@ -201,6 +201,8 @@ const Education = () => {
                     </Box>
 
                 </Card>
+
+
                 <Link href={`/${locate}/education`}>
                     <Button
                         variant="contained"

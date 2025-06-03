@@ -39,16 +39,30 @@
     "project": {
       "title": "Proyectos",
       "button": "Ver más",
-      "projectNebula": {
+      "projectRentalCar": {
         "status": "En desarrollo",
-        "name": "Nebula Wear",
-        "description": " Marca de ropa de lujo y plataforma de comercio electrónico enfocada en crear una solución robusta y escalable. Lidero el equipo técnico, guiando el desarrollo y aplicando nuestras habilidades especializadas en cada área. Mi enfoque es llevar este projecto a su máximo potencial.",
-        "myRole": "Lider Técnico y desarrollador Front-End"
+        "name": "RentalCar",
+        "description": "Proyecto Full Stack con backend en Java Spring Boot y app móvil en Kotlin. Desarrollo de APIs REST seguras, microservicios y arquitectura limpia."
       },
       "projectFunko": {
-        "status": "Finalizado en 2023",
         "name": "Funko Shop",
-        "description": " Es el proyecto de grado del curso de Full Stack con Node.js de Codo a codo. Funko shop es una tienda en linea de venta de productos Funko.",
+        "description": " E-commerce completo con Node, Express y MySQL. Maquetación, rutas, base de datos y lógica de negocio siguiendo patrón MVC."
+      },
+      "projectAhorcado": {
+        "status": "En desarrollo",
+        "name": "Juego del Ahorcado",
+        "description": " Juego web desarrollado con HTML5 canvas, CSS y JavaScript. Interfaz responsiva y lógica de juego implementada desde cero."
+      },
+      "projectJardín": {
+        "status": "En desarrollo",
+        "name": "Jardín burbujar",
+        "description": "Landing page de centro educativo con formulario funcional. HTML, CSS y JS aplicados a una interfaz clara y accesible.",
+        "myRole": "Lider Técnico y desarrollador Front-End"
+      },
+      "projectOtro": {
+        "status": "Finalizado en 2023",
+        "name": "Shop",
+        "description": "Tienda online conectada a una API pública. Maquetación y lógica en JavaScript para filtrar productos y simular un flujo de compra.",
         "myRole": "Desarrollador Full Stack - proyecto individual"
       }
     },
@@ -60,7 +74,7 @@
         "institute": "EEP - IGROUP",
         "location": "Madrid, España",
         "description": "Desarrollo de aplicaciones Multiplataforma.",
-        "experience" : "Durante este ciclo he profundizado en desarrollo Backend con Java y Spring Boot, y en desarrollo móvil con Android. Destaco la creación de una app completa desde cero, además de proyectos en Python, C# y Java que me permitieron trabajar con interfaces gráficas, archivos locales y estructuras de datos. Este camino formativo ha sido clave para definir mi perfil como desarrollador, afianzando tanto mis habilidades técnicas como mi pasión por crear soluciones funcionales y bien estructuradas.Durante este ciclo he profundizado en desarrollo Backend con Java y Spring Boot, y en desarrollo móvil con Android. Destaco la creación de una app completa desde cero, además de proyectos en Python, C# y Java que me permitieron trabajar con interfaces gráficas, archivos locales y estructuras de datos. Este camino formativo ha sido clave para definir mi perfil como desarrollador, afianzando tanto mis habilidades técnicas como mi pasión por crear soluciones funcionales y bien estructuradas."
+        "experience": "Durante este ciclo he profundizado en desarrollo Backend con Java y Spring Boot, y en desarrollo móvil con Android. Destaco la creación de una app completa desde cero, además de proyectos en Python, C# y Java que me permitieron trabajar con interfaces gráficas, archivos locales y estructuras de datos. Este camino formativo ha sido clave para definir mi perfil como desarrollador, afianzando tanto mis habilidades técnicas como mi pasión por crear soluciones funcionales y bien estructuradas.Durante este ciclo he profundizado en desarrollo Backend con Java y Spring Boot, y en desarrollo móvil con Android. Destaco la creación de una app completa desde cero, además de proyectos en Python, C# y Java que me permitieron trabajar con interfaces gráficas, archivos locales y estructuras de datos. Este camino formativo ha sido clave para definir mi perfil como desarrollador, afianzando tanto mis habilidades técnicas como mi pasión por crear soluciones funcionales y bien estructuradas."
       }
     },
     "about": {
@@ -149,9 +163,9 @@
     "project": "Este portafolio esta construído en Next.js"
   },
   "Education": {
-    "title" : "Cursos y formaciones complementarias",
-    "subtitle" : "Estos cursos han sido claves para complementar mi formación técnica, explorando nuevas herramientas, metodologías y enfoques prácticos en desarrollo.",
-    "button" : "Volver al inicio",
+    "title": "Cursos y formaciones complementarias",
+    "subtitle": "Estos cursos han sido claves para complementar mi formación técnica, explorando nuevas herramientas, metodologías y enfoques prácticos en desarrollo.",
+    "button": "Volver al inicio",
     "react": {
       "title": "Front-End Developer with React",
       "date": "Nov. - Dic. 2023",
@@ -181,18 +195,23 @@
       "description": "Bootcamp especialmente pensando en formar desarrolladores full stack de calidad con bases solidas y buenas practicas de codigo."
     }
   },
-  "AboutMe" : {
+  "AboutMe": {
     "title": "Más sobre mí",
     "subtitle": "Un vistazo más humano a mi historia personal y profesional",
     "paragraph1": "Soy venezolano, y si algo me ha enseñado la vida es que uno nunca deja de empezar de nuevo. Viví ocho años en Argentina, y hace poco más de un año llegué a España. Cada cambio ha sido una mezcla de incertidumbre, entusiasmo y muchas lecciones que me han hecho crecer más de lo que imaginé.",
     "paragraph2": "Desde pequeño me sentí atraído por la tecnología. No sabría decir exactamente cuándo empezó, pero recuerdo que todo lo que tuviera una pantalla me fascinaba. Las computadoras, los videojuegos, los dispositivos… era como si hubiera un universo ahí dentro esperando a ser descubierto. Hoy, años después, no solo sigo sintiendo esa misma fascinación, sino que además tengo la suerte de poder crear dentro de ese universo.",
     "paragraph3": "Me gusta programar no solo porque sea desafiante o lógico, sino porque hay algo profundamente satisfactorio en resolver cosas. Empezar con una idea en blanco, chocar con errores, frustrarse, probar, intentar, y de pronto… funciona. Ese momento lo vale todo. No importa cuán complejo sea el problema, me encantan los retos porque en el fondo siempre terminan enseñándome algo nuevo.",
     "paragraph4": "También tengo un lado aventurero que necesita salir al mundo real. Practico airsoft, y en el pasado hice escalada y senderismo. He pasado más de 10 días seguidos en la montaña, y aunque suene extremo, son de los momentos más valiosos que guardo. Estar ahí, sin distracciones, te enseña a confiar en ti mismo, a escuchar el entorno y a valorar lo simple.",
-    "paragraph5":"Sigo aprendiendo todos los días. No me interesa ser perfecto, me interesa ser auténtico, avanzar paso a paso y disfrutar el camino, tanto en el código como en la vida.",
-    "paragraph6" : "Gracias por leerme. Si llegaste hasta acá, ya nos une algo: la curiosidad.",
+    "paragraph5": "Sigo aprendiendo todos los días. No me interesa ser perfecto, me interesa ser auténtico, avanzar paso a paso y disfrutar el camino, tanto en el código como en la vida.",
+    "paragraph6": "Gracias por leerme. Si llegaste hasta acá, ya nos une algo: la curiosidad.",
     "titleTwo": "Algunas fotos que me representan",
     "caption1": "Al fondo el segundo pico mas alto de Venezuela. Pico Humboltd.",
-    "caption2":"Lugar donde sucede la magia.",
-    "caption3" : "La bola del mundo. España - Madrid."
+    "caption2": "Lugar donde sucede la magia.",
+    "caption3": "La bola del mundo. España - Madrid."
+  },
+  "Project": {
+    "title": "Proyectos destacados",
+    "subtitle": "Explora algunos de los trabajos que he realizado, donde combino diseño, desarrollo y resolución de problemas para construir productos funcionales y escalables.",
+    "button": "Volver atrás"
   }
 }

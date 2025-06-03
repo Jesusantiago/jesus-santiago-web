@@ -195,5 +195,10 @@
     "caption1": "In the background the second highest peak in Venezuela. Humbolt Peak",
     "caption2":"Where the magic happens.",
     "caption3" : "With Zeus at La Bola del Mundo. Spain – Madrid."
+  },
+  "Project" : {
+    "title": "Featured Projects",
+    "subtitle": "Explore some of the work I’ve done, where I combine design, development, and problem-solving to build functional and scalable products.",
+    "button": ""
   }
 }

@@ -1,8 +1,10 @@
 import {Box, Button, Card, CardMedia, Chip, Divider, Typography} from '@mui/material';
 import {useTranslations} from 'next-intl'
+import {useParams} from "next/navigation";
 
 const Experience = () => {
     const t = useTranslations('Home.experience')
+    const {locate} = useParams()
 
     return (
         <Box
