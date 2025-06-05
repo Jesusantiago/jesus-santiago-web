@@ -623,7 +623,7 @@ const Project = () => {
                         letterSpacing: '0.5px',
                     }}
                 >
-                    Ver más
+                    {t('button')}
                 </Button>
             </Link>
 

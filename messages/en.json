@@ -215,6 +215,14 @@
   "Project" : {
     "title": "Featured Projects",
     "subtitle": "Explore some of the work I’ve done, where I combine design, development, and problem-solving to build functional and scalable products.",
-    "button": ""
+    "button": "Back to home",
+    "live": "View page",
+    "code": "View code",
+    "pageQualifier": "Page qualifier",
+    "productCard": "Product card",
+    "orderSummary" : "Order Summary",
+    "pageQR": "Page QR",
+    "componentCard": "Component card",
+    "ntfCard": "NTF Card"
   }
 }

@@ -214,6 +214,15 @@
   "Project": {
     "title": "Proyectos destacados",
     "subtitle": "Explora algunos de los trabajos que he realizado, donde combino diseño, desarrollo y resolución de problemas para construir productos funcionales y escalables.",
-    "button": "Volver atrás"
+    "button": "Volver atrás",
+    "live" : "Ver página",
+    "code": "Ver código",
+    "pageQualifier": "Calificador de página",
+    "productCard" : "Tarjeta de producto",
+    "orderSummary": "Resumen de compra",
+    "pageQR": "Carta de QR",
+    "componentCard": "Tarjeta de componente",
+    "ntfCard": "Carta de moneda digital"
+
   }
 }
