@@ -1,9 +1,10 @@
 import {Box, Button, Card, CardMedia, Chip, Divider, Typography} from "@mui/material"
 import {useTranslations} from 'next-intl'
 import {useParams} from "next/navigation";
+import Link from "next/link";
 
 const Project = () => {
-
+    const {locate} = useParams()
     const t = useTranslations('Home.project')
 
     return (
