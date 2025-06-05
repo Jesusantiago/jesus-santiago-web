@@ -158,12 +158,9 @@ const Project = () => {
                             </Button>
                         </Box>
                     </Box>
-
                 </Card> {/* Rental Car*/}
 
-
                 {/*---------------------------------------------------------------------------- */}
-
 
                 {/* Funko Shop */}
                 <Card
@@ -285,7 +282,6 @@ const Project = () => {
                         </Box>
 
                     </Box>
-
                 </Card> {/* Funko Shop */}
 
                 {/*---------------------------------------------------------------------------- */}
@@ -401,7 +397,6 @@ const Project = () => {
 
                 {/*---------------------------------------------------------------------------- */}
 
-
                 {/* Jardín Burbujas */}
                 <Card
                     sx={{
@@ -509,12 +504,9 @@ const Project = () => {
                             </Button>
                         </Box>
                     </Box>
-
                 </Card> {/* Jardín Burbujas */}
 
-
                 {/*---------------------------------------------------------------------------- */}
-
 
                 {/* E-commerce 2 */}
                 <Card
@@ -569,7 +561,7 @@ const Project = () => {
 
                         <Divider/>
 
-                        <Typography variant='body1'fontWeight='400'>
+                        <Typography variant='body1' fontWeight='400'>
                             {t('projectOtro.description')}
                         </Typography>
 
@@ -621,24 +613,21 @@ const Project = () => {
                             </Button>
                         </Box>
                     </Box>
-
                 </Card> {/* E-commerce 2 */}
-
-
             </Box>
 
-            {/*<Link href={`/${locate}/project`}>*/}
-            {/*    <Button*/}
-            {/*        variant="contained"*/}
-            {/*        color="secondary"*/}
-            {/*        sx={{*/}
-            {/*            fontWeight: "600",*/}
-            {/*            letterSpacing: '0.5px',*/}
-            {/*        }}*/}
-            {/*    >*/}
-            {/*        Ver más*/}
-            {/*    </Button>*/}
-            {/*</Link>*/}
+            <Link href={`/${locate}/project`}>
+                <Button
+                    variant="contained"
+                    color="secondary"
+                    sx={{
+                        fontWeight: "600",
+                        letterSpacing: '0.5px',
+                    }}
+                >
+                    Ver más
+                </Button>
+            </Link>
 
         </Box>
     )
