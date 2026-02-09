@@ -104,6 +104,12 @@ const Faq = () => {
                         >
                             {t('FAQ2.question')}
                         </Typography>
+                        <br/>
+                        <Typography
+                            variant='body1'
+                        >
+                            {t('FAQ2.question2')}
+                        </Typography>
                     </AccordionDetails>
                 </Accordion>
 
@@ -238,6 +244,12 @@ const Faq = () => {
                             variant='body1'
                         >
                             {t('FAQ7.question')}
+                        </Typography>
+                        <br/>
+                        <Typography
+                            variant='body1'
+                        >
+                            {t('FAQ7.question1')}
                         </Typography>
                     </AccordionDetails>
                 </Accordion>

@@ -19,9 +19,18 @@
     },
     "experience": {
       "title": "Experience",
-      "projectAgiliza": {
+      "projectMrHouston" : {
         "status": "Currently",
-        "date": "Aug. 2023 - Currently",
+        "date": "Jun. 2025 - Currently",
+        "name": "mrHouston Tech Solutions",
+        "description" : "I built the company's style architecture from scratch, providing structure, scalability, and maintainability, making it the foundation for more efficient and consistent Front-End development.",
+        "description2" : "In addition, I work on Full Stack projects, handling both Front-End and Back-End tasks, including authentication, role management, and resolving production issues.",
+        "myRole": "Full-Stack developer.",
+        "technologies" : "HTML, CSS, C# Blazor, .NET, Java, MySql, Postgres."
+      },
+      "projectAgiliza": {
+        "status": "Finished",
+        "date": "Aug. 2024 - Aug. 2025",
         "name": "Agiliza",
         "description": "A startup dedicated to the centralization and presentation of business data. I led the creation of the app, developing the interface that displays BI charts and managing authentication, user control and permissions.",
         "myRole": "Front-End developer.",
@@ -81,11 +90,9 @@
     },
     "about": {
       "title": "About me",
-      "paragraph1-1": "I'm Jesús Santiago, a Full Stack Developer in constant training. I'm passionate about creating useful, well-thought-out solutions with real impact, both on the client and server sides.",
-      "paragraph2-1": "I'm currently in my second year of the Multiplatform Application Development (DAM) program at EEP iGroup, and",
-      "paragraph2-2": "I’m looking for a company where I can carry out my professional internship.",
-      "paragraph3-1": "Throughout my journey, I’ve combined self-taught learning, personal projects, and teamwork — developing not only technical skills, but also communication, leadership, and commitment. I define myself by my initiative, eagerness to learn, and practical approach to building software.",
-      "paragraph4-1": "I’m looking for a challenging environment where I can grow alongside people who share a passion for technology, learning, and doing things right.",
+      "paragraph1": "I am a Full Stack Developer specialized in Front-End, with a strong focus on JavaScript and React. I always start by understanding the problem before proposing solutions, which allows me to write cleaner, more predictable, and easier-to-maintain code.",
+      "paragraph2": "I have a strong interest in building well-thought-out interfaces, organizing code effectively, and consciously applying patterns and best practices. I see architecture as a tool to reduce complexity, not as an end in itself.",
+      "paragraph3": "I stand out for my ability to organize and manage tasks, as well as for a practical, value-driven approach to product development. I am looking for a team where I can continue to grow, gradually take on more responsibility, and learn from experienced professionals.",
       "button" : "Get to know my personal side"
     },
     "FAQ": {
@@ -96,7 +103,8 @@
       },
       "FAQ2": {
         "title": "What is your specialization?",
-        "question": "I’m comfortable working on both the Front-End and the Back-End. I enjoy creating intuitive, functional interfaces, but I also feel confident handling server-side logic. My focus is Full Stack development, combining both areas to build complete and cohesive solutions."
+        "question": "I work as a Full Stack Developer with a specialization in Front-End. My main interest lies in creating clear and functional interfaces, always understanding the problem and the full context of the application.",
+        "question2": "My Back-End knowledge allows me to make better decisions on the Front-End and build more coherent, maintainable solutions."
       },
       "FAQ3": {
         "title": "How long have you been working in web development?",
@@ -116,7 +124,8 @@
       },
       "FAQ7": {
         "title": "What has been your greatest professional achievement?",
-        "question": "One of my greatest achievements was in my current job, when I was asked to improve a web application that was not meeting expectations: it was slow, not intuitive and not accessible. I was given the freedom to choose the most appropriate technologies and working with the Back-End team we managed to create a new web application that solved the problems presented by the previous one, significantly improving the experience of our customers. "
+        "question": "One of my greatest professional achievements was taking part in the complete overhaul of a web application that suffered from performance, usability, and accessibility issues.",
+        "question1": "I had the opportunity to propose and select the most appropriate technical approach, and by working closely with the Back-End team, we developed a new application that addressed the previous limitations and significantly improved the user experience."
       },
       "FAQ8": {
         "title": "Are you willing to learn new technologies if required by the project?",

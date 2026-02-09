@@ -52,6 +52,121 @@ const Experience = () => {
                     gap: 4
                 }}
             >
+                {/* mrHuston */}
+                <Button
+                    href='https://mrhouston.net/'
+                    target='_black'
+                >
+                    <Card
+                        sx={{
+                            width: '100%',
+                            display: 'flex',
+                            flexDirection: {xs: 'column', lg: 'row'},
+                            borderRadius: 4,
+                            boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`
+                        }}>
+                        <CardMedia
+                            component='img'
+                            image='portfolio/mrhouston.png'
+                            alt='Logo de MrHuston'
+                            sx={{
+                                height: 320,
+                                width: {xs: 1, lg: 345},
+                                objectPosition: 'center',
+                                objectFit: 'contain'
+                            }}
+                        />
+
+                        <Box
+                            sx={{
+                                display: 'flex',
+                                flexDirection: 'column',
+                                justifyContent: 'space-around',
+                                gap: 1,
+                                py: 2,
+                                px: 4,
+                                width: '100%',
+                            }}>
+
+                            <Box
+                                sx={{
+                                    display: 'flex',
+                                    justifyContent: 'space-between',
+                                    alignItems: 'center'
+                                }}
+                            >
+                                <Typography
+                                    variant='h6'
+                                    width={1 / 2}
+                                    textAlign={'start'}
+                                    fontWeight={'700'}
+                                >
+                                    {t('projectMrHouston.name')}
+                                </Typography>
+                                <Typography
+                                    variant='button'
+                                    width={1 / 2}
+                                    textAlign={'right'}
+                                >
+                                    {t('projectMrHouston.date')}
+                                </Typography>
+
+                            </Box>
+                            <Divider/>
+                            <Typography
+                                variant='body1'
+                                color='primary.transparent'
+                                fontWeight='500'
+                            >
+                                {t('projectMrHouston.myRole')}
+                            </Typography>
+
+                            <Typography variant='body1'>
+                                {t('projectMrHouston.description')}
+                            </Typography>
+
+                            <Typography variant='body1'>
+                                {t('projectMrHouston.description2')}
+                            </Typography>
+
+                            <Box
+                                sx={{
+                                    display: 'flex',
+                                    flexWrap: 'wrap',
+                                    gap: 1,
+                                    mt: 6
+                                }}
+                            >
+                                <Chip
+                                    label='HTML'
+                                />
+                                <Chip
+                                    label='CSS'
+                                />
+                                <Chip
+                                    label='C# Blazor'
+                                />
+                                <Chip
+                                    label='.NET'
+                                />
+                                <Chip
+                                    label='Java'
+                                />
+                                <Chip
+                                    label='MySql'
+                                />
+                                <Chip
+                                    label='PostgreSQL'
+                                />
+                                <Chip
+                                    label='Entity FrameWork'
+                                />
+                            </Box>
+
+                        </Box>
+                    </Card>
+                </Button>
+
                 {/* agiliza */}
                 <Button
                     href='https://agiliza-sa.com/'

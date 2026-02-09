@@ -118,7 +118,7 @@ const HeroSection = () => {
                             fontFamily: (theme) => theme.typography.lexend
                         }}
                         target='_blank'
-                        href='jesusSantiago-FullStack.pdf'
+                        href='Cv-Jesus-Santiago-Front-end-React.pdf'
                     >
                         {t('hero.btnCV')}
                     </Button>

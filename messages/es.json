@@ -19,11 +19,20 @@
     },
     "experience": {
       "title": "Experiencia",
-      "projectAgiliza": {
+      "projectMrHouston" : {
         "status": "Actualmente",
-        "date": "Agosto 2023 - Actualmente",
+        "date": "Jul 2025 - Actualmente",
+        "name": "mrHouston Tech Solutions",
+        "description": "Creé desde cero la arquitectura de estilos de la empresa, aportando orden, escalabilidad y facilidad de mantenimiento, y convirtiéndola en la base para un desarrollo Front-End más eficiente y consistente.",
+        "description2": "Además, participo en proyectos Full Stack, abordando tareas de Front-End y Back-End, incluyendo autenticación, gestión de roles y resolución de incidencias en producción.",
+        "myRole": "Desarrollador Full Stack.",
+        "technologies" : "HTML, CSS, C# Blazor, .NET, Java, MySql, Postgres."
+      },
+      "projectAgiliza": {
+        "status": "Finalizado",
+        "date": "Agosto 2024 - Agosto 2025",
         "name": "Agiliza",
-        "description": "Startup dedicada a la centralización y presentación de datos empresariales. Lideré la creación de la app, desarrollando la interfaz que muestra gráficos BI y gestionando la autenticación, control de usuarios y permisos.",
+        "description": "Startup dedicada a la centralización y presentación de datos empresariales. Lideré la creación de la app, desarrollando la interfaz que muestra gráficos Power BI y gestionando la autenticación, control de usuarios y permisos.",
         "myRole": "Desarrollador Front-End.",
         "technologies": "React, ReactStrap (estilos)."
       },
@@ -81,11 +90,9 @@
     },
     "about": {
       "title": "Sobre mí",
-      "paragraph1-1": "Soy Jesús Santiago, Desarrollador Full Stack en formación constante. Me apasiona crear soluciones útiles, bien pensadas y con impacto real, tanto en el lado del cliente como del servidor.",
-      "paragraph2-1": "Actualmente curso el segundo año del ciclo de Desarrollo de Aplicaciones Multiplataforma (DAM) en EEP iGroup, y ",
-      "paragraph2-2": "estoy en búsqueda de una empresa donde realizar mis prácticas profesionales.",
-      "paragraph3-1": "A lo largo de mi recorrido he combinado formación autodidacta, proyectos personales y trabajo en equipo, desarrollando no solo habilidades técnicas, sino también comunicación, liderazgo y compromiso. Me defino por mi iniciativa, mis ganas de aprender y mi enfoque práctico a la hora de construir software.",
-      "paragraph4-1": "Busco un entorno desafiante, donde pueda crecer rodeado de personas que compartan la pasión por la tecnología, el aprendizaje y el trabajo bien hecho.",
+      "paragraph1": "Soy desarrollador Full Stack especializado en Front-End, con foco en JavaScript y React. Mi forma de trabajar parte siempre de entender el problema antes de proponer soluciones, lo que me permite escribir código más limpio, predecible y fácil de mantener.",
+      "paragraph2": "Tengo especial interés en la construcción de interfaces bien pensadas, la organización del código y el uso consciente de patrones y buenas prácticas. Valoro la arquitectura como una herramienta para reducir complejidad, no como un fin en sí mismo.",
+      "paragraph3": "Destaco por mi capacidad de organización y gestión de tareas, y por un enfoque práctico orientado a aportar valor real al producto. Busco un equipo donde pueda seguir creciendo, asumir responsabilidades progresivamente y aprender de personas con experiencia.",
       "button": "Conocer mi lado más personal"
     },
     "FAQ": {
@@ -96,7 +103,8 @@
       },
       "FAQ2": {
         "title": "¿Cuál es tu especialización?",
-        "question": "Me desenvuelvo con soltura tanto en el desarrollo Front-End como en el Back-End. Disfruto creando interfaces intuitivas y funcionales, pero también me siento muy cómodo trabajando en la lógica del servidor. Mi enfoque es Full Stack, combinando ambos mundos para construir soluciones completas y coherentes."
+        "question": "Trabajo como desarrollador Full Stack con especialización en Front-End. Mi interés principal está en crear interfaces claras y funcionales, entendiendo siempre el problema y el contexto completo de la aplicación.",
+        "question2" : "El conocimiento de Back-End me permite tomar mejores decisiones en el Front y construir soluciones más coherentes y mantenibles."
       },
       "FAQ3": {
         "title": "¿Cuánto tiempo llevas trabajando en desarrollo web?",
@@ -116,7 +124,8 @@
       },
       "FAQ7": {
         "title": "¿Cuál ha sido tu mayor logro profesional?",
-        "question": "Uno de mis mayores logros fue en mi trabajo actual, cuando me pidieron mejorar una aplicación web que no cumplía con las expectativas: era lenta, poco intuitiva y no accesible. Me dieron la libertad de elegir las tecnologías más adecuadas y trabajando con el equipo de Back-End logramos crear una nueva aplicación web que resolvío los problemas que presentaba la anterior, mejorando esto significativamente la experiencia de nuestros clientes. "
+        "question": "Uno de mis mayores logros profesionales fue participar en la renovación completa de una aplicación web que presentaba problemas de rendimiento, usabilidad y accesibilidad.",
+        "question1": "Tuve la oportunidad de proponer y seleccionar el enfoque técnico más adecuado, y trabajando en conjunto con el equipo de Back-End desarrollamos una nueva aplicación que resolvió las limitaciones de la anterior y mejoró de forma notable la experiencia de los usuarios."
       },
       "FAQ8": {
         "title": "¿Estás dispuesto a aprender nuevas tecnologías si lo requiere el proyecto?",

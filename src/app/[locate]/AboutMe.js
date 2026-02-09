@@ -91,7 +91,7 @@ const AboutMe = () => {
                             fontSize: {xs: '16px', sm: '18px'}
                         }}
                     >
-                        {t('paragraph1-1')}
+                        {t('paragraph1')}
                     </Typography>
 
                     <Typography
@@ -102,7 +102,7 @@ const AboutMe = () => {
                             fontSize: {xs: '16px', sm: '18px'}
                         }}
                     >
-                        {t('paragraph2-1')} <b> {t('paragraph2-2')} </b>
+                        {t('paragraph2')}
                     </Typography>
 
                     <Typography
@@ -113,39 +113,28 @@ const AboutMe = () => {
                             fontSize: {xs: '16px', sm: '18px'}
                         }}
                     >
-                        {t('paragraph3-1')}
+                        {t('paragraph3')}
                     </Typography>
 
-                    <Typography
-                        sx={{
-                            color: 'text.secondary',
-                            lineHeight: 1.7,
-                            textWrap: 'balance',
-                            fontSize: {xs: '16px', sm: '18px'}
-                        }}
-                    >
-                        {t('paragraph4-1')}
-                    </Typography>
-
-                    <Link href={`/${locate}/about`}>
-                        <Button
-                            variant="outlined"
-                            sx={{
-                                borderColor: 'button.aboutme',
-                                color: 'button.aboutme',
-                                textTransform: 'none',
-                                fontWeight: 500,
-                                '&:hover': {
-                                    backgroundColor: theme => theme.palette.mode === 'dark'
-                                        ? 'rgba(183, 242, 94, 0.1)'
-                                        : 'rgba(0,0,0,0.05)',
-                                    borderColor: 'button.aboutme',
-                                }
-                            }}
-                        >
-                            {t('button')}
-                        </Button>
-                    </Link>
+                    {/*<Link href={`/${locate}/about`}>*/}
+                    {/*    <Button*/}
+                    {/*        variant="outlined"*/}
+                    {/*        sx={{*/}
+                    {/*            borderColor: 'button.aboutme',*/}
+                    {/*            color: 'button.aboutme',*/}
+                    {/*            textTransform: 'none',*/}
+                    {/*            fontWeight: 500,*/}
+                    {/*            '&:hover': {*/}
+                    {/*                backgroundColor: theme => theme.palette.mode === 'dark'*/}
+                    {/*                    ? 'rgba(183, 242, 94, 0.1)'*/}
+                    {/*                    : 'rgba(0,0,0,0.05)',*/}
+                    {/*                borderColor: 'button.aboutme',*/}
+                    {/*            }*/}
+                    {/*        }}*/}
+                    {/*    >*/}
+                    {/*        {t('button')}*/}
+                    {/*    </Button>*/}
+                    {/*</Link>*/}
                 </Grid>
             </Grid>
         </Box>
