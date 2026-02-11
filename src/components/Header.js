@@ -15,7 +15,7 @@ import {Brightness7} from "@mui/icons-material";
 import {Brightness4} from "@mui/icons-material";
 import MenuIcon from '@mui/icons-material/Menu';
 import {Link} from "@/i18n/routing";
-import React, {useState, useEffect} from "react"
+import React, {useState} from "react"
 import {useTranslations} from "next-intl";
 import ParentComponent from "@/components/ParentComponent";
 import {useActiveSection} from "@/hooks/useActiveSection";
@@ -53,7 +53,6 @@ const LogotipoDark = () => {
 const Header = ({darkMode, toggleDarkMode}) => {
     const t = useTranslations('header')
     const [anchorElNav, setAnchorElNav] = useState(null);
-    const [open, setOpen] = useState(null);
     
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
@@ -66,10 +65,6 @@ const Header = ({darkMode, toggleDarkMode}) => {
         'experience', 'project', 'education', 'aboutMe',
     ])
 
-    useEffect(() => {
-        console.log('Sección activa en Header:', activeSection);
-    }, [activeSection]);
-
     const pages = [
         {name: t('btnExperience'), page: "#experience", id: 'experience'},
         {name: t('btnPortfolio'), page: "#projects", id: 'project'},
@@ -78,7 +73,7 @@ const Header = ({darkMode, toggleDarkMode}) => {
     ]
 
     const getOpacity = () => {
-        const sections = ['experience', 'projects', 'education', 'aboutMe'];
+        const sections = ['experience', 'project', 'education', 'aboutMe'];
         const index = sections.indexOf(activeSection);
         return index >= 0 ? 0.3 + (index * 0.08) : 0.3;
     };
@@ -171,7 +166,18 @@ const Header = ({darkMode, toggleDarkMode}) => {
                                     <Button
                                         variant="text"
                                         href={item.page}
-                                        sx={{width: 1}}
+                                        sx={{
+                                            width: 1,
+                                            color: activeSection === item.id
+                                                ? 'common.white'
+                                                : (darkMode ? 'primary.main' : 'text.textPrimary'),
+                                            backgroundColor: activeSection === item.id ? 'secondary.main' : 'transparent',
+                                            borderRadius: 2,
+                                            fontWeight: activeSection === item.id ? 700 : 400,
+                                            '&:hover': {
+                                                backgroundColor: activeSection === item.id ? 'secondary.main' : 'action.hover',
+                                            }
+                                        }}
                                     >
                                         {item.name}
                                     </Button>
@@ -217,10 +223,16 @@ const Header = ({darkMode, toggleDarkMode}) => {
                                     href={item.page}
                                     key={item.name}
                                     sx={{display: 'block',
-                                        // color: 'primary.main',
-                                        color: activeSection === item.id ? 'secondary.main' : ' text.primary',
-                                        // fontWeight: 700
+                                        color: activeSection === item.id
+                                            ? 'common.white'
+                                            : (darkMode ? 'primary.main' : 'text.textPrimary'),
+                                        backgroundColor: activeSection === item.id ? 'secondary.main' : 'transparent',
+                                        borderRadius: 2,
                                         fontWeight: activeSection === item.id ? 700 : 400
+                                        ,
+                                        '&:hover': {
+                                            backgroundColor: activeSection === item.id ? 'secondary.main' : 'action.hover',
+                                        }
                                 }}
                                 >
                                     {item.name}

@@ -3,14 +3,14 @@ import {useTranslations} from 'next-intl'
 import {useParams} from "next/navigation";
 import Link from "next/link";
 
-const Project = () => {
+const Project = ({id}) => {
     const {locate} = useParams()
     const t = useTranslations('Home.project')
 
     return (
         <Box
             component='section'
-            id='projects'
+            id='project'
             sx={{
                 width: '1',
                 backgroundColor: (theme) => theme.palette.card.main,

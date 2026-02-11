@@ -28,18 +28,13 @@ export default function Home() {
         <ButtonChange/>
         <HeroSection id="hero"/>
         <Experience id="experience"/>
-        <Box id="project" ><Project /></Box>
-        <Box id="education" ><Education /></Box>
-        <Box id="aboutMe" ><AboutMe/></Box>
-        <Box id="" ><Faq/></Box>
-        <Box id="" ><Testimonials/></Box>
-        <Box id="" ><Blog/></Box>
-        <Box id="" ><SectionForm /></Box>
-
-
-
-
-
+        <Project id="project"/>
+        <Education id="education" />
+        <AboutMe id="aboutMe"/>
+        <Faq/>
+        <Testimonials/>
+        <Blog/>
+        <SectionForm />
     </Box>
   );
 }

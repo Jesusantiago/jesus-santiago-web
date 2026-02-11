@@ -40,7 +40,6 @@ const ButtonChange = () => {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-
             }}
         >
             <Button
@@ -49,8 +48,6 @@ const ButtonChange = () => {
             >
                 {select == "es" ? `en` : `es`}
             </Button>
-
-
         </Box>
     );
 };
