@@ -8,12 +8,13 @@ import {useTranslations} from 'next-intl'
 import {useState} from "react";
 import ParentComponent from "@/components/ParentComponent";
 
-const HeroSection = () => {
+const HeroSection = ({id}) => {
     const [open, setOpen] = useState(false)
     const t = useTranslations('Home')
 
     return (
         <Grid
+            id={id}
             container
             component='section'
             sx={{

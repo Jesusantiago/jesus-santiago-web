@@ -15,9 +15,10 @@ import {Brightness7} from "@mui/icons-material";
 import {Brightness4} from "@mui/icons-material";
 import MenuIcon from '@mui/icons-material/Menu';
 import {Link} from "@/i18n/routing";
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import {useTranslations} from "next-intl";
 import ParentComponent from "@/components/ParentComponent";
+import {useActiveSection} from "@/hooks/useActiveSection";
 
 const LogotipoLight = () => {
     return (
@@ -61,12 +62,26 @@ const Header = ({darkMode, toggleDarkMode}) => {
         setAnchorElNav(null);
     };
 
+    const activeSection = useActiveSection([
+        'experience', 'project', 'education', 'aboutMe',
+    ])
+
+    useEffect(() => {
+        console.log('Sección activa en Header:', activeSection);
+    }, [activeSection]);
+
     const pages = [
-        {name: t('btnExperience'), page: "/#experience"},
-        {name: t('btnPortfolio'), page: "/#projects"},
-        {name: t('btnEducation'), page: "/#education"},
-        {name: t('btnAboutMe'), page: "/#aboutMe"}
+        {name: t('btnExperience'), page: "#experience", id: 'experience'},
+        {name: t('btnPortfolio'), page: "#projects", id: 'project'},
+        {name: t('btnEducation'), page: "#education", id: 'education'},
+        {name: t('btnAboutMe'), page: "#aboutMe", id: 'aboutMe'},
     ]
+
+    const getOpacity = () => {
+        const sections = ['experience', 'projects', 'education', 'aboutMe'];
+        const index = sections.indexOf(activeSection);
+        return index >= 0 ? 0.3 + (index * 0.08) : 0.3;
+    };
 
     return (
         <Box
@@ -83,6 +98,15 @@ const Header = ({darkMode, toggleDarkMode}) => {
                 top: '32px',
                 width: {xs: .8, md: 0.8},
                 boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`,
+
+                transition: 'all 0.4s ease-in-out',
+                background: (theme) => {
+                    const opacity = getOpacity();
+                    return darkMode
+                        ? `rgba(255, 255, 255, ${opacity * 0.1})`
+                        : `rgba(0, 0, 0, ${opacity * 0.05})`;
+                },
+                // border: (theme) => `2px solid rgba(${darkMode ? '255,255,255' : '0,0,0'}, ${getOpacity()})`,
             }}
         >
             <Container maxWidth='xl'>
@@ -192,7 +216,12 @@ const Header = ({darkMode, toggleDarkMode}) => {
                                     onClick={handleCloseNavMenu}
                                     href={item.page}
                                     key={item.name}
-                                    sx={{display: 'block', color: 'primary.main', fontWeight: 700}}
+                                    sx={{display: 'block',
+                                        // color: 'primary.main',
+                                        color: activeSection === item.id ? 'secondary.main' : ' text.primary',
+                                        // fontWeight: 700
+                                        fontWeight: activeSection === item.id ? 700 : 400
+                                }}
                                 >
                                     {item.name}
                                 </Button>

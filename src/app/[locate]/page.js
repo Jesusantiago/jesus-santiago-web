@@ -26,15 +26,20 @@ export default function Home() {
       }}
     >
         <ButtonChange/>
-        <HeroSection/>
-        <Blog />
-        <Experience />
-        <Project />
-        <Education />
-        <AboutMe/>
-        <Faq/>
-        <Testimonials/>
-        <SectionForm />
+        <HeroSection id="hero"/>
+        <Experience id="experience"/>
+        <Box id="project" ><Project /></Box>
+        <Box id="education" ><Education /></Box>
+        <Box id="aboutMe" ><AboutMe/></Box>
+        <Box id="" ><Faq/></Box>
+        <Box id="" ><Testimonials/></Box>
+        <Box id="" ><Blog/></Box>
+        <Box id="" ><SectionForm /></Box>
+
+
+
+
+
     </Box>
   );
 }

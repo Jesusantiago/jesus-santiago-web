@@ -574,7 +574,7 @@ export default function Project() {
                         </Card>
                         {/* Component Card */}
 
-                        {/*---------------------------------------------------------------------*/}
+                        {/*--------------------------Digital Coin-----------------------------------*/}
                         <Card
                             sx={{
                                 display: 'flex',
@@ -670,7 +670,110 @@ export default function Project() {
                                     </Button>
                                 </Box>
                             </Box>
-                        </Card> {/* E-commerce 2 */}
+                        </Card>
+
+                        {/*---------------------------------------------------------------------*/}
+                        <Card
+                            sx={{
+                                display: 'flex',
+                                flexDirection: 'column',
+                                borderRadius: 4,
+                                boxShadow: (theme) => `15px 15px 30px ${theme.palette.card.shadowPrimary}, -15px -15px 30px ${theme.palette.card.shadowSecondary}`,
+                                transition: 'transform 0.3s ease',
+                                '&:hover': {
+                                    transform: 'scale(1.01)',
+                                },
+                            }}>
+                            <CardMedia
+                                component='img'
+                                image='/portfolio/JuegoDelAhorcado.jpg'
+                                alt='Imagen del proyecto del Juego del ahorcado'
+                                sx={{
+                                    height: 300,
+                                    width: 1,
+                                    objectPosition: 'center',
+                                    objectFit: 'fill',
+                                }}
+                            />
+
+                            <Box
+                                sx={{
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    justifyContent: 'space-around',
+                                    gap: 3,
+                                    my: 2,
+                                    px: {xs: 2, sm: 4},
+                                    height: '100%'
+                                }}
+                            >
+                                <Box
+                                    sx={{
+                                        display: 'flex',
+                                        justifyContent: 'space-between',
+                                        alignItems: 'center'
+                                    }}
+                                >
+                                    <Typography
+                                        variant='h6'
+                                        width='1'
+                                        fontWeight='800'
+                                    >
+                                        {t('projectAhorcado')}
+                                    </Typography>
+                                </Box>
+
+                                <Box
+                                    sx={{display: 'flex', flexWrap: 'wrap', gap: 1}}
+                                >
+                                    <Chip
+                                        label={<Typography variant='caption' color='text.accent'
+                                                           fontWeight='500'>HTML</Typography>}
+                                    />
+                                    <Chip
+                                        label={<Typography variant='caption' color='text.accent'
+                                                           fontWeight='500'>CSS</Typography>}
+                                    />
+                                    <Chip
+                                        label={<Typography variant='caption' color='text.accent'
+                                                           fontWeight='500'>JAVASCRIPT</Typography>}
+                                    />
+                                </Box>
+
+                                <Box
+                                    sx={{
+                                        display: 'flex',
+                                        justifyContent: 'space-between',
+                                        flexDirection: {xs: 'column', lg: 'row'},
+                                        alignItems: 'center',
+                                        gap: 2,
+                                    }}
+                                >
+                                    <Button
+                                        href='https://jesusantiago.github.io/JuegoAhorcado/'
+                                        target='_black'
+                                        variant='contained'
+                                        sx={{
+                                            width: {xs: '100%', lg: '1/2'}
+                                        }}
+                                    >
+                                        {t('live')}
+                                    </Button>
+
+                                    <Button
+                                        href='https://github.com/Jesusantiago/JuegoAhorcado'
+                                        target='_black'
+                                        variant='outlined'
+                                        sx={{
+                                            width: {xs: '100%', lg: '1/2'}
+                                        }}
+                                    >
+                                        {t('code')}
+                                    </Button>
+                                </Box>
+                            </Box>
+                        </Card>
+                        {/* E-commerce 2 */}
                     </Box>
 
                     <Button

@@ -2,14 +2,14 @@ import {Box, Button, Card, CardMedia, Chip, Divider, Typography} from '@mui/mate
 import {useTranslations} from 'next-intl'
 import {useParams} from "next/navigation";
 
-const Experience = () => {
+const Experience = ({id}) => {
     const t = useTranslations('Home.experience')
     const {locate} = useParams()
 
     return (
         <Box
             component='section'
-            id='experience'
+            id={id}
             sx={{
                 width: '.9',
                 maxWidth: '1620px',

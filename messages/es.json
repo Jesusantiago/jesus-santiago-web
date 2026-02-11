@@ -8,7 +8,7 @@
   },
   "Home": {
     "hero": {
-      "status": "Disponible para practicas FP",
+      "status": "Abiertos a nuevas oportunidades",
       "title": "Jesús Santiago",
       "subtitle": "Desarrollador Full Stack",
       "btnCTA": "Charlemos",
@@ -47,7 +47,7 @@
     },
     "project": {
       "title": "Proyectos",
-      "button": "Ver más",
+      "button": "Ver más +7",
       "button2": "Ver código",
       "button1": "Ver página",
       "projectRentalCar": {
@@ -58,11 +58,6 @@
       "projectFunko": {
         "name": "Funko Shop",
         "description": " E-commerce completo con Node, Express y MySQL. Maquetación, rutas, base de datos y lógica de negocio siguiendo patrón MVC."
-      },
-      "projectAhorcado": {
-        "status": "En desarrollo",
-        "name": "Juego del Ahorcado",
-        "description": " Juego web desarrollado con HTML5 canvas, CSS y JavaScript. Interfaz responsiva y lógica de juego implementada desde cero."
       },
       "projectJardín": {
         "status": "En desarrollo",
@@ -231,7 +226,7 @@
     "orderSummary": "Resumen de compra",
     "pageQR": "Carta de QR",
     "componentCard": "Tarjeta de componente",
-    "ntfCard": "Carta de moneda digital"
-
+    "ntfCard": "Carta de moneda digital",
+    "projectAhorcado": "Juego del Ahorcado"
   }
 }

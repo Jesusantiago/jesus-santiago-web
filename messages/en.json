@@ -8,7 +8,7 @@
   },
   "Home": {
     "hero": {
-      "status": "Available for internships",
+      "status": "Open to new opportunities",
       "title": "Jesus Santiago",
       "subtitle": "Full Stack Developer",
       "btnCTA": "Let's talk",
@@ -47,7 +47,7 @@
     },
     "project": {
       "title": "Projects",
-      "button": "See more",
+      "button": "See more +7",
       "button2": "View code",
       "button1": "View page",
       "projectRentalCar": {
@@ -58,11 +58,6 @@
       "projectFunko": {
         "name": "Funko Shop",
         "description": "Full e-commerce built with Node, Express, and MySQL. Layout, routing, database, and business logic following the MVC pattern."
-      },
-      "projectAhorcado": {
-        "status": "In development",
-        "name": "Hangman Game",
-        "description": "Web game developed with HTML5 canvas, CSS, and JavaScript. Responsive interface and game logic implemented from scratch."
       },
       "projectJardín": {
         "status": "In development",
@@ -232,6 +227,8 @@
     "orderSummary" : "Order Summary",
     "pageQR": "Page QR",
     "componentCard": "Component card",
-    "ntfCard": "NTF Card"
+    "ntfCard": "NTF Card",
+    "projectAhorcado": "Hangman Game"
+
   }
 }
